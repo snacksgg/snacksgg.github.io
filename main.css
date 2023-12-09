@@ -1,0 +1,261 @@
+html {
+  margin: -10px ;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+	background-image: url(images/triangle2.png); background-size: 100%; background-attachment: fixed;
+
+    width: auto;
+    overflow-y: scroll; /* Show vertical scrollbar */
+    overflow-x: hidden;
+    font-family: "Helvetica", Baskerville, serif;
+    text-align:center
+    
+}
+
+.container {
+    margin: auto;
+ max-width: 1400px; 
+padding: 15px 15px;
+}
+
+.container2 {
+    margin: auto;
+ max-width: 1300px; 
+padding: 15px 15px;
+position:relative;
+    z-index: -1;
+}
+
+.container-header {
+    background-image: url(images/header8.png); background-size: 1920px 130px; background-attachment: fixed; background-blend-mode: hard-light;
+height: 130px;
+    background-repeat: repeat-x;
+    position:relative;
+    z-index: 100;
+
+}
+
+.boxed {
+  
+background: url(images/checker.png); background-size: 90%;
+  border: none;
+  
+  font-family: "Prompt";, "Bradley Hand";, "Comic Sans MS";, sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  padding: 15px 15px;
+  outline: 5px solid #00243B;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+  text-decoration-line: none
+  pointer-events: none;
+  font-size: 16px;
+  width: 900px;
+  height: inherit;
+  line-height:30px;
+  margin-right: 15px;
+  text-shadow: #062c40 -2px 2px 0px ;
+  box-shadow: -0px 0px 10px black;
+  transition: 0.1s;
+  transition-timing-function: ease;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.boxed2 {
+  
+background: url(images/checker2.png); background-size: 180%;
+  border: none;
+  
+  font-family: "Prompt";, "Bradley Hand";, "Comic Sans MS";, sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  padding: 30px 15px;
+  outline: 5px solid #00243B;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+  text-decoration-line: none
+  pointer-events: none;
+  font-size: 16px;
+  width: 520px;
+  height: inherit;
+  line-height:30px;
+  margin-right: 15px;
+  text-shadow: #062c40 -2px 2px 0px ;
+  box-shadow: -0px 0px 10px black;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box
+}
+
+
+h1 {
+    color:white;
+    font-family: "Prompt", Baskerville, serif;
+    text-align:center;
+    
+    
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 15px;
+    color:#133670;
+    background-color: #91b3d6;
+    user-select: none;
+    border: 5px solid #0D1A2A;
+}
+
+.bolded {
+    font-weight: bold; 
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    pointer-events: none;
+    
+    
+}
+
+.img2 {
+    width: 20%;
+    pointer-events: none;
+    
+    
+}
+    
+
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+    margin-top: 20px;
+  height: 300px;
+  width: 300px;
+outline: 5px solid #00243B;
+  box-shadow: -20px 1px 0px #00243B;
+    
+}
+    
+}
+
+
+.emphasis {
+    font-size: 20px;
+    color:#2064d6;
+}
+
+.action {
+    color:#0f4caf;
+    font-style: italic;
+    
+}
+
+
+
+
+button {
+  background: url(images/checker.png); background-size: 300%;
+  border: none;
+  font-family: "Prompt";, "Bradley Hand";, "Comic Sans MS";, sans-serif;
+    user-select: none;
+  color: white;
+  letter-spacing: 1px;
+outline: 3px solid #00243B;
+border-color:white;
+  border-radius: 15px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+  text-decoration-line: none
+  pointer-events: none;
+  font-size: 16px;
+  width: 170px;
+  line-height:30px;
+  margin-right: 15px;
+  text-shadow: #062c40 -2px 2px 0px;
+  box-shadow: 0px 0px 5px black;
+  cursor: pointer;
+  transition: 0.1s;
+  transition-timing-function: ease;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: auto;
+}
+
+.left {
+   max-width: 40%;
+        float: left;
+        //display: inline-flex;
+        margin-left:100px;
+        }
+}
+
+
+element {
+  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+}
+
+
+button:hover {background-color: #2899b0;;box-shadow: 0 0 0 5px white;color: #bde9ff;justify-content: center;align-items: center;
+}
+
+/* unvisited link */
+a:link {
+  color: lightblue;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: lightblue;
+}
+
+/* mouse over link */
+a:hover {
+  color: #2899b0;
+    transition: 0.1s;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+body nav {
+  position: sticky;
+  top: 0;
+}
+
+
+$("#someSelector").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){ ... });
+
+
