@@ -8,6 +8,7 @@ html {
 
 body {
     margin: 0;
+    background-color: #062c40;
 	background-image: url(images/triangle2.png); background-size: 100%; background-attachment: fixed; background-repeat: no-repeat;
     width: auto;
     height:auto;
