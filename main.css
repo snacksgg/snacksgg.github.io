@@ -8,7 +8,7 @@ html {
 
 body {
     margin: 0;
-	background-image: url(images/triangle2.png); background-size: 100%; background-attachment: fixed;
+	background-image: url(images/triangle2.png); background-size: 100%; background-attachment: fixed; background-repeat: no-repeat;
     width: auto;
     height:auto;
     overflow-y: scroll; /* Show vertical scrollbar */
@@ -128,7 +128,7 @@ margin-left: 340px;
   text-decoration-line: none
   pointer-events: none;
   font-size: 16px;
-  width: 800px;
+  width: 50%;
   height: inherit;
 align-self: center;
   line-height:30px;
@@ -215,17 +215,25 @@ img.rounded {
     margin-top: 20px;
   height: 300px;
   width: 300px;
-outline: 5px solid #00243B;
-  box-shadow: -20px 1px 0px #00243B;
+outline: 6px solid #00243B;
+  box-shadow: 15px 12px 0px #00243B;
     
 }
     
-.img-hand {
+.img-float {
     
-    left:5px;;
-    top; 5px;
-    z-index: 1;
+    position:fixed;
+    bottom: 10px;
+    right: -250px;
+    max-height: 30%;
+}
+
+.img-float2 {
     
+    position: fixed;
+    bottom: 10px;
+    left: -250px;
+    max-height: 30%;
 }
 
 
