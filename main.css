@@ -338,4 +338,8 @@ body nav {
 
 $("#someSelector").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){ ... });
 
-
+twitch-embed {
+    width: 5008px;
+    
+    
+}
