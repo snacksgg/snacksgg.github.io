@@ -253,7 +253,7 @@ outline: 6px solid #00243B;
 
 
 button {
-  background: url(images/checker.png); background-size: 300%;
+  background: url(images/checker.png); background-size: 310%;
   border: none;
   font-family: "Prompt";, "Bradley Hand";, "Comic Sans MS";, sans-serif;
     user-select: none;
@@ -281,8 +281,44 @@ border-color:white;
   transition-timing-function: ease;
   margin-top: 10px;
   margin-bottom: 20px;
-  box-sizing: border-box
+  box-sizing: border-box;
 
+}
+
+.fcc-btn {
+background: url(images/checker.png); background-size: 310%;
+  border: none;
+  font-family: "Prompt";, "Bradley Hand";, "Comic Sans MS";, sans-serif;
+    user-select: none;
+    position: fixed;
+    top: 180px;
+    right: 50px;
+    max-height: 30%;
+  color: white;
+  letter-spacing: 1px;
+outline: 3px solid #00243B;
+border-color:white;
+  border-radius: 15px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+  text-decoration-line: none
+  pointer-events: none;
+  font-size: 16px;
+  width: inherit;
+  line-height:30px;
+  margin-right: 15px;
+  text-shadow: #062c40 -2px 2px 0px;
+  box-shadow: 0px 0px 5px black;
+  cursor: pointer;
+  transition: 0.1s;
+  transition-timing-function: ease;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box
+  
 }
 
 .center {
@@ -343,4 +379,44 @@ twitch-embed {
     width: 5008px;
     
     
+}
+
+.scroll-top {
+    background-color: #00243B;
+    font-family: "Prompt";, "Bradley Hand";, "Comic Sans MS";, sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  padding: 5px 5px;
+    width: 35px;
+    position: fixed;
+    bottom: 10px;
+    right: 60px;
+    max-height: 30%;
+    
+}
+
+
+
+.scroll-top:hover {background-color: #0B354D;;box-shadow: 0 0 0 2px white;color: #bde9ff;justify-content: center;align-items: center;
+}
+
+.scroll-bot {
+    background-color: #00243B;
+    font-family: "Prompt";, "Bradley Hand";, "Comic Sans MS";, sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  padding: 5px 5px;
+    width: 35px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    max-height: 30%;
+    
+}
+
+
+
+.scroll-bot:hover {background-color: #0B354D;;box-shadow: 0 0 0 2px white;color: #bde9ff;justify-content: center;align-items: center;
 }
