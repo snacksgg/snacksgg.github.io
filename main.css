@@ -9,42 +9,34 @@ html {
 body {
     margin: 0;
     background-color: #062c40;
-	background-image: url(images/triangle2.png); background-size: 100%;
-        background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-attachment: fixed;
-    width: auto;
+	background-image: url(images/triangle2.png); background-size: 100%; background-attachment: fixed; background-repeat: repeat;
+    width: 100%;
     height:auto;
     overflow-y: scroll; /* Show vertical scrollbar */
     overflow-x: hidden;
     font-family: "Helvetica", Baskerville, serif;
     text-align:center;
-    -webkit-background-size: calc(100vw) calc(100vh);
-    -moz-background-size: calc(100vw) calc(100vh);
-    -o-background-size: calc(100vw) calc(100vh);
-    background-size: calc(100vw) calc(100vh);
+    
 }
 
 .container-header {
-    background-image: url(images/header8.png); 
-    background-size: 1920px 130px; 
+    background-image: url(images/header8.png);  
     background-attachment: fixed;
+    width: 100%;
     height: 130px;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     position: absolute;
-    min-width: 100%;
     z-index: 1;
 
 }
 
 /* Matches your header height */
-.blocker { height: 200px; };
+.blocker { height: 150px; };
 
 .container {
     margin: auto;
    margin-top: 150px
- max-width: 1500px; 
-padding: 15px 15px;
+   padding: 15px 15px;
 }
 
 .container2 {
@@ -107,6 +99,8 @@ background: url(images/checker.png); background-size: 90%;
   font-size: 16px;
   width: 60%;
   height: inherit;
+    min-width: 60%;
+    max-width: 60%;
   line-height:30px;
   margin-right: 15px;
   text-shadow: #062c40 -2px 2px 0px ;
@@ -117,6 +111,7 @@ background: url(images/checker.png); background-size: 90%;
   margin-bottom: 20px;
   box-sizing: border-box;
         z-index: 5;
+        overflow: visible;
 }
 
 .boxed2 {
@@ -150,6 +145,7 @@ align-self: center;
   margin-bottom: 20px;
   box-sizing: border-box;
   max-height: 900px;
+    overflow-x: hidden;
 }
 
 .boxed3 {
@@ -172,6 +168,7 @@ background: url(images/checker.png); background-size: 90%;
   font-size: 16px;
   width: auto;
   height: inherit;
+max-width: 60%;
   line-height:30px;
   margin-right: 15px;
   text-shadow: #062c40 -2px 2px 0px ;
