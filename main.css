@@ -36,7 +36,8 @@ body {
     background-repeat: repeat;
     position: fixed;
     z-index: 100;
-
+    margin: 0 auto;
+    padding: 25px auto;
 }
 
 @media only screen and (max-width: 870px) {
@@ -48,6 +49,8 @@ body {
         background-repeat: repeat;
         position: fixed;
         z-index: 1;
+        margin: 0 auto;
+        padding: 25px auto;
     }
 }
 
