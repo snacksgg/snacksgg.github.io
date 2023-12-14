@@ -1,58 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
-	<meta charset="utf-8" />
-	<title>Snacks' Paint Box</title>
+    <title>Snacks' Paint Box</title>
+    <meta charset="utf-8" />
+    <meta content="Snacks' Paint Box" property="og:title" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta content="Art by snacksgg" property="og:description" />
+    <meta content="https://snacksgg.art/" property="og:url" />
+    <meta content="https://i.imgur.com/RFxll4Q.png" property="og:image" />
+    <meta content="#062c40" data-react-helmet="true" name="theme-color" />
+
     <link href="main.css" rel="stylesheet" />
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+    <style>
+        * {
+            box-sizing: border-box
+        }
 
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            width: 1520px;
+            height: auto;
+            margin: auto;
+            align-content: center;
+            min-width: 60%;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            position: absolute;
+            cursor: pointer;
+            margin: 50px;
+            width: auto;
+            padding: 10px;
+            top: 250px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            transition: 0.2s ease;
+            border-radius: 3px 0 0 3px;
+            user-select: none;
+            min-width: inherit;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 230px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* Position the "prev button" to the left */
+        .prev {
+            left: 250px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #062c40;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: white;
+        }
+    </style>
 </head>
-    
-
-  <body>
-      <nav> <div class="container-header">
-          <a style="text-decoration:none" href="index.html" title="HOME"><button>HOME</button>
-              <a style="text-decoration:none" href="about.html" title="ABOUT"><button>ABOUT</button></a>
-              <a style="text-decoration:none" href="gallery.html" title="GALLERY"><button>GALLERY</button></a>
-              <a style="text-decoration:none" href="commissions.html" title="COMMISSIONS"><button>COMMISSIONS</button></a></button></a><a style="text-decoration:none" href="misc.html" title="MISC"><button>MISC</button></a> </div> </nav>
-    <br>
-    
-    
-    
-    
-      <div class="boxed" >
 
 
-          <div class="center"><img src="images/zedicon.png" alt="Image Not Found"/><br> ! This site is a work in progress ! </div></div>
-        
-      <div class="boxed" >
-  ! This site is a work in progress ! </div><br>
-    <div class="container2"> 
-    <div class="left">
-    <img src="images/artfight3.gif" class="rounded" style="position: relative; left: 0px; top: 0px;"><img src="images/handanim3.gif" style="position: relative; left: -40px; top: -140px;"></div>
-    <div class="boxed2" style="position: relative; left: -130px; top: 60px;" ><div class="right" >Hey there! I’m Snacks, an artist who likes a lot of Nintendo and indie stuff. <br> I mostly make illustrations, occasionally also <br> animation and 3D art.</div>
-        </div> </div>
-    
-    <div class="boxed">Commissions are currently CLOSED.<br>Please read my <a href="https://snacksgg.carrd.co/#tos">Terms of Service</a> before commissioning me!<br>
-Contact:<br>
-snacksgg@gmail.com<br>
-        Discord: <a href="https://discordapp.com/users/130546665017966592">@snacksgg</a> </div>  <div class="boxed">Commissions are currently CLOSED.<br>Please read my <a href="https://snacksgg.carrd.co/#tos">Terms of Service</a> before commissioning me!<br>
-Contact:<br>
-snacksgg@gmail.com<br>
-        Discord: <a href="https://discordapp.com/users/130546665017966592">@snacksgg</a> </div>  <div class="boxed">Commissions are currently CLOSED.<br>Please read my <a href="https://snacksgg.carrd.co/#tos">Terms of Service</a> before commissioning me!<br>
-Contact:<br>
-snacksgg@gmail.com<br>
-        Discord: <a href="https://discordapp.com/users/130546665017966592">@snacksgg</a> </div>  <div class="boxed">Commissions are currently CLOSED.<br>Please read my <a href="https://snacksgg.carrd.co/#tos">Terms of Service</a> before commissioning me!<br>
-Contact:<br>
-snacksgg@gmail.com<br>
-        Discord: <a href="https://discordapp.com/users/130546665017966592">@snacksgg</a> </div>  <div class="boxed">Commissions are currently CLOSED.<br>Please read my <a href="https://snacksgg.carrd.co/#tos">Terms of Service</a> before commissioning me!<br>
-Contact:<br>
-snacksgg@gmail.com<br>
-        Discord: <a href="https://discordapp.com/users/130546665017966592">@snacksgg</a> </div>
+<!-- Header -->
+<div class="header">
+    <nav>
+        <div class="container-header">
+            <a style="text-decoration:none" href="./" title="HOME"><button>HOME</button></a>
+            <a style="text-decoration:none" href="./about" title="ABOUT"><button>ABOUT</button></a>
+            <a style="text-decoration:none" href="./gallery" title="GALLERY"><button>GALLERY</button></a>
+            <a style="text-decoration:none" href="./commissions" title="COMMISSIONS"><button>COMMISSIONS</button></a>
+            <a style="text-decoration:none" href="./misc" title="MISC"><button>MISC</button></a>
+        </div>
+    </nav>
+    <!-- Floating Images -->
+    <div class="img-float"><img src="images/wip.png" alt="WIP" style="width: 35%; height: 35%;"></div>
+    <div class="img-float2"><img src="images/wizzed2.gif" alt="wizzed" style="width: 35%; height: 35%;"></div>
+
+
+
+    <div class="blocker"> </div>
+</div>
+
+<!-- End of Header -->
+
+
+
+
+<body>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="images/slide7.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide6.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide11.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide5.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide3.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide1.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide2.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide10.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide8.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slide4.png" style="width:100%" class="slide">
+        </div>
+
+        <div class="container4"> <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    </div <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
     </div>
-    
-    
-  </body>
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <br>
+    <div class="boxed">Coming soon! <br>In the meantime a gallery of my art can be found <a href="https://snacksgg.carrd.co/#art" target="_blank">here</a>.</div>
+
+
+
+
+
+
+
+
+    <div class="blocker"> </div>
+    <div class="blocker"> </div>
+    <div class="blocker"> </div>
+    <div class="blocker"> </div>
+    <div class="blocker"> </div>
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="left" style="position: float; padding-top:65px;;">© snacksgg 2023 • All rights reserved. <br> Do not repost or copy content without permission. </div>
+
+        <div class="footercontent" style="padding-top:55px; min-width: 100%;">
+            <a href="https://snacksgg.tumblr.com/" target="_blank"><img src="images/tumblr.png" alt="Tumblr" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://www.instagram.com/snacksgg/" target="_blank"><img src="images/sm-insta.png" alt="Instagram" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://cohost.org/snacks" target="_blank"><img src="images/sm-cohost.png" alt="Cohost" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://www.twitch.tv/snacksgg" target="_blank"><img src="images/sm-twitch.png" alt="Twitch" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://www.youtube.com/@snacksgg/" target="_blank"><img src="images/sm-yt.png" alt="YouTube" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://artfight.net/~snacksgg" target="_blank"><img src="images/sm-artfight.png" alt="ArtFight" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://snacksgg.newgrounds.com/" target="_blank"><img src="images/sm-ng.png" alt="Newgrounds" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://bsky.app/profile/snacksgg.bsky.social" target="_blank"><img src="images/sm-bsky.png" alt="HTML tutorial" style="width:50px;height:50px;" class="sm"></a>
+            <a href="#" target="_blank"><img src="images/sm-blank.png" alt="HTML tutorial" style="width:50px;height:50px;" class="sm"></a>
+        </div>
+    </footer>
+
+    <!-- End of Footer -->
+
+</body>
+
 </html>
