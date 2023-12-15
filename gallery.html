@@ -126,7 +126,7 @@
 
 <body>
 
-
+<!-- Slideshow -->
     <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -172,69 +172,97 @@
         <div class="container4"> <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-    </div <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-    <span class="dot" onclick="currentSlide(6)"></span>
-    <span class="dot" onclick="currentSlide(7)"></span>
-    <span class="dot" onclick="currentSlide(8)"></span>
-    <span class="dot" onclick="currentSlide(9)"></span>
-    <span class="dot" onclick="currentSlide(10)"></span>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <br>
+    </div>
+    
+
+    <!-- Art Categories -->
+    <div class="boxed" >
+        <h1 style="cursor: default;"> • <a href="#FeaturedArt" style="color:white;">Featured Art</a> •
+            <a href="../ocart.html">Original Art</a> •
+            <a href="../fanart.html">Fanart</a> •
+            <a href="../animations.html">Animations</a> •
+            <a href="../sketchbook.html">Sketchbook</a> • </h1>
+    </div>
+
+        <!-- Coming Soon -->
+        <div class="boxed">Coming soon! <br>In the meantime a gallery of my art can be found <a href="https://snacksgg.carrd.co/#art" target="_blank">here</a>.</div>        
+        
+        
+        
+    <!-- Featured Art - Gallery -->
+    <br>
+    <div id="FeaturedArt"></div>
+    <div class="boxed">
+        <h1> Featured Art</h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </h1> 
+        </div>
+
+
+
+
+
     </div>
 
 
 
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-
-    <br>
-    <div class="boxed">Coming soon! <br>In the meantime a gallery of my art can be found <a href="https://snacksgg.carrd.co/#art" target="_blank">here</a>.</div>
-
-
-
-
-
-
 
 
     <div class="blocker"> </div>
-    <div class="blocker"> </div>
-    <div class="blocker"> </div>
-    <div class="blocker"> </div>
-    <div class="blocker"> </div>
+
+
+
+    <!-- Scroll Buttons -->
+    <div id="scrollBottom"></div>
+    <a class="scroll-top" href="#"><img src="images/totop.png" style="width: 60%;"></a>
+    <a class="scroll-bot" href="#scrollBottom"><img src="images/tobot.png" style="width: 60%;"></a>
     <!-- Footer -->
 
     <footer>
@@ -256,6 +284,4 @@
 
     <!-- End of Footer -->
 
-</body>
-
-</html>
+</body></html>
