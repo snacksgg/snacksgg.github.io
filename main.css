@@ -45,6 +45,21 @@ body {
 
 }
 
+.container-header-gallery {
+    background-image: url(images/header9.png);
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 100%;
+    height: 120px;
+    background-repeat: repeat-x;
+    position: relative;
+    z-index: 1000000;
+    display: block;
+
+    
+
+}
+
 @media only screen and (max-width: 870px) {
     .container-header {
         background-image: url(images/header9.png);
@@ -637,6 +652,7 @@ footer {
 
 /* Slideshow container */
 .slideshow-container {
+    padding: 15px;
   max-width: 1000px;
   margin: auto;
     z-index: 0;
@@ -713,7 +729,7 @@ footer {
             cursor: pointer;
             height: 15px;
             width: 15px;
-            margin: 0 3px;
+            margin: 0 3px 3px ;
             background-color: #062c40;
             border-radius: 50%;
             display: inline-block;
