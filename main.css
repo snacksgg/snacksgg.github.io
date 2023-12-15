@@ -253,7 +253,8 @@ body {
 
 h1 {
     font-size: 20px;
-
+    line-height: 20px;
+    padding-bottom: 5px;
 
 }
 
@@ -455,7 +456,7 @@ input[type=button] {
 }
 
 input[type=button]:active {
-        transform: scale(0.75);
+        transform: scale(0.90);
     
     
 }
