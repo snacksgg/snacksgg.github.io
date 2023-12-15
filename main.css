@@ -357,6 +357,8 @@ img.sm:hover {
 }
 
 
+
+
 .emphasis {
     font-size: 20px;
     color: #2064d6;
@@ -386,10 +388,8 @@ button {
     letter-spacing: 1px;
     outline: 3px solid #00243B;
     border-color: white;
-    position: relative;
     border-radius: 15px;
     padding: 10px 32px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-weight: bolder;
@@ -407,8 +407,61 @@ button {
     margin-bottom: 2px;
     box-sizing: border-box;
     overflow-x: hidden;
+    position: relative;
 
 }
+
+button:hover {
+    background-color: #2899b0;
+    box-shadow: 0 0 0 5px white;
+    color: #bde9ff;
+
+}
+
+input[type=button] {
+    background: url(images/checker3.png);
+    background-size: 200%;
+    border: none;
+    font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+    user-select: none;
+    color: white;
+    letter-spacing: 1px;
+
+    border-color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration-line: none pointer-events: none;
+    font-size: 16px;
+    width: 200px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    text-shadow: #062c40 -2px 2px 0px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+input[type=button]:active {
+        transform: scale(0.75);
+    
+    
+}
+
+
+
 
 @media only screen and (max-width: 870px) {
     button {
@@ -456,12 +509,7 @@ element {
 }
 
 
-button:hover {
-    background-color: #2899b0;
-    box-shadow: 0 0 0 5px white;
-    color: #bde9ff;
 
-}
 
 /* unvisited link */
 a:link {
