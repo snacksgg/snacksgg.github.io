@@ -657,20 +657,20 @@ twitch-embed {
 }
 
 footer {
-    background-image: url(images/footer.png);
-    position: relative;
-    text-align: center;
-    height: 130px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    background-repeat: repeat;
+        background-image: url(images/footer.png);
+        position: relative;
+        text-align: center;
+        height: 130px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        background-repeat: repeat;
 
 }
 
-@media only screen and (min-width: 2562px) {
+@media only screen and (min-width: 1920px) {
     footer {
         background-image: url(images/footer.png);
         position: fixed;
@@ -699,7 +699,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 570px) {
     footer {
         background-image: url(images/footer.png);
         position: relative;
@@ -715,7 +715,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 570px) {
     .footercontent {
         padding-top: 70px;
         float: inherit;
