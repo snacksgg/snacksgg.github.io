@@ -914,12 +914,12 @@ footer {
     width:100%;
     margin:auto;
     display: flex;
- 
+    columns: 15rem 3;
     column-gap: 20px;
 }
 
 img.gallery {
-    
+    width: 50px;
     
 
 }
