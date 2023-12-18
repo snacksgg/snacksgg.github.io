@@ -398,7 +398,9 @@ button {
     outline: 3px solid #00243B;
     border-color: white;
     border-radius: 15px;
-    padding: 10px 32px;
+    padding: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     text-decoration: none;
     display: inline-block;
     font-weight: bolder;
