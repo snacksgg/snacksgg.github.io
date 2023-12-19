@@ -935,5 +935,14 @@ img.gallery {
 }
 
 
+#rounded {
+    outline: 3px solid #00243B;
+    border-radius: 15px;
+    height: 222px;
+}
 
+#rounded:hover {
+        outline: 3px solid white;
 
+    
+}
