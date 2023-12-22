@@ -916,10 +916,19 @@ footer {
     display: flex;
     columns: 15rem 3;
     column-gap: 20px;
+    
 }
 
 img.gallery {
     width: 50px;
+
+    
+
+}
+
+img.emote {
+    width: 40px;
+
     
 
 }
@@ -939,10 +948,100 @@ img.gallery {
     outline: 3px solid #00243B;
     border-radius: 15px;
     height: 222px;
+    pointer-events: auto;
 }
 
-#rounded:hover {
+#rounded-t {
+    border-radius: 15px;
+    height: 222px;
+}
+
+#rounded:hover, #rounded-t:hover, #img-blog:hover {
         outline: 3px solid white;
 
     
+}
+
+#img-blog {
+    width:30%;
+    outline: 3px solid #00243B;
+    border-radius: 15px;
+    
+    
+}
+
+    img::before {
+        content: 'not found';
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        line-height: 200px;
+    background-image: url(images/sm-blank.png);
+        color: currentColor;
+        text-align: center;
+        border-radius: 2px;
+        display: block;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+/* Header/Blog Title */
+.blogheader {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+        outline: 5px solid #00243B;
+  background-image: url(images/checker3.png);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    color: white;
+        pointer-events: none;
+     font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+
+
+
+    
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
