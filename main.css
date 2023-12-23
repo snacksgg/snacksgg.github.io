@@ -331,7 +331,7 @@ ul {
 
 hr {
     border: none;
-    height: 1px;
+    height: 5px;
     /* Set the hr color */
     color: white;
     /* old IE */
@@ -928,7 +928,7 @@ img.gallery {
 
 img.emote {
     width: 40px;
-
+    vertical-align: middle;
     
 
 }
