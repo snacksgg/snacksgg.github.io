@@ -19,6 +19,7 @@
     <link href = "/pagination/pagination.css" rel = "stylesheet" type = "text/css">
  <!-- First we must link in the paginator.js script file so we can use it in
     the body of our document. -->
+
     <script src = "/pagination/paginator.js" type = "text/javascript"></script>
 </head>
     
@@ -45,36 +46,29 @@
 <body>
     
 
-<div class="container4">
-
-<div class="blogheader">
-  <h2>Snacks' Blog Box</h2>
-</div>
-
-<div class="row">
-  <div class="leftcolumn">
+  
+<div class="boxed" style="background-image: url(images/checker3.png); background-attachment:scroll; padding-top: 0px;width: 100%;">
+<script type = "text/javascript">Paginator.create(["/pagination/updatelog1.html"], 0, 1);</script>
     
-
-<script type = "text/javascript">Paginator.create(["/pagination/blog1.txt", "/pagination/blog2.txt", "/pagination/blog3.txt", "/pagination/blog4.txt", "/pagination/blog5.txt"], 0, 3);</script>
-
-  </div>
-  <div class="rightcolumn">
-    <div class="boxed" style= "overflow: hidden; min-width: 100%;">
-      <h2>snacksgg</h2>
-        <div class="tooltip"><span class="tooltiptext">Status: so very sleepy</span><img src="images/musicmini2.gif" id="rounded-t"></div>      
-    </div>
-    <div class="boxed3" style= "overflow: hidden; min-width: 100%;">
-<a href="https://last.fm/user/snacksgg"><img src="https://lastfm-recently-played.vercel.app/api?user=snacksgg&amp;count=5&amp;show_user=header&amp;footer_style=normal_stats&amp;bg_color=00243B" alt="last.fm listening"></a> 
-    </div>
-    <div class="boxed">
-      <h3>Something will go here</h3>
-      <p>at some point</p>
-    </div>
-  </div>
+    
+    <a href="#blog-start"><img src="/images/totop.png" style="width: 35px;background-color: #00243B;border-radius: 5px;padding: 5px 5px;margin-top: 10px; "></a>
 </div>
-    </div>
+      
+        <!-- Todo -->
+
+        <div class="boxed">
+                <center>todo:</center>Create splash art for homepage<br>Create header art for blog<br>Add interests on about page<br>Add stamp page to misc<br>Create cool stuff page<br>Create resources page
+   
+        </div>
+
+
     </body>
     </main>
+    
+    <!-- Scroll Buttons -->
+        <div id="scrollBottom"></div>
+        <a class="scroll-top" href="#"><img src="/images/totop.png" style="width: 60%;"></a>
+        <a class="scroll-bot" href="#scrollBottom"><img src="/images/tobot.png" style="width: 60%;"></a>
     <!-- Footer -->
 
     <footer style="overflow: hidden;">

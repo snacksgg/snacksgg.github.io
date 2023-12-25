@@ -26,7 +26,7 @@ const Paginator = function(links, index, limit) {
   up to you. Even without the css, it all works. */
   this.html = document.createElement("div");
   this.html.setAttribute("class", "paginator");
-  this.html.innerHTML = "<div class = \"paginator-content\"></div><div class = \"paginator-navigator\"><a class = \"paginator-button\">back</a><div class = \"paginator-index\"></div><a class = \"paginator-button\">next</a></div>";
+  this.html.innerHTML = "<div class = \"paginator-content\"></div><div class = \"paginator-navigator\"><a class = \"paginator-button\">prev</a><div class = \"paginator-index\"></div><a class = \"paginator-button\">next</a></div>";
 
   /* Here we set up the buttons created above to respond to click events and give
   them a reference to their paginator. */
@@ -111,7 +111,7 @@ Paginator.click = function(event) {
 
   switch(this.innerHTML) {
 
-    case "back":
+    case "prev":
 
       shift = this.paginator.index - this.paginator.limit;
       if (shift < 0) return;
@@ -122,6 +122,7 @@ Paginator.click = function(event) {
 
       shift = this.paginator.index + this.paginator.limit;
       if (shift >= this.paginator.links.length) return;
+
 
     break;
 
