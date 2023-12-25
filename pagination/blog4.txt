@@ -1,0 +1,8 @@
+    <div class="boxed3" style="width: 100%;">
+      <h2>Test Blog 4!</h2>
+      <h5>Test description, 12-22-2023</h5>
+<a href="https://artfight.net/attack/5499713.alien-world" target="_blank"><img src="/images/misc/Zed%20-%20KNQTS.png" id="img-blog" ></a>
+        <h5>Art by <a href="https://twitter.com/GdKnots" target="_blank">KNQTS</a></h5>
+    <p>This is a test blog!</p>
+      <p>I've never made a blog before, don't know how much I'll use it to be honest. I wanted to try and make this thing paginated but I have no clue how <img src="https://cdn.betterttv.net/emote/5fd1610acbd462462d56cd7d/3x.webp" class="emote"> Hopefully the more I mess around here the more I learn about properly coding stuff. If anything looks weird feel free to let me know! (a lot of links are probably broken) <br>Most of the gallery is up to date and some of the links in <a href="/misc">Misc</a> have pages. (message board, old art, and the random buttons)</p> Anyway hope you like my site 
+    </div>

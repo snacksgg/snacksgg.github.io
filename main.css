@@ -340,6 +340,29 @@ hr {
     margin-top: 25px;
 }
 
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-image: url(/images/checker3.png);
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 7px 7px 7px 7px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  padding-left: 7px;
+
+  
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .bolded {
     font-weight: bold;
     color: #fff;
@@ -348,7 +371,7 @@ hr {
 img {
     max-width: 100%;
     pointer-events: auto;
-
+    
 
 }
 
@@ -966,6 +989,13 @@ img.emote {
     width:30%;
     outline: 3px solid #00243B;
     border-radius: 15px;
+    
+    
+}
+
+
+#gallery {
+    pointer-events: none;
     
     
 }
