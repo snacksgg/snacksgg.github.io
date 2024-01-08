@@ -404,6 +404,14 @@ border-style:outset;
     
 }
 
+li.nobg {
+    padding: 5px;
+    background-image: none;
+    border:none;
+    margin-bottom: 5px;
+    
+}
+
 hr {
     border: none;
     height: 5px;
