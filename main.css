@@ -360,7 +360,7 @@ overflow-wrap: anywhere;
 h1 {
     font-size: 20px;
     line-height: 30px;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
     text-shadow: #062c40BF -2px 2px 2px;
 
 }
@@ -1236,3 +1236,7 @@ details[open] > img {
   content-visibility: auto;
   }
 
+
+#kofiframe {
+    border-radius: 15px;
+}
