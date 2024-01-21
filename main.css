@@ -399,8 +399,9 @@ border-style:outset;
     padding: 5px;
     border-color: #00243B;
     margin-bottom: 5px;
-    background-image: url(/images/header11.png);
-    background-size: cover;
+    background-image: url(/images/header12.png);
+    background-size: 150%;
+
     
 }
 
