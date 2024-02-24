@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Snacks' Paint Box</title>
+    <meta charset="utf-8" />
+    <meta content="Snacks' Paint Box" property="og:title" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta content="Art by snacksgg" property="og:description" />
+    <meta content="https://snacksgg.art/" property="og:url" />
+    <meta content="https://c.l3n.co/i/4TMGLb.png" property="og:image" />
+    <meta content="#062c40" data-react-helmet="true" name="theme-color" />
+
+    <link href="/main.css" rel="stylesheet" />
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+    
+    <script>
+
+
+// This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+
+// load the playlist
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    events: {
+      'onReady': onPlayerReady
+    },
+    playerVars: {
+      listType: 'playlist',
+      list: 'PLmLtU7F7y0CFB8WCmb2XiRXeQQeLilPvd'
+    }
+  });
+}
+
+// when the video player is ready, generate a random number, and play from that
+function onPlayerReady(event) {
+  // create a random number between 0 and 199
+  num = Math.floor(Math.random() * 199);
+
+  // the timeout is set because of a bug with the youtube API. if you do any of this line without it, it won't affect anything
+  // see: https://stackoverflow.com/questions/12916017/youtube-api-setshuffle-dont-work
+  setTimeout(() => {
+    player.playVideoAt(num);
+  }, 0);
+}
+        
+function onPlayerStateChange( event ) {
+    console.log(player.getPlayerState()) 
+    if (player.getPlayerState() == 1) {
+    document.getElementById( "title" ).innerText = player.getVideoData().title;
+    }
+}
+</script>
+
+</head>
+    
+
+<!-- Header -->
+
+<nav>
+    <div class="container-header">
+        <a style="text-decoration:none" href="/" title="HOME" ><button >HOME</button></a>
+        <a style="text-decoration:none" href="/about" title="ABOUT"><button>ABOUT</button></a>
+        <a style="text-decoration:none" href="/gallery" title="GALLERY"><button>GALLERY</button></a>
+        <a style="text-decoration:none" href="/commissions" title="COMMISSIONS"><button>COMMISSIONS</button></a>
+        <a style="text-decoration:none" href="/misc" title="MISC"><button style="color: lightblue;box-shadow: 0 0 0 5px lightblue;">MISC</button></a>
+    </div>
+</nav>
+<!-- Floating Images -->
+    <div class="img-float"><img src="/images/wizzed2.gif" alt="WIP" style="width: 35%; height: 35%;"></div>
+
+
+
+<div class="blocker"> </div>
+
+<!-- End of Header -->
+
+<body><main>
+    
+
+<div class="container4">
+
+    <div class="boxed" > <h1>Stamp Collection</h1>
+    <div style="
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+"> 
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/cat.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/daery1f-caaf6dc2-5447-40d5-90b8-b68a24c32436.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/penguin.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/j1.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/daqvrd9-8f52ede5-1841-44d8-945f-1efc665bdfa5.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/dd8hdih-40524027-095a-4b2a-a5a1-37384d76ea79.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d3bkxjx-cfc625e2-2888-45d2-9f6b-13efdcdde91d.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d1ziu69-a888213b-4ee4-403a-9a71-7031ed725184.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/thosbeans.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d2h0lrh-c876c45a-b47f-41eb-b5b0-558a3279118b.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/daqvtkb-9b8bac27-30df-41b2-9014-d6a782150ade.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/dgsv0zt-5878f69c-be59-41a1-9e0d-4a8ddc5654ee.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/cubone1.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/j11.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/dbouwyo-12ea50a8-b69f-4531-98e8-2eb43f8759dc.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/ammycool.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/nyan.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/daqvsv5-5443530a-41e8-4a10-b29b-0bdaf7a01006.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/37933b8d.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/eatingchaps.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/vinesauce_by_scarletdestiney_dd05s2s-fullview.jpg" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/toonlinkfan.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d1w2bt7-bd4a970a-9462-44ae-a538-dac37a495857.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/chain.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/2fbe8e5d.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/tumblr_pebv1bRXAA1xy0eh3o1_100.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d1v4e6f-497c4a55-9ab9-485b-95c0-c9041b223146.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d38dy7g-89b24099-49c3-4ed4-949c-5b8e04abc868.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/chao.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d73to64-79ac1eca-397d-41ab-8339-1e4b41a2a2de.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/0ecd43f4.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d6oomkd-4879dff0-c6c2-45fd-b893-c0186ff5e0b4.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d8a4yz0-20112bd3-e16c-4d31-af98-8a464a888cb8.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d23io59-d83025b4-79f8-4789-861c-64152c0702ae.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/tumblr_pebv1bRXAA1xy0eh3o2_100.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dbs8ezg-17e37aee-ac3a-45d3-ac43-5e669acc7ad7.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/sham_wow_by_100791_d2376hx-fullview.jpg" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/tumblr_96f6fe9c2e4879d76c5ce1457c9e100f_eb3b6acc_500.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/plugplug%20(1).png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/guiness.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/stamp8.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/frylock_by_laselwoo_d2jxjxi-fullview.jpg" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/mumbo_stamp_by_kawaiisteffu_d888kun-fullview.jpg" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dd8upp1-d9a4ad51-db54-4648-bd43-aeb8cc4c2480.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dahbz90-1016c0dc-07ae-467e-9e5c-1723e14594e9.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d7qsc26-425e127d-8ff6-4bf2-bf13-baf8a1ba9c17.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d7m2r53-9e00e3aa-65f9-4ae6-b227-1422c191f710.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/08424aac.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/gth.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/tumblr_inline_rbe2xgrIs11vefsve_500.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/36b42c0c.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/sillayyyyy.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d4u9508-9138cf0f-7a61-460b-b948-4fa30c45ddde.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/dbq98av-47abf864-3cdf-4c62-b9b8-4fe639961fce.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/giantrat.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d2izsn8-1a401c1a-d40e-42c7-adfe-59c96cb125ed.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/glassanimals.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/8118f69d.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/kirbyfacestamp.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/jellies2.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/sonic.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d2mrwc6-93d72b64-5653-43a9-a3ac-f3dafaad4e48.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/water2.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/parappa.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d8a4v59-89daffbc-05c8-4bba-8c43-5cf15a312995.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/woopa.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/i2.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/djluigi.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d2hzfsg-4341c813-4137-4ca8-901c-8f19728bb51d.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d18.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/aaaaaa.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/umo.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dfpslwp-61887ee7-18b5-434d-9040-d89489f4bf3e.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/tumblr_inline_q0xu79gM8d1vefsve_500.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dbqalbw-a90e7404-6e1a-4a81-acfc-6974fefebdba.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d4kiz9s-a04c71b9-428c-4852-8c76-a124e682e2a8.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/ddbm3xe-cb537bf6-bd51-435e-afa0-19a96541265a.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dwod2j-db27ff8d-1eff-4d7e-884c-8fa9a5466313.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/9b9fbf9e.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dtr8ku-1f489224-d1c6-4acf-b044-e370aa0fd964.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d2q5xur-14231554-29f6-4ceb-8407-41fa6eb7fc4e.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/buygf.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d4bpf4t-17017c5c-2f66-433e-80dd-79fe906f6d74.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/huell.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d598mwl-beee4a8c-7f27-445b-b0de-9d3de9c98255.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d3nlhiu-5a0d2be7-df74-4c2a-ba23-3a3b5924d926.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d4x1vvm-50b6cd2f-c434-4435-bcf2-6ecf56f28eef.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dadmjxz-bdbb9bd9-2512-4032-b9ee-c92f2d715fb8.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d184vug-1ac1e8f7-3e6e-4cdf-b7ee-210b8f17a74e.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d3lkj5z-45c73108-dc41-48be-b233-7a2503cc1447.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d2hjsqs-f1eebebd-3c19-49d8-8532-f7c87b3d4af7.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/125cb6fe.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/servbot_fan_stamp_by_rhythm_wily_d190l08-fullview.jpg" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d1vd27e-c7e054fa-7580-4c63-9fcb-d80a09e21ecb.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/tumblr_inline_mr1jkyENHm1qz4rgp.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/00a87f39.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/tumblr_inline_owuh67nwtH1u5rvwj_500.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/corndog.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/wahoo.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/kg.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/de8349u-01b3bfb7-191a-4acf-9687-40b812ca3f52.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/bear.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/limmy.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/kainalu.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/e730e174.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/puma.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/24668037.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dd18zlg-937ee59f-8b63-4316-9579-a7ad49521205.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/be462875.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/d1spnrs-107708ac-3804-4962-b683-07542508ed48.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/tumblr_inline_pe6lbs6ND71v11djx_1280.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/catsleep.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/strfkr.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/2e743e3e.jpg" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/rail.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/jeff.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/kittycatttdance.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/dg6q7a-0575ca67-b6d8-4994-8270-929d98b05f4a.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/demondayz.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/d1eghrw-05b3490d-cee8-45b4-bab1-32f69fcd0f99.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/dbnm0p1-b6d88b56-69b0-4f2a-9460-988da992cb32.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/mother3.gif" /> <br>
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/abs.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/000%20Y2K%20NEOCITIES%20BUTTON%2001.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/G9PEJMc.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/e10.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/dontfeedai.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/copy_floppy.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/warioware.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/d5.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/ublock-now.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/150x20/sucklet.gif" />
+    </div>      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div><br>
+        <button onclick="history.back()" style="position: relative;right:10px;">Go Back</button>
+    
+<div class="blocker"> </div>
+
+  </div>
+
+</main></body>
+
+    <!-- Footer -->
+
+    <footer style="overflow: hidden;">
+
+        <div class="left" style="position: float; padding-top:65px;cursor: default;">© snacksgg <script>document.write( new Date().getFullYear() );</script> • All rights reserved. <br> Do not repost or copy content without permission. </div>
+
+        <div class="footercontent" style="padding-top:55px; min-width: 100%;cursor: default;">
+            <a href="https://snacksgg.tumblr.com/" target="_blank"><img src="/images/tumblr.png" alt="Tumblr" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://www.instagram.com/snacksgg/" target="_blank"><img src="/images/sm-insta.png" alt="Instagram" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://cohost.org/snacks" target="_blank"><img src="/images/sm-cohost.png" alt="Cohost" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://bsky.app/profile/snacksgg.bsky.social" target="_blank"><img src="/images/sm-bsky.png" alt="Bluesky" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://sheezy.art/snacksgg" target="_blank"><img src="/images/sm-sheezy.png" alt="Sheezyart" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://www.twitch.tv/snacksgg" target="_blank"><img src="/images/sm-twitch.png" alt="Twitch" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://www.youtube.com/@snacksgg/" target="_blank"><img src="/images/sm-yt.png" alt="YouTube" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://artfight.net/~snacksgg" target="_blank"><img src="/images/sm-artfight.png" alt="ArtFight" style="width:50px;height:50px;" class="sm"></a>
+            <a href="https://snacksgg.newgrounds.com/" target="_blank"><img src="/images/sm-ng.png" alt="Newgrounds" style="width:50px;height:50px;" class="sm"></a>
+            <a href="#" target="_blank"><img src="/images/sm-blank.png" alt="HTML tutorial" style="width:50px;height:50px;" class="sm"></a>
+                    • <a href="/index" >Home</a> •
+        <a href="/about">About</a> •
+        <a href="/gallery.html">Gallery</a> •
+        <a href="/commissions.html">Commissions</a> •
+        <a href="/misc.html">Misc</a> •
+
+        </div> 
+    </footer>
+
+    <!-- End of Footer -->
+
+</html>

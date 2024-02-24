@@ -360,6 +360,7 @@ overflow-wrap: anywhere;
 h1 {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 5px;
     margin-bottom: 5px;
     text-shadow: black -2px 2px 2px;
 
@@ -1086,11 +1087,7 @@ img.emote {
     height: 222px;
 }
 
-#rounded:hover, #rounded-t:hover {
-    outline: 3px solid white;
-    color: #bde9ff;
-    
-}
+
 
 #img-blog {
     max-width: 80%;
@@ -1140,10 +1137,11 @@ img.emote {
   font-size: 40px;
   text-align: center;
         outline: 5px solid #00243B;
-  background-image: url(images/checker3.png);
+  background-image: url(images/header12.png);
     margin-bottom: 20px;
     border-radius: 15px;
     color: white;
+    background-size: 90%;
         pointer-events: none;
      font-family: "Prompt";
     ,
