@@ -39,19 +39,96 @@
 <main>
 
     <body>
+        
+        
+        
+        <div class="boxed" style="background-image: url(/images/checker2.png)">
+            <img src="/images/zedicon.png">
+<!-- customize labels of htmlcommentbox.com -->
+<script>
+/* This code goes ABOVE the main HTML Comment Box code!
+ replace the text in the single quotes below to customize labels.*/
+hcb_user = {
+    /* L10N */
+    comments_header : 'Message Board <hr> Welcome to my message board! <br>Feel free to leave messages, questions, or suggestions here. You can also just say hi if you want! <hr>',
+    name_label : 'Name',
+    content_label: 'Enter your message here',
+    submit : 'Submit',
+    logout_link : '<img title="log out" src="https://www.htmlcommentbox.com/static/images/door_out.svg" alt="[logout]" class="hcb-icon hcb-door-out"/>',
+    admin_link : '<img src="https://www.htmlcommentbox.com/static/images/door_in.svg" alt="[login]" class="hcb-icon hcb-door-in"/>',
+    no_comments_msg: 'No one has commented yet. Be the first!',
+    add:'Add your comment',
+    again: 'Post another comment',
+    rss:'<img src="https://www.htmlcommentbox.com/static/images/feed.svg" class="hcb-icon" alt="rss"/> ',
+    said:'said:',
+    prev_page:'<img src="https://www.htmlcommentbox.com/static/images/arrow_left.png" class="hcb-icon" title="previous page" alt="[prev]"/>',
+    next_page:'<img src="https://www.htmlcommentbox.com/static/images/arrow_right.png" class="hcb-icon" title="next page" alt="[next]"/>',
+    showing:'Showing',
+    to:'to',
+    website_label:'website (optional)',
+    email_label:'email',
+    anonymous:'Anonymous',
+    mod_label:'(mod)',
+    subscribe:'Email Me Replies',
+    add_image:'Add Image',
+    are_you_sure:'Do you want to flag this comment as inappropriate?',
 
+    reply:'Reply',
+    flag:'Flag',
+    like:'Like',
 
-        <div class="container4">
+    /* dates */
+    days_ago:'days ago',
+    hours_ago:'hours ago',
+    minutes_ago:'minutes ago',
+    within_the_last_minute:'within the last minute',
 
-            <iframe src="https://snacksgg.123guestbook.com/" style="border:none;width: 50%;height: 600px;border-radius: 15px;outline: 5px solid #00243B;
-"></iframe><br>
+    msg_thankyou:'Thank you for your message!',
+    msg_approval:'NOTE: This comment is not published until approved',
+    msg_approval_required:'Thank you for commenting! Your comment will appear once approved by a moderator.',
+
+    err_bad_html:'Your comment contained bad html.',
+    err_bad_email:'Please enter a valid email address.',
+    err_too_frequent:'You must wait a few seconds between posting comments.',
+    err_comment_empty:'Your comment was not posted because it was empty!',
+    err_denied:'Your comment was not accepted.',
+    err_unknown:'Your comment was blocked for unknown reasons, please report this.',
+    err_spam:'Your comment was detected as spam.',
+    err_blocked:'Your comment was blocked by site policy.',
+
+    /* SETTINGS */
+    MAX_CHARS: 8192,
+    PAGE:'', /* ID of the webpage to show comments for. defaults to the webpage the user is currently visiting. */
+    ON_COMMENT: function(){}, /* Function to call after commenting. */
+    RELATIVE_DATES:true /* show dates in the form "X hours ago." etc. */
+};
+</script>
+
+  <style>
+#HCB_comment_box{border-radius: 15px;  color:#FFFFFF; }
+#HCB_comment_box div.comment{border-radius: 15px; color:white; background-image: url(/images/header12.png); background-size: 70%; margin:15px; padding:20px;     outline: 4px solid #00243B;}
+#HCB_comment_box .comment .likes{color: white; padding: 10px;}
+#HCB_comment_box .hcb-link{color:red;text-decoration:none;}
+#HCB_comment_box .hcb-comment-tb button.hcb-like {background-color: #0b354d; margin-right: 10px; color: lightblue;}
+#HCB_comment_box .hcb-comment-tb button.hcb-reply {background-color: #0b354d; margin-right: 10px; color: lightblue;}
+#HCB_comment_box .hcb-comment-tb button.hcb-flag {background-color: #0b354d; color: lightblue;}
+ input#hcb_submit {
+     background: none;
+    color:blue;
+    font-size:18px;
+    background-color:darkgreen;
+  }
+
+  </style>
+
 
             
-            <button onclick="history.back()" style="position: relative;right:10px;">Go Back</button>
-
-
-        </div>
-
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24q8e89Kx2nf%2FyWM7fJ5EcD."+"&opts=16798&num=10&ts=1710467314026");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+</div>
     </body>
 </main>
     <!-- Footer -->
