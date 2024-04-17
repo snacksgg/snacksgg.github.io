@@ -167,7 +167,7 @@ body {
     max-width: 70%;
     line-height: 25px;
     margin-right: 15px;
-    text-shadow: #062c40BF -2px 2px 2px;
+    text-shadow: black -2px 2px 2px;
     box-shadow: -0px 0px 10px black;
     transition: 0.1s;
     transition-timing-function: ease;
@@ -205,7 +205,7 @@ body {
     height: inherit;
     align-self: center;
     margin-right: 15px;
-    text-shadow: #062c40BF -2px 2px 2px;
+    text-shadow: black -2px 2px 2px;
     box-shadow: -0px 0px 10px black;
     transition: 0.3s;
     transition-timing-function: ease;
@@ -336,7 +336,7 @@ body {
     height: 500px;
     line-height: 25px;
     margin-right: 15px;
-    text-shadow: #062c40BF -2px 2px 0px;
+    text-shadow: black -2px 2px 0px;
     box-shadow: -0px 0px 10px black;
     transition: 0.1s;
     transition-timing-function: ease;
@@ -368,7 +368,7 @@ h1 {
 
 h2 {
 
-    text-shadow: #062c40BF -2px 2px 2px;
+    text-shadow: black -2px 2px 2px;
 
 }
 
@@ -579,7 +579,7 @@ img.sm:hover {
 
 button {
     background: url(images/checker.png);
-    background-size: 200%;
+    background-size: 250%;
     border: none;
     font-family: "Prompt";
     ,
@@ -592,7 +592,7 @@ button {
     letter-spacing: 1px;
     outline: 3px solid #00243B;
     border-color: white;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 0px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -604,7 +604,7 @@ button {
     width: 170px;
     line-height: 30px;
     margin-right: 15px;
-    text-shadow: #062c40BF -2px 2px 0px;
+    text-shadow: black -2px 2px 0px;
     box-shadow: 0px 0px 5px black;
     cursor: pointer;
     transition: 0.1s;
@@ -691,7 +691,7 @@ input[type=button]:active {
     line-height: 30px;
     margin-bottom: 5px;
     margin-right: 15px;
-    text-shadow: #062c4080BF -2px 2px 2px;
+    text-shadow: black -2px 2px 2px;
     box-shadow: 0px 0px 5px black;
     cursor: pointer;
     transition: 0.1s;
