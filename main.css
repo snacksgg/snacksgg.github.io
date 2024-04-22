@@ -141,7 +141,7 @@ body {
 .boxed {
 
     background: url(images/checker.png);
-    background-size: 120%;
+    background-size: 122%;
     border: none;
 
 
@@ -183,7 +183,7 @@ body {
 .boxed2 {
 
     background: url(images/checker2.png);
-    background-size: 180%;
+    background-size: 150%;
     border: none;
 
     font-family: "Prompt";
@@ -1018,12 +1018,7 @@ footer {
     
 }
 
-img.gallery {
-    width: 50px;
-    
-    
 
-}
 
 
 img.emote {
