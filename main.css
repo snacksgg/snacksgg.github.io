@@ -28,6 +28,7 @@ body {
     font-family: "Helvetica", "Baskerville", serif;
     text-align: center;
     padding-bottom: 120px;
+    word-wrap:break-word;
 
 }
 
@@ -143,6 +144,7 @@ body {
     background-size: 120%;
     border: none;
 
+
     font-family: "Prompt";
     ,
     "Bradley Hand";
@@ -164,7 +166,7 @@ body {
     width: 60%;
     height: auto;
     min-width: 70%;
-    max-width: 70%;
+    max-width: 100%;
     line-height: 25px;
     margin-right: 15px;
     text-shadow: black -2px 2px 2px;
@@ -400,6 +402,7 @@ border-style:outset;
     padding: 5px;
     border-color: #00243B;
     margin-bottom: 5px;
+    overflow: auto;
     background-image: url(/images/header12.png);
     background-size: 140%;
 
@@ -578,8 +581,8 @@ img.sm:hover {
 
 
 button {
-    background: url(images/checker.png);
-    background-size: 250%;
+    background: url(images/button2.png);
+    background-size: 120%;
     border: none;
     font-family: "Prompt";
     ,
@@ -710,7 +713,9 @@ input[type=button]:active {
         font-size: 10px;
         text-align: center;
         padding: 0px 0px;
+        background-size: 150%;
         border-radius: 5px;
+        margin-top: 6px;
     }
 }
 
@@ -872,6 +877,8 @@ footer {
 
 }
 
+
+
 @media only screen and (min-width: 2500px) {
     footer {
         background-image: url(images/footer.png);
@@ -886,7 +893,6 @@ footer {
         background-repeat: repeat;
     }
 }
-
 .footercontent {
     padding-top: 70px;
     float: inherit;
@@ -899,47 +905,7 @@ footer {
     margin: auto;
 
 
-}
 
-@media only screen and (max-width: 570px) {
-    footer {
-        background-image: url(images/footer.png);
-        position: relative;
-        text-align: center;
-        height: 130px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 120px;
-        background-repeat: repeat;
-        overflow-y: hidden;
-    }
-}
-
-@media only screen and (max-width: 570px) {
-    .footercontent {
-        padding-top: 70px;
-        float: inherit;
-        top: 70px;
-        font-weight: bolder;
-        max-height: inherit;
-
-        * {
-            box-sizing: border-box
-        }
-
-
-
-
-
-        text-decoration-line: none pointer-events: none;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        transform: scale(0.5);
-        margin: 0px;
-    }
 }
 
 * {
