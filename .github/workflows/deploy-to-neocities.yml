@@ -1,10 +1,10 @@
 name: Deploy to neocities
 
-# only run on changes to master
+# only run on changes to main. Use main or master depending on whatever your default branch is called. 
 on:
   push:
     branches:
-      - master
+      - main
 
 concurrency: # prevent concurrent deploys doing strange things
   group: deploy-to-neocities
@@ -28,8 +28,8 @@ jobs:
         npm run build
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@v1
+      uses: bcomnes/deploy-to-neocities@v2
       with:
-        api_token: $
+        api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: false
         dist_dir: public
