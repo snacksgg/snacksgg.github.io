@@ -34,6 +34,8 @@ body {
 
 
 
+
+
 .header {
 
     z-index: 100;
@@ -513,6 +515,8 @@ img.sm {
     transition: 0.05s;
     transition-timing-function: ease-in-out;
     pointer-events: auto;
+    height: auto;
+    
 
 }
 
@@ -540,6 +544,7 @@ img.sm:hover {
         box-shadow: 15px 12px 0px #00243B;
 
     }
+
 }
 
 .img-float {
@@ -717,6 +722,13 @@ input[type=button]:active {
         border-radius: 5px;
         margin-top: 6px;
     }
+
+    img.sm {
+        width: 30px !important;
+        height: 30px !important;
+
+    }
+    
 }
 
 
@@ -734,7 +746,7 @@ input[type=button]:active {
     margin-left: 60px;
     font-weight: bolder;
     text-decoration-line: none pointer-events: none;
-    font-size: 16px;
+    font-size: 12px;
     color: white;
 }
 
@@ -864,35 +876,23 @@ twitch-embed {
 }
 
 footer {
-    background-image: url(images/footer.png);
+    background-image: url(images/footer2.png);
+    
     position: relative;
     text-align: center;
-    height: 130px;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 120px;
+    height: auto;
     background-repeat: repeat;
 
+
 }
 
 
 
-@media only screen and (min-width: 2500px) {
-    footer {
-        background-image: url(images/footer.png);
-        position: fixed;
-        text-align: center;
-        height: 130px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 120px;
-        background-repeat: repeat;
-    }
-}
+
 .footercontent {
     padding-top: 70px;
     float: inherit;
@@ -930,7 +930,7 @@ footer {
 /* Next & previous buttons */
 .prev,
 .next {
-    position: absolute;
+    position: inherit;
     cursor: pointer;
     margin: 50px;
     width: auto;
@@ -942,7 +942,6 @@ footer {
     transition: 0.2s ease;
     border-radius: 3px 0 0 3px;
     user-select: none;
-    min-width: inherit;
 }
 
 /* Position the "next button" to the right */
@@ -1042,14 +1041,20 @@ img.emote {
 #rounded {
     outline: 3px solid #00243B;
     border-radius: 15px;
-    height: 222px;
+    height: auto;
+    width:auto;
+    max-height: 222px;
     pointer-events: auto;
-    cursor: pointer
+    cursor: pointer;
+    overflow-x: hidden;
 }
 
 #rounded-t {
     border-radius: 15px;
-    height: 222px;
+        height: auto;
+    width: auto;
+    max-height: 222px;
+
 }
 
 #rounded:hover {
@@ -1208,3 +1213,7 @@ details[open] > img {
 #kofiframe {
     border-radius: 15px;
 }
+
+.lbimg {
+}
+
