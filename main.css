@@ -345,7 +345,7 @@ body {
     transition: 0.1s;
     transition-timing-function: ease;
     margin-bottom: 5px;
-    box-sizing: border-box;
+    box-sizing: inherit;
         overflow-y: auto;
 overflow-wrap: anywhere;
 
@@ -356,8 +356,16 @@ overflow-wrap: anywhere;
     grid-column-gap: 30px;
     grid-row-gap: 20px;
   grid-template-columns: auto auto auto;
-
   padding: 10px;
+    height: auto;
+}
+
+@media only screen and (max-width: 870px) {
+    .grid-container {
+    grid-template-columns: auto;
+
+
+    }
 }
 
 
