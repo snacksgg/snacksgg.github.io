@@ -751,7 +751,7 @@ input[type=button]:active {
     max-width: 40%;
     float: left;
     //display: inline-flex;
-    margin-left: 60px;
+    margin-left: 15px;
     font-weight: bolder;
     text-decoration-line: none pointer-events: none;
     font-size: 12px;
