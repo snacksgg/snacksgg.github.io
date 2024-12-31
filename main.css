@@ -524,6 +524,7 @@ img.sm {
     transition-timing-function: ease-in-out;
     pointer-events: auto;
     height: auto;
+
     
 
 }
@@ -1225,3 +1226,30 @@ details[open] > img {
 .lbimg {
 }
 
+/* transparent text box */
+
+.tbox {
+    background:rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    margin:inherit;
+    padding:20px;
+}
+
+/* hr with text in middle */
+
+fieldset.title {
+    
+    border-radius: 10px;
+    border-top: 7px solid white;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+fieldset.title legend {
+    padding: 5px 10px;
+}
