@@ -99,6 +99,38 @@
             </script>
             <div class="boxed" style="cursor:default; background:url(/images/header12.png); background-size:109%;">Last updated: <span id="lastupdate"> </div> <br>
 
+            <!--   Last Updated & Visitor Number Github -->
+
+            <script>
+const desiredRepo = "snacksgg.github.io";
+const dateTagClass = ".date";
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function()
+{
+  if (this.readyState == 4 && this.status == 200)
+  {
+    let repos = JSON.parse(this.responseText);
+
+    repos.forEach((repo)=>{
+      if (repo.name == desiredRepo)
+      {
+        var lastUpdated = new Date(repo.updated_at);
+        var day = lastUpdated.getUTCDate();
+        var month = lastUpdated.getUTCMonth();
+        var year = lastUpdated.getUTCFullYear();
+        $(dateTagClass).text(`Last updated: ${month}-${day}-${year}`);
+      }
+    });
+  }
+};
+xhttp.open("GET", "https://api.github.com/users/snacksgg/repos", true);
+xhttp.send();
+            </script>
+            <div class="boxed" style="cursor:default; background:url(/images/header12.png); background-size:109%;"><div class="date">
+  
+</div> </div> <br>
+
             <!--            buttons -->
 
             <a href="https://snacksgg.me/"><img src="/images/buttons/spb6.gif" alt="Snacks' Paint Box" /></a>
