@@ -1256,3 +1256,28 @@ fieldset.title legend {
 
 .lastupdate {    
 }
+
+.webbuttons {
+
+  display: block;
+}
+
+.image-hover-highlight {
+    -webkit-transition: all 0.10s;
+    transition: all 0.10s;
+          border: 2px solid transparent;
+    &:hover {
+        border: 2px solid white;
+        border-radius: 5px;
+        filter: brightness(130%);
+        -webkit-filter: brightness(130%);
+        -moz-filter: brightness(130%);
+        -o-filter: brightness(130%);
+        -ms-filter: brightness(130%);
+        -webkit-transition: all 0.10s;
+        transition: all 0.10s;
+        transform: scale(1.05);
+
+
+    }
+}

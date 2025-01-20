@@ -7,8 +7,8 @@
     <meta content="Snacks' Paint Box" property="og:title" />
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <meta content="Art by snacksgg" property="og:description" />
-    <meta content="https://https://snacksgg.me/" property="og:url" />
-    <meta content="https://c.l3n.co/i/4TMGLb.png" property="og:image" />
+    <meta content="https://snacksgg.me/" property="og:url" />
+    <meta content="/images/embedthumb.png" property="og:image" />
     <meta content="#062c40" data-react-helmet="true" name="theme-color" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="main.css" rel="stylesheet" />
@@ -99,42 +99,11 @@
             </script>
             <div class="boxed" style="cursor:default; background:url(/images/header12.png); background-size:109%;">Last updated: <span id="lastupdate"> </div> <br>
 
-            <!--   Last Updated & Visitor Number Github -->
-
-                <script>
-                    const desiredRepo = "snacksgg.github.io";
-const dateTagClass = ".lastupdate";
-
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function()
-{
-  if (this.readyState == 4 && this.status == 200)
-  {
-    let repos = JSON.parse(this.responseText);
-
-    repos.forEach((repo)=>{
-      if (repo.name == desiredRepo)
-      {
-        var lastUpdated = new Date(repo.updated_at);
-        var day = lastUpdated.getUTCDate();
-        var month = lastUpdated.getUTCMonth();
-        var year = lastUpdated.getUTCFullYear();
-        $(dateTagClass).text(`Last updated: ${year}-${month}-${day}`);
-      }
-    });
-  }
-};
-xhttp.open("GET", "https://api.github.com/users/snacksgg/repos", true);
-xhttp.send();</script>
-
-            <div class="boxed" style="cursor:default; background:url(/images/header12.png); background-size:109%;"><div class="lastupdate">
-  
-</div></div> <br>
 
             <!--            buttons -->
 
-            <a href="https://snacksgg.me/"><img src="/images/buttons/spb6.gif" alt="Snacks' Paint Box" /></a>
-            <a href="https://neocities.org/site/snacksgg"><img src="/images/buttons/neocitiesbutton.png" alt="Snacks' Paint Box" /></a> <br>
+            <a href="https://snacksgg.me/"><img src="/images/buttons/spb6.gif" alt="Snacks' Paint Box" class="image-hover-highlight" /></a>
+            <a href="https://neocities.org/site/snacksgg"><img src="/images/buttons/neocitiesbutton.png" alt="Snacks' Paint Box" class="image-hover-highlight" /></a> <br>
             <script type="text/javascript" src="//counter.websiteout.com/js/32/0/0/1"></script>
 
 
@@ -165,14 +134,14 @@ xhttp.send();</script>
 
     <div class="footercontent" style="padding-top:55px; min-width: 100%;cursor: default;">
         <a href="https://snacksgg.tumblr.com/" target="_blank"><img src="/images/tumblr.png" alt="Tumblr" style="width:50px;height:50px;" class="sm"></a>
-        <a href="https://www.instagram.com/snacksgg/" target="_blank"><img src="/images/sm-insta.png" alt="Instagram" style="width:50px;height:50px;" class="sm"></a>
-        <a href="https://cohost.org/snacks" target="_blank"><img src="/images/sm-cohost.png" alt="Cohost" style="width:50px;height:50px;" class="sm"></a>
         <a href="https://bsky.app/profile/snacksgg.bsky.social" target="_blank"><img src="/images/sm-bsky.png" alt="Bluesky" style="width:50px;height:50px;" class="sm"></a>
         <a href="https://sheezy.art/snacks" target="_blank"><img src="/images/sm-sheezy.png" alt="Sheezyart" style="width:50px;height:50px;" class="sm"></a>
         <a href="https://www.twitch.tv/snacksgg" target="_blank"><img src="/images/sm-twitch.png" alt="Twitch" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://www.instagram.com/snacksgg/" target="_blank"><img src="/images/sm-insta.png" alt="Instagram" style="width:50px;height:50px;" class="sm"></a>
         <a href="https://www.youtube.com/@snacksgg/" target="_blank"><img src="/images/sm-yt.png" alt="YouTube" style="width:50px;height:50px;" class="sm"></a>
         <a href="https://artfight.net/~snacksgg" target="_blank"><img src="/images/sm-artfight.png" alt="ArtFight" style="width:50px;height:50px;" class="sm"></a>
-        <a href="https://snacksgg.newgrounds.com/" target="_blank"><img src="/images/sm-ng.png" alt="Newgrounds" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://ko-fi.com/snacksgg" target="_blank"><img src="/images/sm-kofi.png" alt="Ko-fi" style="width:50px;height:50px;" class="sm"></a>
+        <a href="https://discordapp.com/users/130546665017966592" target="_blank"><img src="/images/sm-discord.png" alt="Discord" style="width:50px;height:50px;" class="sm"></a>
         <a href="#" target="_blank"><img src="/images/sm-blank.png" alt="blank" style="width:50px;height:50px;" class="sm"></a>
         • <a href="/index">Home</a> •
         <a href="/about">About</a> •
