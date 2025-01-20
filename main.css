@@ -142,10 +142,11 @@ body {
 
 .boxed {
 
-    background: url(images/checker.png);
-    background-size: 50%;
-    background-repeat: repeat;
-    border: none;
+  background:
+    repeating-conic-gradient(
+        #0b354d 0 90deg,
+        #00243B 0 180deg) 
+    0 0/60px 60px round;
 
 
     font-family: "Prompt";
@@ -159,7 +160,7 @@ body {
     letter-spacing: 1px;
     border-radius: 15px;
     padding: 15px 15px;
-    outline: 5px solid #00243B;
+    outline: 5px solid #000e1c;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -185,9 +186,26 @@ body {
 
 .boxed2 {
 
-    background: url(images/checker2.png);
-    background-size: 150%;
-    border: none;
+   background-color: #0b354d;
+  background-image: linear-gradient(
+      45deg,
+      #00243B 25%,
+      transparent 25%,
+      transparent 75%,
+      #00243B 75%,
+      #00243B
+    ),
+    linear-gradient(
+      -45deg,
+      #00243B 25%,
+      transparent 25%,
+      transparent 75%,
+      #00243B 75%,
+      #00243B
+    )
+      ;
+  background-size: 70px 70px;
+  background-repeat: repeat;
 
     font-family: "Prompt";
     ,
@@ -200,7 +218,7 @@ body {
     letter-spacing: 1px;
     border-radius: 15px;
     padding: 30px 15px;
-    outline: 5px solid #00243B;
+    outline: 5px solid #000e1c;
     text-align: center;
     text-decoration: none;
     font-weight: bolder;
@@ -246,7 +264,7 @@ body {
     letter-spacing: 1px;
     border-radius: 15px;
     padding: 15px 15px;
-    outline: 5px solid #00243B;
+    outline: 5px solid #000e1c;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -327,7 +345,7 @@ body {
     letter-spacing: 1px;
     border-radius: 15px;
     padding: 15px 15px;
-    outline: 6px solid #00243B;
+    outline: 6px solid #000e1c;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -539,6 +557,7 @@ img.slide {
 
 img.sm:hover {
     transform: scale(1.1);
+    
 
 }
 
@@ -1278,7 +1297,7 @@ box-shadow: 0 0 0 2px transparent;
         -ms-filter: brightness(130%);
         -webkit-transition: all 0.10s;
         transition: all 0.10s;
-        transform: scale(1.1);
+        transform: scale(1.05);
 
 
     }
