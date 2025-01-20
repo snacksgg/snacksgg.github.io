@@ -1265,9 +1265,10 @@ fieldset.title legend {
 .image-hover-highlight {
     -webkit-transition: all 0.10s;
     transition: all 0.10s;
-          border: 2px solid transparent;
+box-shadow: 0 0 0 2px transparent;
     &:hover {
-        border: 2px solid white;
+
+
         border-radius: 5px;
         filter: brightness(130%);
         -webkit-filter: brightness(130%);
@@ -1276,7 +1277,7 @@ fieldset.title legend {
         -ms-filter: brightness(130%);
         -webkit-transition: all 0.10s;
         transition: all 0.10s;
-        transform: scale(1.05);
+        transform: scale(1.1);
 
 
     }
