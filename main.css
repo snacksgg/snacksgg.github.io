@@ -143,7 +143,7 @@ body {
 .boxed {
 
     background: url(images/checker.png);
-    background-size: 122%;
+    background-size: cover;
     border: none;
 
 
@@ -185,7 +185,7 @@ body {
 .boxed2 {
 
     background: url(images/checker2.png);
-    background-size: 150%;
+    background-size: cover;
     border: none;
 
     font-family: "Prompt";
@@ -231,7 +231,7 @@ body {
 .boxed3 {
 
     background: url(images/checker.png);
-    background-size: 100%;
+    background-size: cover;
     border: none;
 
     font-family: "Prompt";
