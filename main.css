@@ -5,6 +5,7 @@ html {
     width: 100vw;
     height: 100vh;
     -webkit-font-smoothing: antialiased;
+    
 
 }
 
@@ -146,7 +147,7 @@ body {
     repeating-conic-gradient(
         #0b354d 0 90deg,
         #00243B 0 180deg) 
-    0 0/60px 60px round;
+    0 0/100px 100px round;
 
 
     font-family: "Prompt";
@@ -249,9 +250,11 @@ body {
 
 .boxed3 {
 
-    background: url(images/checker.png);
-    background-size: 100%;
-    border: none;
+background:
+    repeating-conic-gradient(
+        #0b354d 0 90deg,
+        #00243B 0 180deg) 
+    0 0/100px 100px round;
 
     font-family: "Prompt";
     ,
@@ -282,6 +285,49 @@ body {
     margin-top: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
+
+}
+
+.boxed4 {
+
+background: repeating-linear-gradient(45deg, #0b354d, #0b354d 20px, #00243B 20px, #00243B 40px);
+
+
+
+    font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+    sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    padding: 15px 15px;
+    outline: 5px solid #000e1c;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration-line: none pointer-events: none;
+    font-size: 16px;
+    width: 80%;
+    height: auto;
+    min-width: 80%;
+    max-width: 100%;
+    line-height: 25px;
+    margin-right: 15px;
+    text-shadow: black -2px 2px 2px;
+    box-shadow: -0px 0px 10px black;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    z-index: 5;
+    overflow: visible;
+}
 
 }
 
@@ -331,9 +377,13 @@ body {
 
 .boxed-grid {
 
-    background: url(images/checker.png);
-    background-size: cover;
-    border: none;
+ background:
+    repeating-conic-gradient(
+        #0b354d 0 90deg,
+        #00243B 0 180deg) 
+    0 0/100px 100px round;
+
+
     font-family: "Prompt";
     ,
     "Bradley Hand";
@@ -915,6 +965,7 @@ footer {
     width: 100%;
     height: auto;
     background-repeat: repeat;
+    z-index: 10000;
 
 
 }
@@ -1039,6 +1090,7 @@ footer {
 
 .gallery {
     width:100%;
+    height: 50%;
     margin:auto;
     display: flex;
     columns: 15rem 3;
@@ -1301,4 +1353,80 @@ box-shadow: 0 0 0 2px transparent;
 
 
     }
+}
+
+/* index page code */
+
+/* container */
+.content-with-sidebars {
+    display:flex;
+    flex-wrap:wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 0;
+}
+
+.main-column {
+
+}
+
+.left-column {
+    
+}
+
+.right-column {
+ 
+}
+
+
+
+
+/* columns */
+.content-with-sidebars > * {
+    width:100%;
+
+    
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .content-with-sidebars > * {
+        width:50%;
+    }
+    .content-with-sidebars > *:nth-child(1) {
+        width:100%;
+    }
+}
+
+/* desktop breakpoint */
+@media (min-width:1024px) {
+    .content-with-sidebars > * {
+        width:25%;
+    }
+    .content-with-sidebars > *:nth-child(1) {
+        width:50%;
+    }
+    .content-with-sidebars > *:nth-child(2) {
+        order:-1;
+    }
+}
+
+
+
+
+
+.zoom-in-zoom-out {
+z-index: -5;
+  color: white;
+  animation: mymove 1s  ease-in-out infinite alternate;
+}
+
+@keyframes mymove {
+
+  0% {transform: rotate(3deg);}
+      100% {transform: rotate(-3deg);
+    }
+
+
+
 }
