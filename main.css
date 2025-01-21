@@ -508,6 +508,7 @@ li {
 
     
 
+
 padding-left: 10px;
     list-style-type: none;
     line-height: 25px;
@@ -518,9 +519,8 @@ padding-left: 10px;
 
 .li-nested li {
 
-    
-
-padding-left: 50px;
+padding-left: 20px;
+    width: auto;
 
     
 
@@ -1457,7 +1457,13 @@ box-shadow: 0 0 0 2px transparent;
         width:50%;
     }
     
+    .li-nested li > * {
+
     
+
+padding-left: 0px;
+        
+    }
     .content-with-sidebars > *:nth-child(1) {
         width:100%;
     }
