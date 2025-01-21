@@ -516,6 +516,16 @@ padding-left: 10px;
 
 }
 
+.li-nested li {
+
+    
+
+padding-left: 50px;
+
+    
+
+}
+
 li.nobg {
     padding: 5px;
     background-image: none;
