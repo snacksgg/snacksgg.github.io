@@ -467,25 +467,53 @@ p {
 }
 
 ul {
-    margin:auto;
-
 
     text-align: left;
-       list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    
 
 }
 
+.ul-nostyle {
+   padding-left: 0px;
+
+
+    text-align: left;
+    
+}
+
 li {
+    
+}
+
+.li-boxed li {
     border:5px;
-border-style:outset;
+    border-style:outset;
     padding: 5px;
     border-color: #00243B;
     margin-bottom: 5px;
+    margin:auto;
     overflow: auto;
     background-image: url(/images/header12.png);
     background-size: 140%;
+    list-style-type: none;
+    max-width: 900px;
+    text-align: center;
+    
+
+}
+
+.li-sitemap li {
 
     
+
+padding-left: 10px;
+    list-style-type: none;
+
+    text-align: left;
+    
+
 }
 
 li.nobg {
