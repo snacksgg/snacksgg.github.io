@@ -56,34 +56,38 @@
 <!--  Main Column  -->
 
     <div class="main-column" style="margin-left: auto;margin-right: auto;">
-  
-            <img src="/images/spb-text.png" class="swivel" style="position: relative;width: 50%">
-            <img src="/images/gallery/sheezyid2.gif" width="70%" style="border-radius: 15px; padding-bottom: 10px;">
-               <div class="boxed4" style="width: 100%;">Featured Art</div>
-        <div class="boxed" style="width: 100%;">Recent Art</div>
-            <div class="boxed" style="width: 100%;">
-                <img src="images/zedicon.png" alt="Image Not Found" /><br> ! This site is a work in progress ! 
-            </div>
-        
-                    <div class="boxed" style="cursor:default; background:url(/images/header12.png); background-size:109%; width: 100%;">
-                <h1>Quick Links</h1>
-                <hr class="small">
-                Info: <a href="/about">About</a> • <a href="/blog">Blog</a> • <a href="/commissions">Commissions</a> • <a href="/updatelog">Update&nbsp;Log</a> • <a href="/misc/resources">Resources</a>
-                <hr class="small">
-                Gallery: <a href="/gallery">Featured&nbsp;Art</a> •
-                <a href="/gallery/ocart">Original&nbsp;Art</a> •
-                <a href="/gallery/fanart">Fanart</a> •
-                <a href="/gallery/animations">Animations</a> •
-                <a href="/gallery/3D">3D</a> •
-                <a href="/gallery/forothers">For&nbsp;Others</a> •
-                <a href="/gallery/sketchbook">Sketchbook/Misc</a>
-                <hr class="small">
-                Fun: <a href="/misc/randomvgm">Random VGM</a> • <a href="/misc/randomsong">Random&nbsp;Song</a> • <a href="/misc/randomvideo">Random Video</a> • <a href="/misc/coolstuff">Cool&nbsp;Stuff</a> • <a href="/misc/stamps">Stamps</a>
-                <hr class="small">
-                Other: <a href="/misc/messageboard">Message&nbsp;Board</a> • <a href="/misc/oldart">Old Art Archive</a>
-                <hr class="small">
 
-            </div><br>
+        <img src="/images/spb-text.png" class="swivel" style="position: relative;width: 50%">
+        <img src="/images/gallery/sheezyid2.gif" width="70%" style="border-radius: 15px; padding-bottom: 10px;">
+        <div class="boxed4" style="width: 100%;">Featured Art<br> <img id="randomImage" style="max-height: 500px; border-radius: 15px; margin-top: 10px;" />
+            <script>
+                document.getElementById("randomImage").src = "feat" + Math.floor(Math.random() * 9) + ".png";
+            </script>
+        </div>
+        <div class="boxed" style="width: 100%;">Recent Art</div>
+        <div class="boxed" style="width: 100%;">
+            <img src="images/zedicon.png" alt="Image Not Found" /><br> ! This site is a work in progress !
+        </div>
+
+        <div class="boxed" style="cursor:default; background:url(/images/header12.png); background-size:109%; width: 100%;">
+            <h1>Quick Links</h1>
+            <hr class="small">
+            Info: <a href="/about">About</a> • <a href="/blog">Blog</a> • <a href="/commissions">Commissions</a> • <a href="/updatelog">Update&nbsp;Log</a> • <a href="/misc/resources">Resources</a>
+            <hr class="small">
+            Gallery: <a href="/gallery">Featured&nbsp;Art</a> •
+            <a href="/gallery/ocart">Original&nbsp;Art</a> •
+            <a href="/gallery/fanart">Fanart</a> •
+            <a href="/gallery/animations">Animations</a> •
+            <a href="/gallery/3D">3D</a> •
+            <a href="/gallery/forothers">For&nbsp;Others</a> •
+            <a href="/gallery/sketchbook">Sketchbook/Misc</a>
+            <hr class="small">
+            Fun: <a href="/misc/randomvgm">Random VGM</a> • <a href="/misc/randomsong">Random&nbsp;Song</a> • <a href="/misc/randomvideo">Random Video</a> • <a href="/misc/coolstuff">Cool&nbsp;Stuff</a> • <a href="/misc/stamps">Stamps</a>
+            <hr class="small">
+            Other: <a href="/misc/messageboard">Message&nbsp;Board</a> • <a href="/misc/oldart">Old Art Archive</a>
+            <hr class="small">
+
+        </div><br>
                     <!--            buttons -->
 
             <a href="https://snacksgg.me/"><img src="/images/buttons/spb6.gif" alt="Snacks' Paint Box" class="image-hover-highlight" /></a>
@@ -150,9 +154,7 @@
     
     <!--  Right Column  -->
     <div class="right-column">
-        <div class="boxed4">Welcome Blurb: todo <hr style="margin-bottom: 250px;"></div>
-        <div class="boxed4">Status: todo <hr style="margin-bottom: 115px;"></div>
-                            <!--   Last Updated & Visitor Number -->
+                                    <!--   Last Updated & Visitor Number -->
 
             <script>
                 var xhttp = new XMLHttpRequest();
@@ -177,7 +179,11 @@
                 xhttp.send();
             </script>
             <div class="boxed4" style="cursor:default; background:url(/images/header12.png); background-size:109%; ">Last updated: <span id="lastupdate"> </div> 
-        <div class="boxed4">Chatbox: todo<hr style="margin-bottom: 350px;"></div>
+        <div class="boxed4">Welcome Blurb: todo <hr style="margin-bottom: 250px;"></div>
+        <div class="boxed4">Status: todo <hr style="margin-bottom: 115px;"></div>
+        
+
+        <div class="boxed4"><iframe src="https://www3.cbox.ws/box/?boxid=3543718&boxtag=iLeb5s" width="100%" height="400" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" style="border-radius: 15px;"></iframe>	</div>
     </div>
 
     </div>
