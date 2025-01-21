@@ -11,6 +11,7 @@
     <meta content="/images/embedthumb.png" property="og:image" />
     <meta content="#062c40" data-react-helmet="true" name="theme-color" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" as="style" href="main.css">
     <link href="main.css" rel="stylesheet" />
     <link rel="icon" href="/images/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
@@ -19,6 +20,7 @@
     <link href="/pagination/pagination.css" rel="stylesheet" type="text/css">
 
     <script src="/pagination/paginator.js" type="text/javascript"></script>
+
 </head>
 
 
@@ -42,20 +44,19 @@
 <!-- End of Header -->
 <main>
 
-    <body>
+
         
         
         
         
 <!--   3 Columns  -->
-        
 <div class="content-with-sidebars">
 
 <!--  Main Column  -->
 
-    <div class="main-column">
+    <div class="main-column" style="margin: auto;">
   
-            <img src="/images/spb-text.png" class="zoom-in-zoom-out" style="position: relative;padding-bottom: 20px; width: 50%">
+            <img src="/images/spb-text.png" class="swivel" style="position: relative;padding-bottom: 20px; width: 50%">
             <img src="/images/gallery/sheezyid2.gif" width="70%" style="border-radius: 15px; padding-bottom: 10px;">
                <div class="boxed4" style="width: 100%;">Featured Art</div>
         <div class="boxed" style="width: 100%;">Recent Art</div>
@@ -144,7 +145,7 @@
 
 
 
-        </div>
+            </div></div></main>
         
         
         
@@ -159,7 +160,22 @@
         
         
         
-        
+        <noscript id="deferred-styles">
+          <link rel="stylesheet" type="text/css" href="/main.css" />
+        </noscript>
+        <script>
+          var loadDeferredStyles = function() {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+          };
+          var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+              webkitRequestAnimationFrame || msRequestAnimationFrame;
+          if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+          else window.addEventListener('load', loadDeferredStyles);
+        </script>
         
         
         

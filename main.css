@@ -1119,6 +1119,7 @@ img.emote {
 }
 
 
+
 #rounded {
     outline: 3px solid #00243B;
     border-radius: 15px;
@@ -1415,7 +1416,7 @@ box-shadow: 0 0 0 2px transparent;
 
 
 
-.zoom-in-zoom-out {
+.swivel {
 z-index: -5;
   color: white;
   animation: mymove 1s  ease-in-out infinite alternate;
