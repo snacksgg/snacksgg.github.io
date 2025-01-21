@@ -509,7 +509,7 @@ li {
     
 
 
-padding-left: 10px;
+padding-left: 0px;
     list-style-type: none;
     line-height: 25px;
     text-align: left;
@@ -520,6 +520,8 @@ padding-left: 10px;
 .li-nested li {
 
 padding-left: 20px;
+    padding-top:3px;
+    padding-bottom:3px;
     width: auto;
 
     
@@ -864,8 +866,18 @@ input[type=button]:active {
         font-size: 12px;
     }
     
-}
 
+  
+    
+
+
+
+    }
+
+    body {
+      padding:0;
+    }
+    }
 
 .center {
     display: block;
@@ -1448,6 +1460,7 @@ box-shadow: 0 0 0 2px transparent;
 .content-with-sidebars > * {
     width:100%;
 
+
     
 }
 
@@ -1455,6 +1468,8 @@ box-shadow: 0 0 0 2px transparent;
 @media (min-width:768px) {
     .content-with-sidebars > * {
         width:50%;
+            margin-right: 0px;
+    margin-left: 0px;
     }
     
     .li-nested li > * {
@@ -1467,6 +1482,8 @@ padding-left: 0px;
     .content-with-sidebars > *:nth-child(1) {
         width:100%;
     }
+    
+
 }
 
 /* desktop breakpoint */
