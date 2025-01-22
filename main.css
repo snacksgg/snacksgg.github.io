@@ -529,10 +529,11 @@ padding-left: 20px;
 }
 
 li.nobg {
-    padding: 5px;
+    padding: px;
     background-image: none;
     border:none;
     margin-bottom: 5px;
+    margin-left: 10px;
     
 }
 
