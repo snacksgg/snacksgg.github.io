@@ -38,11 +38,10 @@ const navLinks = [
 {	"name": `Archive`,		"filename": `archive`,	},
 ];
 const contactLinks = [
-{	"name": `Neocities`,	"url": `https://example.com/`,	},
-{	"name": `Twitter`,		"url": `https://example.com/`,	},
-{	"name": `Codeberg`,		"url": `https://example.com/`,	},
-{	"name": `Itch`,			"url": `https://example.com/`,	},
-{	"name": `email`,		"url": `contact@example.com`,	},
+{	"name": `Neocities`,	"url": `hhttps://neocities.org/site/snacksgg`,	},
+{	"name": `Bluesky`,		"url": `https://bsky.app/profile/snacksgg.me`,	},
+{	"name": `Tumblr`,		"url": `https://snacksgg.tumblr.com`,	},
+
 ];
 
 
@@ -53,20 +52,17 @@ const contactLinks = [
 
 const posts = [
 {
-	"title": `Images and galleries`,
-	"filename": `2024-08-31-images-and-galleries`,
-	"tags": [`example post`, `images`, `guide`],
+	"title": `Happy New Year!`,
+	"filename": `2024-01-02-happy-new-year`,
+	"tags": [`updates`, `new year`],
 },
+    
 {
-	"title": `Text styles`,
-	"filename": `2024-08-30-text-styles`,
-	"tags": [`example post`, `text`, `guide`],
+	"title": `Test Blog!`,
+	"filename": `2023-12-23-test-blog`,
+	"tags": [`updates`, ],
 },
-{
-	"title": `Example post`,
-	"filename": `2024-08-29-example-post`,
-	"tags": [`example post`, `first post`, `yeet`],
-},
+    
 ];
 
 
@@ -80,8 +76,8 @@ const messages = [
 	`wahoo`,
 	`I get eaten by the worms`,
 	`its a good day to do what has to be done by me`,
-	`this message includes <em>inline <abbr>HTML</abbr></em>`,
-	`this message includes <a href="https://zombo.com/" rel="external">a link</a>`,
+	`so very sleepy`,
+
 ];
 
 

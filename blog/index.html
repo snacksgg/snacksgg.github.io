@@ -6,9 +6,12 @@
 	<title>Snacks' Blog Box</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 	<link href="./resources/main.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/main.css" rel="stylesheet" type="text/css" media="all">
 
 	<link rel="icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
 </head>
 
 
@@ -17,24 +20,40 @@
 <body>
 	<a id="skip-link" href="#content">Skip to main content</a>
 
-
+<!--  Main Site Header  -->
+    
+    <div id="container2">
+<a style="text-decoration:none" href="/" title="HOME"><button>HOME</button></a>
+        <a style="text-decoration:none" href="/about" title="ABOUT"><button>ABOUT</button></a>
+        <a style="text-decoration:none" href="/gallery" title="GALLERY"><button>GALLERY</button></a>
+        <a style="text-decoration:none" href="/commissions" title="COMMISSIONS"><button>COMMISSIONS</button></a>
+        <a style="text-decoration:none" href="/misc" title="MISC"><button>MISC</button></a>
+        </div>
+    
+    
+    
+<!-- Blog Box -->
 
 	<div id="container">
+        
+        
 		<header id="header">This site requires JavaScript.
         </header><!--#header end-->
 
 
-        <div class="img-float"><img src="/images/wizzed2.gif" alt="WIP" style="width: 35%; height: 35%;"> </div>
-<div class="img-float2"><img src="/images/blogbox2.gif" alt="WIP" style="width: 50%; height: 50%;position: fixed; right: 500px;"></div>
 		<main id="content">
-            
+                        <img class="centre" src="/images/blogbox2.gif" alt="Snacks' Blog Box" width="30%">
 
+<div class="tbox">
 			<h2>Recent Posts</h2>
-			<ol id="latest-posts" class="post-list" reversed></ol><!--#latest-posts end-->
+			<ol id="latest-posts" class="post-list" reversed></ol></div><br>
+            <ol id="all-posts" class="post-list" reversed></ol>
+            <!--#latest-posts end-->
+            
             <div class="tbox">
                         			<h2>Tags</h2>
 			<ul id="tag-index"></ul>
-                </div>
+                </div><br>
 		</main><!--#content end-->
 
 
@@ -42,11 +61,13 @@
 		<footer id="footer">
 			<a href="#content" rel="return">Return to top</a>
 			<ul id="contact-links" class="flex-list"></ul><!--#contact-links end-->
-		<footer><!--#footer end-->
+        </footer><!--#footer end-->
 	</div> <!--#container end-->
 
 
 
 	<script src="./resources/main.js"></script>
+            
+            
 </body>
 </html>

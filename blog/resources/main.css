@@ -1,3 +1,9 @@
+
+html {
+
+}
+
+
 @layer reset, defaults, themes, utilities;
 
 
@@ -12,7 +18,6 @@
 	--fore-colour: white;
 	--hot-colour: lightblue;
 	--cold-colour: lightblue;
-    background-image: url(/images/triangle3-seamless2.png)
 }
 
 /* =========== END THEMES */ }
@@ -74,7 +79,8 @@ body {
 	font-family: sans-serif;
 	margin: 0;
 	color: var(--fore-colour);
-	background-color: var(--back-colour);
+	    background-image: url(/images/triangle3-seamless2.png);
+    overflow-y: scroll;
 	line-height: 1.5;
 }
 #skip-link {
@@ -88,15 +94,37 @@ body {
 }
 #container {
 background: repeating-linear-gradient(45deg, #0b354d, #0b354d 30px, #00243B 30px, #00243B 60px);
-    margin: 3rem auto;
+    background-size: contain;
+    margin: 2rem auto;
         border-radius: 15px;
-
-	max-inline-size: 750px;
+ font-family: "Prompt";
+    text-align: center;
+        font-weight: bolder;
+    font-size: 16px;
+    text-shadow: #062c40BF -2px 2px 2px;
+	max-inline-size: 1080px;
 	border-inline: var(--line);
 	& > * {
 		padding-inline: 1rem;
 	}
+    
 }
+    
+#container2 {
+    background-image: url(/images/header9.png);
+    background-attachment: inherit;
+    width: 100%;
+    min-width: 100%;
+    height: 120px;
+    background-repeat: repeat-x;
+    position: relative;
+    z-index: 1000000;
+    display: block;
+text-align: center;
+    
+    }
+}
+    
 .flex-list {
 	display: flex;
 	flex-direction: row;
@@ -154,8 +182,7 @@ h1 {
 	margin-block-end: 0;
 }
 h2 {
-    padding-top: 10px;
-	margin-block-start: 3rem;
+	margin-block-start: 1rem;
 	margin-block-end: 0.25rem;
 }
 h3 {
@@ -279,8 +306,6 @@ iframe {
 
 article > header {
 	margin-block-end: 1rem;
-	padding-block-end: 1rem;
-	border-block-end: var(--line);
 	h1 {
 		margin-block-end: 0.5rem;
 		font-size: 2.2rem;
@@ -324,6 +349,7 @@ article > header {
 	border-block: var(--line);
     border-radius: 15px;
 	font-size: var(--meta-font-size);
+    padding: 20px;
 	[rel="return"]::before {
 		content: "\2191 \a0"; /* up arrow + non-breaking space */
 	}
@@ -331,6 +357,7 @@ article > header {
 #contact-links {
 	& > li:not(:last-child)::after {
 		content: "\a0 |\a0"; /* non-breaking space + pipe + non-breaking space */
+        
 	}
 }
 
@@ -363,6 +390,120 @@ article > header {
     border-radius: 15px;
     padding-left: 20px;
     margin-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 
+button {
+    background: url(/images/button2.png);
+    background-size: 120%;
+    border: none;
+    font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+    user-select: none;
+    color: white;
+    letter-spacing: 1px;
+    outline: 3px solid #00243B;
+    border-color: white;
+    border-radius: 5px;
+    padding: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration-line: none pointer-events: none;
+    font-size: 16px;
+    width: 170px;
+    line-height: 30px;
+    margin-right: 15px;
+    text-shadow: black -2px 2px 0px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+
+}
+
+button:hover {
+    background-color: #2899b0;
+    box-shadow: 0 0 0 5px white;
+    color: #bde9ff;
+
+}
+
+input[type=button] {
+    background: url(images/checker3.png);
+    background-size: 200%;
+    border: none;
+    font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+    user-select: none;
+    color: white;
+    letter-spacing: 1px;
+
+    border-color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration-line: none pointer-events: none;
+    font-size: 16px;
+    width: 200px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    text-shadow: #062c40BF -2px 2px 2px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+input[type=button]:active {
+    transform: scale(0.90);
+
+
+}
+
+@media only screen and (max-width: 870px) {
+    .container2 {
+        background-image: url(/images/header9.png);
+        background-attachment: scroll;
+        width: 100%;
+        min-width: 100%;
+        height: 120px;
+        background-repeat: repeat-x;
+        position: relative;
+        z-index: 1000000;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    button {
+        width: 90px;
+        font-size: 10px;
+        text-align: center;
+        padding: 0px 0px;
+        background-size: 150%;
+        border-radius: 5px;
+        margin-top: 6px;
+    }

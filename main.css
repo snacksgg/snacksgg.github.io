@@ -57,7 +57,7 @@ body {
 }
 
 .container-header-gallery {
-    background-image: url(images/header9.png);
+    background-image: url(/images/header9.png);
     background-attachment: inherit;
     width: 100%;
     min-width: 100%;
@@ -73,7 +73,7 @@ body {
 
 @media only screen and (max-width: 870px) {
     .container-header {
-        background-image: url(images/header9.png);
+        background-image: url(/images/header9.png);
         background-attachment: scroll;
         width: 100%;
         min-width: 100%;
@@ -719,7 +719,7 @@ img.sm:hover {
 
 
 button {
-    background: url(images/button2.png);
+    background: url(/images/button2.png);
     background-size: 120%;
     border: none;
     font-family: "Prompt";
@@ -1517,4 +1517,64 @@ z-index: -5;
 
 
 
+}
+
+/* POST LISTS */
+
+.post-list {
+	padding-inline-start: var(--gap);
+	list-style-type: "";
+	text-indent: calc(-1 * var(--gap));
+	font-size: var(--interface-font-size);
+}
+#tag-index {
+	padding-inline-start: 0;
+	list-style-type: "";
+	details {
+		margin-block: 0;
+	}
+	[open] {
+		margin-block-end: 1rem;
+	}
+	summary {
+		font-size: var(--interface-font-size);
+	}
+}
+
+/* POSTS */
+
+article > header {
+	margin-block-end: 1rem;
+	h1 {
+		margin-block-end: 0.5rem;
+		font-size: 2.2rem;
+	}
+	& + * {
+		margin-block-start: 0;
+	}
+}
+#post-tags {
+	margin-block: 0;
+	& > li:not(:last-child)::after {
+		content: ",\a0"; /* comma + non-breaking space */
+	}
+	a::before {
+		content: "#";
+	}
+}
+#post-nav > ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--gap);
+	padding-inline-start: 0;
+	list-style-type: "";
+	& > :first-child > a::before {
+		content: "\2190 \a0"; /* left arrow + non-breaking space */
+	}
+	& > :last-child {
+		text-align: right;
+		a::after {
+			content: "\2192 \a0"; /* right arrow + non-breaking space */
+		}
+	}
 }
