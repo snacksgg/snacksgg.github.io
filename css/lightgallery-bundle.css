@@ -25,13 +25,14 @@
 
 .lg-next,
 .lg-prev {
-  background-color: rgba(0, 0, 0, 0.45);
+    background-image: none;
+    background:rgba(0, 0, 0, .5);
   border-radius: 2px;
-  color: #999;
+  color: white;
   cursor: pointer;
   display: block;
   font-size: 22px;
-  margin-top: -10px;
+  margin-top: 250px;
   padding: 8px 10px 9px;
   position: absolute;
   top: 50%;
@@ -46,6 +47,8 @@
 }
 .lg-next:hover:not(.disabled),
 .lg-prev:hover:not(.disabled) {
+    background: url(/images/button2.png);
+    background-size: 120%;
   color: #fff;
 }
 .lg-single-item .lg-next,
