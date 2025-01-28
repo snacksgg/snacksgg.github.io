@@ -38,7 +38,8 @@ const navLinks = [
 {	"name": `Archive`,		"filename": `archive`,	},
 ];
 const contactLinks = [
-{	"name": `Neocities`,	"url": `hhttps://neocities.org/site/snacksgg`,	},
+{	"name": `Index`,	"url": `/blog/index`,	},
+{	"name": `Neocities`,	"url": `https://neocities.org/site/snacksgg`,	},
 {	"name": `Bluesky`,		"url": `https://bsky.app/profile/snacksgg.me`,	},
 {	"name": `Tumblr`,		"url": `https://snacksgg.tumblr.com`,	},
 
@@ -74,9 +75,33 @@ const posts = [
 const messages = [
 	`WELCOME TO BONUS STAGE!`,
 	`wahoo`,
-	`I get eaten by the worms`,
+	`howdy 🤠`,
+	`i get eaten by the worms`,
+	`hey kid, i'm a computah`,
+	`stop all the downloadin'`,
+	`help computah`,
+	`dibs on the candy bars`,
+	`i just found 12 bricks`,
+	`hope you're having a good day :)`,
 	`its a good day to do what has to be done by me`,
 	`so very sleepy`,
+	`oughhhhh executive dysfunction`,
+	`play tf2`,
+	`play sayonara wild hearts`,
+	`play gitaroo man`,
+	`play TUNIC`,
+	`play rhythm heaven fever`,
+	`drink 5 hour energy`,
+	`<b>DRINK</b> 5 hour energy`,
+	`it's not a drink, more like a drink`,
+	`can i get a bowl of that chili`,
+	`CONGRATULATIONS! YOU WON!`,
+	`mmm soup`,
+	`CAR BATTERY!`,
+	`probably procrastinating`,
+	`honk shoe`,
+	`stay lame`,
+	`girls rule the day... but us guys.... <font color="lightblue"><a href="https://www.youtube.com/watch?v=kZlZ-ZK3bXQ rel="external" target="_blank">we get the night</a></font>`,
 
 ];
 
