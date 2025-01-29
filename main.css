@@ -39,7 +39,7 @@ body {
 
 .header {
 
-    z-index: 100;
+    z-index: 10000;
 }
 
 .container-header {
@@ -325,7 +325,7 @@ background: repeating-linear-gradient(45deg, #0b354d, #0b354d 20px, #00243B 20px
     margin-top: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    z-index: 5;
+    z-index: 1;
     overflow: visible;
 }
 
@@ -625,6 +625,12 @@ img.rounded {
     transition: .5s;
     pointer-events: none;
 
+}
+
+img.boxheader {
+    margin-top: -50px;position: relative; z-index: 1;
+    left: 0px;
+    top:-1;
 }
 
 .recentart {
@@ -1219,6 +1225,15 @@ img.emote {
 .recentart:hover {
  outline: 3px solid white;   
     
+}
+
+#featuredart {
+}
+
+.featuredart:hover {
+ outline: 3px solid white;   
+        transition: 0.3s;
+
     
 }
 
@@ -1581,3 +1596,50 @@ article > header {
 		}
 	}
 }
+
+/* infinite marquee */
+
+
+#marquee {
+        width:100%; /* probably be best at 100% within a containing element like a sidebar or header */
+        margin:auto; /* keeps it centered lol */
+        overflow: hidden;
+        white-space: nowrap;
+        padding: .5em;
+      }
+      
+      #marquee:hover #stamps {
+        animation-play-state: paused; /* remove this line if you'd rather the stamps not pause when the visitor hovers over them */
+      }
+      
+      #stamps {
+        display: inline-block;
+        will-change: transform;
+        animation: marquee 50s linear infinite; /* here, 100s denotes 100 seconds, so change it to the speed you'd like your marquee to flow. slower is better imho */
+      }
+      
+    
+    
+      #stamps img {
+        width: 99px;
+        height:100%; /* since most stamps are 56px tall and 99 px wide, i've set the defaults to this */
+        transition: all 0.2s;
+          position: relative; 
+      z-index: 1; 
+    
+      }
+      
+      #stamps img:hover {
+        transform: scale(1.2); /* remove this if you'd rather they not explode on hover  */
+        opacity:1;
+          z-index: 100;
+      }
+      
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-650%);
+        }
+      }

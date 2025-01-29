@@ -64,7 +64,7 @@
         
 <!--    Featured Art    -->
         
-        <div class="boxed4" style="width: 100%;">Featured Art<br> <a href="/gallery"><img id="randomImage" style="max-height: 500px; border-radius: 15px; margin-top: 10px;"  /> </a>
+        <div class="boxed4" style="width: 100%;">Featured Art<br> <a href="/gallery"><img id="randomImage" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;     "  /> </a>
             <script>
                 document.getElementById("randomImage").src = "feat" + Math.floor(Math.random() * 9) + ".png";
             </script>
@@ -157,7 +157,7 @@
     
     
     <!--  Right Column  -->
-    <div class="right-column" style="margin-left: auto;margin-right: auto;">
+    <div class="right-column" style="margin-left: auto;margin-right: auto;z-index: -1;">
                                     <!--   Last Updated & Visitor Number -->
 
             <script>
@@ -182,11 +182,44 @@
                 xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=snacksgg", true);
                 xhttp.send();
             </script>
-            <div class="boxed4" style="cursor:default; background:url(/images/header12.png); background-size:109%; ">Last updated: <span id="lastupdate"> </div> 
+            <div class="boxed4" style="cursor:default; background:url(/images/header12.png); background-size:109%;overflow: hidden;">Last updated: <span id="lastupdate"> </div> 
                 
                 
                 
-        <div class="boxed4">Welcome Blurb: todo <hr style="margin-bottom: 250px;"></div>
+        <div class="boxed4"><img src="/images/welcome2.png" class="boxheader" width="230px;"><br> <img src="/images/mewave.gif"><br>
+            Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks for visiting!<br>
+
+<!--     stamp marquee       -->
+            
+               <div class="tbox" style="padding-left: 0px; padding-right: 0px;padding-top: 5px;padding-bottom: 5px;          justify-content: center;
+          align-content: center;"><div id="marquee">
+    <div id="stamps" style="padding: 0px;"> <!-- all your stamps go after this, as regular images -->
+        <img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/000%20Y2K%20NEOCITIES%20BUTTON%2001.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/G9PEJMc.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/dontfeedai.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/copy_floppy.gif" />
+        <img src="https://file.garden/ZdQE41nTdySqA5Yg/88x31/ublock-now.png" />
+    <img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/dd8hdih-40524027-095a-4b2a-a5a1-37384d76ea79.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/toonlinkfan.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/chao.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dbs8ezg-17e37aee-ac3a-45d3-ac43-5e669acc7ad7.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/dd8upp1-d9a4ad51-db54-4648-bd43-aeb8cc4c2480.gif"/>
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/jellies2.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/wahoo.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/bear.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/be462875.gif" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/catsleep.png" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/stamps%202-23/2e743e3e.jpg" />
+<img src="https://file.garden/ZdQE41nTdySqA5Yg/99x56/demondayz.gif" />
+                   </div>
+
+
+
+
+  </div>
+</div>
+                
+                </div>
         <div class="boxed4">Status: todo <hr style="margin-bottom: 115px;"></div>
                 
 <!--       lastfm         -->
@@ -235,7 +268,20 @@
         
         
         
-        
+                <script>function stampshuffle() {
+        const marquee = document.querySelector('#stamps');
+        const stamps = Array.from(marquee.querySelectorAll('img'));
+    
+        for (let i = stamps.length - 1; i > 0; i--) {
+            const randomIndex = Math.floor(Math.random() * (i + 1));
+            [stamps[i], stamps[randomIndex]] = [stamps[randomIndex], stamps[i]];
+        }
+    
+        stamps.forEach(img => marquee.appendChild(img));
+    }
+    
+    stampshuffle();     
+</script>
                     </body>
 </main>
 

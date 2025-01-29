@@ -91,6 +91,7 @@ const messages = [
 	`oughhhhh executive dysfunction`,
 	`you gotta draaaaaw somethin'!`,
 	`gimme a hug, man`,
+	`have you heard of the high elves?`,
 
 	`play tf2`,
 	`play sayonara wild hearts`,
