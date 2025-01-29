@@ -38,7 +38,6 @@ body {
 
 
 .header {
-
     z-index: 10000;
 }
 
@@ -49,7 +48,7 @@ body {
     min-width: 100%;
     height: 120px;
     background-repeat: repeat-x;
-    position: fixed;
+    position: absolute;
     z-index: 1000000;
     display: block;
 
@@ -628,7 +627,9 @@ img.rounded {
 }
 
 img.boxheader {
-    margin-top: -50px;position: relative; z-index: 1;
+    margin-top: -50px;
+    position: relative; 
+    z-index: 0;
     left: 0px;
     top:-1;
 }
