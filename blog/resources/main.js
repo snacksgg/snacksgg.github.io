@@ -92,6 +92,10 @@ const messages = [
 	`you gotta draaaaaw somethin'!`,
 	`gimme a hug, man`,
 	`have you heard of the high elves?`,
+	`walk into the wall like you're an NPC`,
+	`i live in a giant bucket`,
+	`Tuesday's coming, did you bring your coat?`,
+	`i'm feeling fat, and sassy`,
 
 	`play tf2`,
 	`play sayonara wild hearts`,
@@ -111,7 +115,7 @@ const messages = [
 	`yeah?`,
 	`stay lame`,
 	`girls rule the day... but us guys.... <font color="lightblue"><a href="https://www.youtube.com/watch?v=kZlZ-ZK3bXQ rel="external" target="_blank">we get the night</a></font>`,
-	`the censored version of <font color="lightblue"><a href="https://www.youtube.com/watch?v=RtSDWq6HsJE rel="external" target="_blank">Nelly's Ride Wit Me </a> </font> cracks me up, its like 6 seconds long`,
+
 
 ];
 
