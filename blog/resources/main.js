@@ -100,6 +100,8 @@ const messages = [
 	`play tf2`,
 	`play sayonara wild hearts`,
 	`play gitaroo man`,
+	`get funky! be funky! stay funky, yo hustle hustle!`,
+	`hey G, would you make me a sandwich?`,
 	`play TUNIC`,
 	`play rhythm heaven fever`,
 	`drink 5 hour energy`,
