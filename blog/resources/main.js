@@ -110,6 +110,7 @@ const messages = [
 	`can i get a bowl of that chili`,
 	`CONGRATULATIONS! YOU WON!`,
 	`mmm soup`,
+	`my dogs expecting me, I'm ready to go`,
 	`CAR BATTERY!`,
 	`probably procrastinating`,
 	`honk shoe`,

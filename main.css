@@ -1658,3 +1658,16 @@ article > header {
           transform: translateX(-550%);
         }
       }
+
+
+/* status cafe */
+
+#statuscafe {
+    padding: .5em;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
