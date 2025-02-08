@@ -93,7 +93,7 @@ body {
 	}
 }
 #container {
-background: repeating-linear-gradient(45deg, #0b354d, #0b354d 30px, #00243B 30px, #00243B 60px);
+background: repeating-linear-gradient(45deg, #00314d, #00314d 30px, #00243B 30px, #00243B 60px);
     background-size: contain;
     margin: 2rem auto;
         border-radius: 15px;
@@ -152,7 +152,7 @@ text-align: center;
 		color: var(--back-colour);
 		text-decoration: unset;
 		&:hover {
-			background-color: #0b354d;
+			background-color: #00314d;
 		}
 	}
 }
@@ -209,10 +209,10 @@ a:visited {
 a:hover {
 	color: var(--back-colour);
 	&:link {
-		background-color: #0b354d;
+		background-color: #00314d;
 	}
 	&:visited {
-		background-color: #0b354d;
+		background-color: #00314d;
 	}
 }
 code {
