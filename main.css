@@ -144,7 +144,7 @@ body {
 
   background:
     repeating-conic-gradient(
-        #00314d 0 90deg,
+        #003759 0 90deg,
         #00243B 0 180deg) 
     0 0/100px 100px round;
 
@@ -186,7 +186,7 @@ body {
 
 .boxed2 {
 
-   background-color: #00314d;
+   background-color: #003759;
   background-image: linear-gradient(
       45deg,
       #00243B 25%,
@@ -251,7 +251,7 @@ body {
 
 background:
     repeating-conic-gradient(
-        #00314d 0 90deg,
+        #003759 0 90deg,
         #00243B 0 180deg) 
     0 0/100px 100px round;
 
@@ -378,7 +378,7 @@ background: repeating-linear-gradient(45deg, #003759, #003759 20px, #00243B 20px
 
  background:
     repeating-conic-gradient(
-        #00314d 0 90deg,
+        #003759 0 90deg,
         #00243B 0 180deg) 
     0 0/100px 100px round;
 
@@ -1015,7 +1015,7 @@ twitch-embed {
 
 
 .scroll-top:hover {
-    background-color: #00314d;
+    background-color: #003759;
     ;
     box-shadow: 0 0 0 2px white;
     color: #bde9ff;
@@ -1048,7 +1048,7 @@ twitch-embed {
 
 
 .scroll-bot:hover {
-    background-color: #00314d;
+    background-color: #003759;
     ;
     box-shadow: 0 0 0 2px white;
     color: #bde9ff;
@@ -1631,7 +1631,9 @@ article > header {
         margin:auto; /* keeps it centered lol */
         overflow: hidden;
         white-space: nowrap;
+    
         padding: .5em;
+
       }
       
       #marquee:hover #stamps {
@@ -1651,6 +1653,9 @@ article > header {
         height:100%; /* since most stamps are 56px tall and 99 px wide, i've set the defaults to this */
         transition: all 0.2s;
           position: relative; 
+          display: inline-block;
+
+          
       z-index: 1; 
     
       }

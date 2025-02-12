@@ -88,7 +88,6 @@ const messages = [
 	`hope you're having a good day :)`,
 	`its a good day to do what has to be done by me`,
 	`so very sleepy`,
-	`oughhhhh executive dysfunction`,
 	`you gotta draaaaaw somethin'!`,
 	`gimme a hug, man`,
 	`have you heard of the high elves?`,

@@ -93,9 +93,10 @@ body {
 	}
 }
 #container {
-background: repeating-linear-gradient(45deg, #00314d, #00314d 30px, #00243B 30px, #00243B 60px);
+background: repeating-linear-gradient(45deg, #003759, #003759 30px, #00243B 30px, #00243B 60px);
     background-size: contain;
     margin: 2rem auto;
+    margin-top: 5px;
         border-radius: 15px;
  font-family: "Prompt";
     text-align: center;
@@ -117,6 +118,7 @@ background: repeating-linear-gradient(45deg, #00314d, #00314d 30px, #00243B 30px
     height: 120px;
     background-repeat: repeat-x;
     position: relative;
+
     z-index: 1000000;
     display: block;
 text-align: center;
@@ -152,7 +154,8 @@ text-align: center;
 		color: var(--back-colour);
 		text-decoration: unset;
 		&:hover {
-			background-color: #00314d;
+			background-color: #003759;
+            
 		}
 	}
 }
@@ -209,10 +212,10 @@ a:visited {
 a:hover {
 	color: var(--back-colour);
 	&:link {
-		background-color: #00314d;
+		background-color: #003759;
 	}
 	&:visited {
-		background-color: #00314d;
+		background-color: #003759;
 	}
 }
 code {
@@ -236,10 +239,7 @@ blockquote {
 
 /* MEDIA */
 
-img {
-	display: block;
-	margin-inline: auto;
-}
+
 figure {
 	margin-inline: var(--gap);
 }
@@ -349,6 +349,8 @@ article > header {
     border-radius: 15px;
 	font-size: var(--meta-font-size);
     padding: 20px;
+    
+    
 	[rel="return"]::before {
 		content: "\2191 \a0"; /* up arrow + non-breaking space */
 	}
