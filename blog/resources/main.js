@@ -38,10 +38,12 @@ const navLinks = [
 {	"name": `Archive`,		"filename": `archive`,	},
 ];
 const contactLinks = [
-{	"name": `Index`,	"url": `/blog/index`,	},
+{	"name": `Back to Home`,	"url": `/`,	},
+{	"name": `Blog Index`,	"url": `/blog/index`,	},
 {	"name": `Neocities`,	"url": `https://neocities.org/site/snacksgg`,	},
 {	"name": `Bluesky`,		"url": `https://bsky.app/profile/snacksgg.me`,	},
 {	"name": `Tumblr`,		"url": `https://snacksgg.tumblr.com`,	},
+{	"name": `Powered by Zonelots!`,		"url": `https://codeberg.org/cdvr/Zonelots`,	},
 
 ];
 
@@ -95,6 +97,8 @@ const messages = [
 	`i live in a giant bucket`,
 	`Tuesday's coming, did you bring your coat?`,
 	`i'm feeling fat, and sassy`,
+	`i'm not sick, but i'm not well`,
+	`ain't no point to the game`,
 
 	`play tf2`,
 	`play sayonara wild hearts`,
