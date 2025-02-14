@@ -82,6 +82,13 @@ body {
         z-index: 1000000;
         display: block;
     }
+    
+    #splashart {
+        position: relative;
+        width: 90vw;
+        right: 20px;
+        
+    }
 }
 
 /* Matches your header height */
@@ -1686,4 +1693,9 @@ article > header {
 }
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
+}
+
+#splashart {
+    
+    
 }
