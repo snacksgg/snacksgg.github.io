@@ -98,7 +98,7 @@ const messages = [
 	`Tuesday's coming, did you bring your coat?`,
 	`i'm feeling fat, and sassy`,
 	`i'm not sick, but i'm not well`,
-	`ain't no point to the game`,
+	`they got this game called Braid, ain't no point to the game`,
 
 	`play tf2`,
 	`play sayonara wild hearts`,
@@ -116,6 +116,7 @@ const messages = [
 	`my dogs expecting me, i'm ready to go`,
 	`CAR BATTERY!`,
 	`probably procrastinating`,
+	`aeiou`,
 	`honk shoe`,
 	`yeah`,
 	`yeah?`,
