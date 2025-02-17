@@ -36,6 +36,7 @@ const navLinks = [
 {	"name": `About`,		"filename": `about`,	},
 {	"name": `Tags`,			"filename": `tags`,		},
 {	"name": `Archive`,		"filename": `archive`,	},
+{	"name": `Microblog`,		"filename": `archive`,	},
 ];
 const contactLinks = [
 {	"name": `Back to Home`,	"url": `/`,	},
@@ -54,6 +55,13 @@ const contactLinks = [
 =============== */
 
 const posts = [
+    
+    {
+	"title": `Art Games to Start Drawing Again`,
+	"filename": `2025-02-17-easing-back-into-art`,
+	"tags": [`art talk`, ],
+},
+    
 {
 	"title": `Happy New Year!`,
 	"filename": `2024-01-02-happy-new-year`,
@@ -65,7 +73,9 @@ const posts = [
 	"filename": `2023-12-23-test-blog`,
 	"tags": [`updates`, ],
 },
-    
+      
+
+      
 ];
 
 
@@ -86,6 +96,7 @@ const messages = [
 	`<em>*continues to butter my biscuit*</em>`,
 	`dibs on the candy bars`,
 	`dibs on the chips`,
+	`i can't control my brain`,
 	`i just found 12 bricks`,
 	`hope you're having a good day :)`,
 	`its a good day to do what has to be done by me`,
@@ -99,7 +110,15 @@ const messages = [
 	`i'm feeling fat, and sassy`,
 	`i'm not sick, but i'm not well`,
 	`they got this game called Braid, ain't no point to the game`,
-
+	`wuh`,
+	`buh`,
+	`guh`,
+	`huh`,
+	`!rtv`,
+	`i got a message for the poodle in your pocket`,
+	`you are not the guy, you're not capable of being the guy`,
+	`i wanna be the guy`,
+	`woohoo flimby`,
 	`play tf2`,
 	`play sayonara wild hearts`,
 	`play gitaroo man`,
