@@ -36,7 +36,7 @@ const navLinks = [
 {	"name": `About`,		"filename": `about`,	},
 {	"name": `Tags`,			"filename": `tags`,		},
 {	"name": `Archive`,		"filename": `archive`,	},
-{	"name": `Microblog`,		"filename": `archive`,	},
+{	"name": `Journal`,		"filename": `journal`,	},
 ];
 const contactLinks = [
 {	"name": `Back to Home`,	"url": `/`,	},
