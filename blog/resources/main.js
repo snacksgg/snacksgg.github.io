@@ -85,6 +85,7 @@ const posts = [
 ============= */
 
 const messages = [
+    	`here, have a medkit <img src="https://developer.valvesoftware.com/w/images/thumb/5/52/Item_healthkit.png/300px-Item_healthkit.png" width="50px">`,
 	`<img src="https://snacksgg.me/images/mewave.gif" width="50px">`,
 	`WELCOME TO BONUS STAGE!`,
 	`wahoo`,
