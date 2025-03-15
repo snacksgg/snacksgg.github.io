@@ -85,12 +85,14 @@ const posts = [
 ============= */
 
 const messages = [
+    	`<img src="/images/pumapost1.png" width="50px">`,
     	`here, have a medkit <img src="https://developer.valvesoftware.com/w/images/thumb/5/52/Item_healthkit.png/300px-Item_healthkit.png" width="50px">`,
 	`<img src="https://snacksgg.me/images/mewave.gif" width="50px">`,
 	`WELCOME TO BONUS STAGE!`,
 	`wahoo`,
 	`howdy 🤠`,
 	`music make you lose control`,
+	`using proper rhythm, wiggle your fingers and jam the keys!`,
 	`i get eaten by the worms`,
 	`hey kid, i'm a computah`,
 	`stop all the downloadin'`,
@@ -98,6 +100,7 @@ const messages = [
 	`<em>*continues to butter my biscuit*</em>`,
 	`dibs on the candy bars`,
 	`dibs on the chips`,
+	`incinerate.`,
 	`i can't control my brain`,
 	`i just found 12 bricks`,
 	`hope you're having a good day :)`,

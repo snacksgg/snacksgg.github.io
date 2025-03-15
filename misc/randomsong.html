@@ -109,6 +109,8 @@
             document.getElementById("message").innerHTML = random;
         }
     </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 
 </head>
 
@@ -144,11 +146,56 @@
 
         <input type="button" id="button2" value="New Song" onclick="onPlayerReady(event);" />    <br>• <a href="/misc/randomvgm">Random VGM</a> • Random Song • <a href="/misc/randomvideo">Random Video</a> •
         </div><br>
+        
+                <div class="boxed" style="background-image: url(/images/patterns/tilesw10.png); background-size: 100px;">
+        <div class="tbox">
+        <h1>Random Song <br> (every song i've liked on spotify edition)</h1>
+            <script>var lines;
+var randomNumber;
+var lastRandomNumber;
+
+$(document.body).ready(function () {
+
+  // load the trivia from the server
+  $.ajax({
+    url: '/misc/spotifylibrary.txt'
+  }).done(function(content) {
+
+    // normalize the line breaks, then split into lines
+    lines = content.replace(/\r\n|\r/g, '\n').trim().split('\n');
+
+    // only set up the click handler if there were lines found
+    if (lines && lines.length) {
+      $('#showLine').on('click', function () {
+        // loop to prevent repeating the last random number
+        while (randomNumber === lastRandomNumber) {
+          randomNumber = parseInt(Math.random() * lines.length);
+          // check to prevent infinite loop
+          if (lines.length === 1) { break; }
+        }
+        // keep track of the last random number
+        lastRandomNumber = randomNumber;
+
+        // show the corresponding line
+        $('#song').text(lines[randomNumber]);
+      });
+    }
+  });
+});</script>
+                <p id="song"></p>
+    <button id="showLine">New Song</button>
+ </div>
+            
+        </div> <br>
+        
+        
         <button onclick="history.back()" style="position: relative;right:10px;">Go Back</button>
 
 
 
     </div>
+        
+
 
 </main></body>
 
