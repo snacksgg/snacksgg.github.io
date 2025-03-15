@@ -494,13 +494,17 @@ li {
 
 .li-boxed {
     
+}
+
+.li-boxed-updatelog {
+    
         columns: 3;
     list-style-type: none; max-width: 100%;margin: auto; text-align: center;columns:3;
     
 }
 
 @media screen and (max-width: 600px) {
-    .li-boxed {
+    .li-boxed-updatelog {
         columns:1;
         
         
@@ -509,6 +513,25 @@ li {
 }
 
 .li-boxed li {
+    border:5px;
+    border-style:outset;
+    padding: 5px;
+    border-color: #00568C;
+    margin-bottom: 5px;
+    margin:auto;
+    overflow: auto;
+    background-image: url(/images/header12.png);
+    background-size: 140%;
+    list-style-type: none;
+    max-width: 900px;
+    text-align: center;
+
+    
+    
+
+}
+
+.li-boxed-updatelog li {
     border:5px;
     border-style:outset;
     padding: 5px;
