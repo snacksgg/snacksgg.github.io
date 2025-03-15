@@ -492,6 +492,22 @@ li {
     
 }
 
+.li-boxed {
+    
+        columns: 3;
+    list-style-type: none; max-width: 100%;margin: auto; text-align: center;columns:3;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .li-boxed {
+        columns:1;
+        
+        
+        
+    }   
+}
+
 .li-boxed li {
     border:5px;
     border-style:outset;
@@ -505,6 +521,8 @@ li {
     list-style-type: none;
     max-width: 900px;
     text-align: center;
+
+    
     
 
 }
