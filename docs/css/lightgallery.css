@@ -455,6 +455,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 .lg-outer .lg-item:not(.lg-start-end-progress) {
   background: url("../images/loading.gif") no-repeat scroll center center transparent;
+    image-rendering: pixelated;
+
 }
 .lg-outer.lg-css3 .lg-prev-slide,
 .lg-outer.lg-css3 .lg-current,
