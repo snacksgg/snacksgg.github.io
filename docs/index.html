@@ -66,7 +66,7 @@
 <!--    Splash Art    -->
         <div id="splashart" >
         <div ><img src="/images/spb-text.png" class="swivel" style="position: relative;width: 50%"></div>
-        <img src="/images/spb-splash-placeholder.png" width="70%" style="border-radius: 15px; margin-bottom: 10px;"> </div>
+        <img src="/images/spb-splash-placeholder.png" width="70%" style="border-radius: 15px; margin-bottom: 10px;"  draggable="false"> </div>
         
 <!--    Featured Art    -->
                 <script src="js/lightgallery.umd.js"></script>
@@ -81,7 +81,8 @@ background-image:  linear-gradient(30deg, #003759 12%, transparent 12.5%, transp
 background-size: 48px 84px;
 background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;
                                  ">
-            <img class="boxheader" style="margin-bottom: -20px; margin-top: -50px;" src="/images/boxheader-featured-art.png" alt="featured art"><br>
+            <div class="noselect">
+            <img class="boxheader" style="margin-bottom: -20px; margin-top: -50px;" src="/images/boxheader-featured-art.png" alt="featured art" draggable="false"></div>
             
             
             <a href="/gallery"><img id="randomImage" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;"  /> </a>
@@ -127,7 +128,7 @@ background-image:  linear-gradient(30deg, #003759 12%, transparent 12.5%, transp
 background-size: 48px 84px;
 background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;">
             
-                        <img class="boxheader" style="margin-bottom: -20px; margin-top: -50px;" src="/images/boxheader-latest-art.png" alt="featured art"><br>
+                        <img class="boxheader" style="margin-bottom: -20px; margin-top: -50px;" src="/images/boxheader-latest-art.png" alt="featured art"  draggable="false"><br>
             
             
             <a href="/latest.png"><img src="/latest.png" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;"  /> </a>
@@ -177,7 +178,7 @@ background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;">
         <div class="boxed4" style="background-color: #00121d;
 opacity: 1;
 background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #00121d 28px ), repeating-linear-gradient( #00375955, #003759 );">
-            <img class="boxheader" style="margin-top: -50px; width: 100%; margin-bottom: -20px;" src="/images/boxheader-sitemap4.gif" alt="sitemap">
+            <img class="boxheader" style="margin-top: -50px; width: 100%; margin-bottom: -20px;" src="/images/boxheader-sitemap4.gif" alt="sitemap"  draggable="false">
             
             <ul class="li-sitemap">
             
@@ -259,7 +260,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
     
 <!--  Recent Blogposts  -->
     
-        <div class="boxed4" style="padding-bottom: 5px;">           <a href="/blog/index"> <img class="boxheader image-hover-highlight" style="margin-top: -50px; width: 100%;" src="/images/boxheader-blogposts.gif" alt="blogposts"></a><br>
+        <div class="boxed4" style="padding-bottom: 5px;">           <a href="/blog/index"> <img class="boxheader image-hover-highlight" style="margin-top: -50px; width: 100%;" src="/images/boxheader-blogposts.gif" alt="blogposts"  draggable="false"></a><br>
             <div class="tbox" style="text-align: left;height: 200px;overflow-y: scroll; padding-top: 15px;padding-left: 8px;padding-right: 2px;margin-bottom: 5px;">
 <em>2-17-25</em> •     <a href="/blog/posts/2025-02-17-easing-back-into-art">Art Games</a>
                 <hr class="small">
@@ -464,11 +465,11 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
         <a href="https://ko-fi.com/snacksgg" target="_blank"><img src="/images/sm-kofi.png" alt="Ko-fi" style="width:50px;height:50px;" class="sm"></a>
         <a href="https://discordapp.com/users/130546665017966592" target="_blank"><img src="/images/sm-discord.png" alt="Discord" style="width:50px;height:50px;" class="sm"></a>
         <a href="#" target="_blank"><img src="/images/sm-blank.png" alt="blank" style="width:50px;height:50px;" class="sm"></a>
-       <a href="/index"><img src="/images/sm-home2.png"alt="Home" style="width:50px;height:50px;" class="sm"></a>
-       <a href="/about"><img src="/images/sm-about.png"alt="About" style="width:50px;height:50px;" class="sm"></a>
-       <a href="/gallery"><img src="/images/sm-gallery.png"alt="Gallery" style="width:50px;height:50px;" class="sm"></a>
-       <a href="/commissions."><img src="/images/sm-comm.png"alt="Commissions" style="width:50px;height:50px;" class="sm"></a>
-       <a href="/misc"><img src="/images/sm-misc.png" alt="Misc" style="width:50px;height:50px;" class="sm"></a>
+        • <a href="/index">Home</a> •
+        <a href="/about">About</a> •
+        <a href="/gallery.html">Gallery</a> •
+        <a href="/commissions.html">Commissions</a> •
+        <a href="/misc.html">Misc</a> •
 
     </div>
 </footer>
