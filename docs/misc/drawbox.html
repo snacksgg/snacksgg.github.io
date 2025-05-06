@@ -25,7 +25,12 @@
             border: 1px solid black;
             cursor: crosshair;
                 box-shadow: black 0px 0px 10px;
+            
         }
+        
+        @media only screen and (max-width: 600px) {
+
+}
         #gallery {
             display: flex;
             flex-wrap: wrap;
@@ -66,7 +71,7 @@
     
 <body style="font: white;">
     <div class="main-column">
-    <div class="boxed4" style="background:none; outline: none;box-shadow: none;">
+    <div class="boxed" style="background:none; outline: none;box-shadow: none;">
     <h1>DRAWBOX</h1>
     <canvas id="drawboxcanvas" width="400" height="400"></canvas>
     <br>
@@ -85,7 +90,7 @@
     <p id="status"></p>
 
 	<div class="boxed">
-    <h1>Submitted Drawings ☻</h1>
+    <h1>Submitted Drawings ☺</h1>
     <div id="gallery" class="tbox">Loading images...</div>
         <font color="white">Powered by <a href="https://drawbox.nekoweb.org/" target="_blank">Drawbox</a>
 

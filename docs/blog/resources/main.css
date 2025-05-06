@@ -96,7 +96,7 @@ body {
 	}
 }
 #container {
-background: repeating-linear-gradient(45deg, #003759, #003759 30px, #00243B 30px, #00243B 60px);
+background: url(/images/triangle3-seamless3.png);
     background-size: contain;
     margin: 2rem auto;
     margin-top: 5px;
@@ -346,13 +346,13 @@ article > header {
 /* FOOTER */
 
 #footer {
-    background-image: url(/images/header12.png);
+    background-image: url(/images/footer2.png);
     background-size: cover;
 	padding-block-start: 1rem;
-	border-block: var(--line);
     border-radius: 15px;
 	font-size: var(--meta-font-size);
     padding: 20px;
+    padding-top: 50px;
     
     
 	[rel="return"]::before {
