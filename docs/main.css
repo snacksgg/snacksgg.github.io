@@ -1785,10 +1785,13 @@ article > header {
 /* webrings */
 
 #rhythmring *{
-    color: white;
-    fill: white;
+    margin:auto;
+    color: white !important;
+    fill: white !important;
 }
 
 #rhythmring-img{
     content: url("https://maddycha.com/rhythm-ring/imgs/widget/g2.png") !important;
+    width: 150%;
 }
+
