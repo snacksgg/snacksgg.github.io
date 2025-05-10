@@ -1781,3 +1781,14 @@ article > header {
 #song {
     text-align: center;
 }
+
+/* webrings */
+
+#rhythmring *{
+    color: white;
+    fill: white;
+}
+
+#rhythmring-img{
+    content: url("https://maddycha.com/rhythm-ring/imgs/widget/g2.png") !important;
+}
