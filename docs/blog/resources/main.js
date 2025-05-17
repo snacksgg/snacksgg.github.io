@@ -57,6 +57,12 @@ const contactLinks = [
 const posts = [
     
     {
+	"title": `[miniblog] Instrumental Music `,
+	"filename": `2025-05-14-instrumental-music`,
+	"tags": [`miniblog`,`music talk`, ,`music spotlight`, ],
+},
+        
+    {
 	"title": `Art Games`,
 	"filename": `2025-02-17-easing-back-into-art`,
 	"tags": [`art talk`, ],

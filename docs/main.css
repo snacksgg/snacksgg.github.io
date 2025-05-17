@@ -1497,7 +1497,7 @@ fieldset.title legend {
 }
 
 .webbuttons {
-
+image-rendering: crisp-edges;
   display: block;
 }
 
@@ -1509,11 +1509,11 @@ box-shadow: 0 0 0 2px transparent;
 
 
         border-radius: 5px;
-        filter: brightness(130%);
-        -webkit-filter: brightness(130%);
-        -moz-filter: brightness(130%);
-        -o-filter: brightness(130%);
-        -ms-filter: brightness(130%);
+        filter: brightness(110%);
+        -webkit-filter: brightness(110%);
+        -moz-filter: brightness(110%);
+        -o-filter: brightness(110%);
+        -ms-filter: brightness(110%);
         -webkit-transition: all 0.10s;
         transition: all 0.10s;
         transform: scale(1.05);
@@ -1794,3 +1794,13 @@ article > header {
     content: url("https://maddycha.com/rhythm-ring/imgs/widget/g1.png") !important;
 }
 
+/* show only on mobile */
+
+.mobile-only {
+  display:none;
+}
+@media screen and (max-width:780px) {
+  .mobile-only {
+    display:block;
+  }
+}
