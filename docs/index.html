@@ -316,7 +316,10 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
  
     
 <!--  Music Players (Radio)  -->
-        <img class="boxheader" src="/images/animarru2.gif" style=";padding: 0px; margin-bottom: -36px; margin-top: -20px; padding-right:20px;" id="radio">
+        <img class="boxheader" id="randomImage2" style=";padding: 0px; margin-bottom: -36px; margin-top: -20px; padding-right:20px;" id="radio">
+    <script>
+                document.getElementById("randomImage2").src = "radio" + Math.floor(Math.random() * 3) + ".gif";
+            </script>
     <div class="boxed4" style="background-color: #00121d;
 opacity: 1;
 background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #00121d 28px ), repeating-linear-gradient( #00375955, #003759 );" >
