@@ -291,6 +291,8 @@ iframe {
 	text-indent: calc(-1 * var(--gap));
 	font-size: var(--interface-font-size);
 }
+
+
 #tag-index {
 	padding-inline-start: 0;
 	list-style-type: "";
@@ -327,6 +329,23 @@ article > header {
 	}
 }
 #post-nav > ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--gap);
+	padding-inline-start: 0;
+	list-style-type: "";
+	& > :first-child > a::before {
+		content: "\2190 \a0"; /* left arrow + non-breaking space */
+	}
+	& > :last-child {
+		text-align: right;
+		a::after {
+			content: "\2192 \a0"; /* right arrow + non-breaking space */
+		}
+	}
+}
+
+#post-nav2 > ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: var(--gap);
@@ -513,3 +532,4 @@ input[type=button]:active {
         border-radius: 5px;
         margin-top: 6px;
     }
+

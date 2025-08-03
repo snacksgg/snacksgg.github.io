@@ -56,6 +56,12 @@ const contactLinks = [
 
 const posts = [
     
+        {
+	"title": `Music Spotlight #0 - Longtime Favorites`,
+	"filename": `2025-07-30-music-spotlight-0`,
+	"tags": [`music talk`, ,`music spotlight`, ],
+},
+    
     {
 	"title": `[miniblog] Instrumental Music `,
 	"filename": `2025-05-14-instrumental-music`,
@@ -187,7 +193,6 @@ const messages = [
 	`this next one's called freebird 2`,
 	`they got this game called Braid, ain't no point to the game`,
 	`deserves to be eaten by wolves`,
-	`last night a dj saved my life`,
 	`on the internet, no one has to know i'm a.... seaman`,
 	`fishbowl to mercury`,
 	`i am a patient boy, i wait i wait i wait i wait`,
@@ -307,6 +312,8 @@ document.getElementById(`contact-links`).innerHTML = contactLinks.map(link => `<
 const latestPosts = document.getElementById(`latest-posts`);
 if (latestPosts) latestPosts.innerHTML = posts.slice(0, latestPostsCutoff).map(formatPostLink).join(``);
 
+
+
 // build list of all blog posts for the main blog page
 const allPosts = document.getElementById(`all-posts`);
 if (allPosts) allPosts.innerHTML = posts.map(formatPostLink).join(``);
@@ -365,3 +372,35 @@ if (inPost) {
 
 	document.getElementById(`post-nav`).innerHTML = `<ul>${postNav}</ul>`;
 }
+
+
+/* --------------
+	BLOG POST
+-------------- */
+
+if (inPost) {
+	// get index of post matching path (cut off file extension so if webhost cuts off extension the script still works)
+	const i = posts.findIndex(post => post.filename === path.at(-1).split(`.html`)[0]);
+
+	const postDate = document.getElementById(`post-date`);
+	const pathDate = posts[i].filename.substring(0, 10);
+	postDate.dateTime = pathDate;
+	postDate.innerHTML = new Date(pathDate).toLocaleDateString();
+
+	if (posts[i].tags) document.getElementById(`post-tags`).innerHTML = posts[i].tags.map(tag => `<li><a href="${pathToInfo}tags.html#${formatTagHash(tag)}">${tag}</a></li>`).join(``);
+
+	// link to previous and next posts (if this post is first/latest, link to index instead of previous/next post)
+	let postNav = ``;
+
+	postNav += `<li>${i < posts.length - 1
+	? `<a href="${pathToPosts}${posts[i + 1].filename}.html" rel="prev">${posts[i + 1].title}</a>`
+	: `<a href="${pathToInfo}index.html" rel="index">Back to index</a>`}</li>`;
+	postNav += `<li>${i > 0
+	? `<a href="${pathToPosts}${posts[i - 1].filename}.html" rel="next">${posts[i - 1].title}</a>`
+	: `<a href="${pathToInfo}index.html" rel="index">Back to index</a>`}</li>`;
+
+	document.getElementById(`post-nav2`).innerHTML = `<ul>${postNav}</ul>`;
+}
+
+
+
