@@ -56,6 +56,12 @@ const contactLinks = [
 
 const posts = [
     
+            {
+	"title": `Working On A Game`,
+	"filename": `2025-08-20-working-on-a-game`,
+	"tags": [`gamedev`, ,`behind the scenes`, ],
+},
+    
         {
 	"title": `Music Spotlight #0 - Longtime Favorites`,
 	"filename": `2025-07-30-music-spotlight-0`,
@@ -128,6 +134,7 @@ const messages = [
 	`writing is hard`,
 	`one man. one lord. one faith. one baptism, two nunchucks`,
 	`art is hard`,
+	`yerp`,
 	`website making is hard`,
 	`i'm a little lad who loves berries and cream`,
 	`minmaxing the four-way stop`,
@@ -195,6 +202,7 @@ const messages = [
 	`deserves to be eaten by wolves`,
 	`on the internet, no one has to know i'm a.... seaman`,
 	`fishbowl to mercury`,
+	`i asked my friend joe, i asked my friend jake and they said it was fhqwhgads`,
 	`i am a patient boy, i wait i wait i wait i wait`,
 	`mmm, delicious, rap snitch knishes`,
 	`it's you're lying to me`,
@@ -217,12 +225,14 @@ const messages = [
 	`huh`,
 	` 🦍 Inner gorilla is unleashed. Ooh-Ahh-Ahh! (Can't be removed)`,
 	`wandadadadadada wandadadadadada`,
+	`ohhhhh banana`,
 	`woag`,
 	`YOU should back up your files! Now!`,
 	`did you know?`,
 	`sometimes i dream about cheese`,
 	`daft punk is playing at my house`,
 	`*takes poison damage*`,
+	`f r e s h  o a t s`,
 	`you hear about video games?`,
 	`Way back when I was just a little bitty boy living in a box under the stairs in the corner of the basement of the house half a block down the street from Jerry's Bait shop. You know the place.`,
 	`don't breathe this`,
