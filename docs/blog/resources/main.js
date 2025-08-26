@@ -128,6 +128,7 @@ const messages = [
 	`y'haw`,
 	`gorp`,
 	`yabba doo!`,
+	`use the boost to get through`,
 	`accidentally went to drive.goo`,
 	`fancy seeing you here..`,
 	`mashed banana mashed banana`,
