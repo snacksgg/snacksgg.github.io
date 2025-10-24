@@ -1830,7 +1830,7 @@ article > header {
 
 
 #cdr{
-        font-family: "Prompt";
+        font-family: "Prompt" !important;
     ,
     "Bradley Hand";
     ,
@@ -1841,3 +1841,6 @@ article > header {
  
 }
 
+.cdr-widget {
+  font-family: "Prompt" !important;
+}
