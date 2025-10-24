@@ -1839,7 +1839,13 @@ article > header {
     sans-serif !important;
     color: white;
      font-size: 10px !important;
+}
 
+#cdr p{
+        font-size: 10px !important;
+text-align: center;
+
+    
 }
 
 .cdr-widget {
