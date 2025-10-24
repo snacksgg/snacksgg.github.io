@@ -1830,8 +1830,15 @@ article > header {
 
 
 #cdr{
-  color: yourtextcolor;
-    font-family: "Helvetica", "Baskerville", serif !important;
-font-size: 2px !important;
+        font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+    sans-serif !important;
+    color: white;
+
+ 
 }
 
