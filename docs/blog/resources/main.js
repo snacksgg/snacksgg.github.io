@@ -175,6 +175,7 @@ const messages = [
 	`d-d-d-d-d-d-d-d-d-d-d-d-d-digital animal freaky folk`,
 	`i feel just like a purple pikmin`,
 	`like a fish`,
+	`fish gaming`,
 	`your goose is cooked`,
 	`get the cool shoeshine`,
 	`get the fries, you'll need the energy in the coming days`,

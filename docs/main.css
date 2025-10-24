@@ -1831,7 +1831,7 @@ article > header {
 
 #cdr{
   color: yourtextcolor;
-    font-family: "Helvetica", "Baskerville", serif;
-
+    font-family: "Helvetica", "Baskerville", serif !important;
+font-size: 2px !important;
 }
 
