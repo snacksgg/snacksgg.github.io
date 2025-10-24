@@ -1814,8 +1814,24 @@ article > header {
 .mobile-only {
   display:none;
 }
-@media screen and (max-width:780px) {
+@media screen and (max-width:800px) {
   .mobile-only {
-    display:block;
+    display: block;
   }
+    
+            canvas {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+            padding: 0;
+            display: block;
+            }
 }
+
+
+#cdr{
+  color: yourtextcolor;
+    font-family: "Helvetica", "Baskerville", serif;
+
+}
+

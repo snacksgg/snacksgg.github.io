@@ -59,37 +59,37 @@ const posts = [
             {
 	"title": `Working On A Game`,
 	"filename": `2025-08-20-working-on-a-game`,
-	"tags": [`gamedev`, ,`behind the scenes`, ],
+	"tags": [`2025`, `gamedev`, ,`behind the scenes`, ],
 },
     
         {
 	"title": `Music Spotlight #0 - Longtime Favorites`,
 	"filename": `2025-07-30-music-spotlight-0`,
-	"tags": [`music talk`, ,`music spotlight`, ],
+	"tags": [`2025`, `music talk`, ,`music spotlight`, ],
 },
     
     {
 	"title": `[miniblog] Instrumental Music `,
 	"filename": `2025-05-14-instrumental-music`,
-	"tags": [`miniblog`,`music talk`, ,`music spotlight`, ],
+	"tags": [`2025`, `miniblog`,`music talk`, ,`music spotlight`, ],
 },
         
     {
 	"title": `Art Games`,
 	"filename": `2025-02-17-easing-back-into-art`,
-	"tags": [`art talk`, ],
+	"tags": [`2025`, `art talk`, ],
 },
     
 {
 	"title": `Happy New Year!`,
 	"filename": `2024-01-02-happy-new-year`,
-	"tags": [`updates`, `new year`],
+	"tags": [`2024`, `updates`, `new year`],
 },
     
 {
 	"title": `Test Blog!`,
 	"filename": `2023-12-23-test-blog`,
-	"tags": [`updates`, ],
+	"tags": [`2023`, `updates`, ],
 },
       
 
@@ -187,11 +187,13 @@ const messages = [
 	`just tryin' to draw just for fun, son 😎`,
 	`sorry nothing`,
 	`friends are a hamster, a fish, and an owl`,
+	`jungle is massive`,
 	`i live in a giant bucket`,
 	`fish`,
 	`Tuesday's coming, did you bring your coat?`,
 	`you didn't tell me you were bringing a secret weapon, luigi`,
 	`funky music playing in my head`,
+	`make a little birdhouse in your soul`,
 	`you have uno!`,
 	`conga rats`,
 	`stop starin' at me with them BIG OL EYES`,
@@ -209,6 +211,7 @@ const messages = [
 	`it's you're lying to me`,
 	`keep truck`,
 	`when onion rings i answer the phone`,
+	`onions! onions! onions!`,
 	`oobh i got plany off time`,
 	`no squealing, remember that it's free real estate`,
 	`if you don't got mojo nixon then your store could use some fixin`,
@@ -217,7 +220,6 @@ const messages = [
 	`cold spaghetti cold spaghetti`,
 	`if there is one thing i must do, i must kick BP's ass. this is going to be a very very difficult task.`,
 	`wuh`,
-	`protip: ctrl + shift + T reopens your last closed tab`,
 	`everybody tells me that it's cool to be a cat`,
 	`buh`,
 	`guh`,
@@ -225,6 +227,7 @@ const messages = [
 	`yuh`,
 	`huh`,
 	` 🦍 Inner gorilla is unleashed. Ooh-Ahh-Ahh! (Can't be removed)`,
+	`fresh from the juice!`,
 	`wandadadadadada wandadadadadada`,
 	`ohhhhh banana`,
 	`woag`,
@@ -232,6 +235,7 @@ const messages = [
 	`did you know?`,
 	`sometimes i dream about cheese`,
 	`daft punk is playing at my house`,
+	`the playstation can produce mind-boggling effects`,
 	`*takes poison damage*`,
 	`f r e s h  o a t s`,
 	`you hear about video games?`,

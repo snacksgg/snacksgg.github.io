@@ -32,6 +32,19 @@ let context = canvas.getContext("2d");
 context.fillStyle = "white";
 context.fillRect(0, 0, canvas.width, canvas.height);
 
+
+
+function setCanvasSize () {
+   canvas.width = canvas.offsetWidth;
+   canvas.height = canvas.offsetWidth;
+   context.fillStyle = "white";
+   context.fillRect(0, 0, canvas.width, canvas.height);
+}
+
+window.addEventListener('resize', setCanvasSize);
+
+setCanvasSize();
+
 let restore_array = [];
 let start_index = -1;
 let stroke_color = "black";
@@ -119,6 +132,7 @@ document.getElementById("submit").addEventListener("click", async function () {
   submitButton.disabled = true;
   statusText.textContent = "Uploading...";
 
+
   const imageData = canvas.toDataURL("image/png");
   const blob = await (await fetch(imageData)).blob();
   const formData = new FormData();
@@ -147,7 +161,7 @@ document.getElementById("submit").addEventListener("click", async function () {
     });
 
     statusText.textContent = "Upload successful!";
-    alert("Image uploaded and submitted successfully ☻");
+    alert("Image uploaded and submitted successfully â˜»");
     location.reload();
   } catch (error) {
     console.error(error);
