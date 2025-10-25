@@ -25,7 +25,6 @@
     
 <!--  Scripts  -->
 
-    <script src="/pagination/paginator.js" type="text/javascript"></script>
 <script src="https://kit.fontawesome.com/712948e023.js" crossorigin="anonymous"></script>
 
 
@@ -67,21 +66,61 @@
 <!--    `Splash Art    -->
         <div id="splashart" >
         <div ><img src="/images/spb-text.png" class="swivel" style="position: relative;width: 50%"></div>
-        <img src="/images/spb-splash-placeholder.png" width="70%" style="border-radius: 15px; margin-bottom: 10px;"  draggable="false"> </div>
+        <img src="/images/spb-splash-placeholder.png" width="70%" style="border-radius: 15px; margin-bottom: 20px;"  draggable="false"> </div>
         
         
-<!-- `Mobile Only Links -->
+<!-- `Mobile Only Links + Welcome -->
         
-        <div class="mobile-only"> <div class="boxed4" style="font-size: 12px; background: url(/images/header11.png); padding: 4px; width: 100%; ">
-<a href="#sitemap"><button>Sitemap</button></a>
+        <div class="show-on-mobile"> 
+
+            
+            
+                    <div class="boxed4" style="background: url(/images/checkersmall.gif); background-size: 15%; width: 100%;"><img src="/images/welcome2.png" class="boxheader" width="230px;" ><br> 
+                        <a href="#sitemap"><button>Sitemap</button></a>
             <a href="#latestart"><button>Latest Art</button></a>
     <a href="#blogposts"><button>Blogposts</button></a>
-    <a href="#radio"><button>Radio</button></a>
+    <a href="#radiooo"><button>Radio</button></a><br>
+                        <img src="/images/artfight4.gif" class="rounded" style="width: 200px; height: 200px; margin-bottom: 22px;"><br>
+                        
+            Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks&nbsp;for&nbsp;visiting!
+
             
             
+<!--     stamp marquee       -->
+            
+               <div class="tbox" style=" margin-right: auto; margin-left: auto;padding-left: 0px; padding-right: 0px;padding-top: 5px;padding-bottom: 5px;justify-content: center;
+          align-content: center; width: 95%; margin-bottom: 0px;"><div id="marquee">
+    <div id="stamps" style="padding: 0px;"> <!-- all your stamps go after this, as regular 17images -->
+        <img src="/images/stamps/hk.png" />
+        <img src="/images/stamps/toonlinkfan.png" />
+        <img src="/images/stamps/awk.jpg" />
+        <img src="/images/stamps/copy_floppy.gif" style="margin-bottom: 8px;" />
+        <img src="/images/stamps/wahoo.png" />
+        <img src="/images/stamps/dontfeedai.gif" style="margin-bottom: 8px;" />
+        <img src="/images/stamps/chao.png" />
+        <img src="/images/stamps/bob.gif"  style="margin-bottom: 8px;" />
+        <img src="/images/stamps/daftpunk2.gif" />
+        <img src="/images/stamps/record.gif" />
+        <img src="/images/stamps/cohost2.gif" style="margin-bottom: 8px;" />
+        <img src="/images/stamps/strfkr.png" />
+        <img src="/images/stamps/y2k.png" style="margin-bottom: 8px;" />
+        <img src="/images/stamps/alwayswip.png" style="margin-bottom: 8px;" />
+        <img src="/images/stamps/bear.png" />
+        <img src="/images/stamps/inrainbows.gif" />
+        <img src="/images/stamps/rain.gif" />
+        <img src="/images/stamps/ublock-now.png" style="margin-bottom: 8px;" />
+                   </div>
+
+                   
+
+
+
+  </div>
+</div>
+
+                </div>
             
             
-            </div>
         </div>
         
         
@@ -299,7 +338,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
     
     </div>
     
-<!--  Recent Blogposts  -->
+<!--  `Recent `Blogposts  -->
     
         <div class="boxed4" style="padding-bottom: 5px;">           <a href="/blog/index"> 
             
@@ -324,9 +363,9 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
                             <a href="/blog/archive">• All Posts •</a>
     </div>
  
-    
+    <div id="radiooo"></div>
 <!--  Music Players (Radio)  -->
-        <img class="boxheader" id="randomImage2" style=";padding: 0px; margin-bottom: -36px; margin-top: -20px; padding-right:20px;" id="radio">
+        <img class="boxheader" id="randomImage2" style=";padding: 0px; margin-bottom: -36px; margin-top: -20px; padding-right:20px;" >
     <script>
                 document.getElementById("randomImage2").src = "radio" + Math.floor(Math.random() * 3) + ".gif";
             </script>
@@ -354,7 +393,10 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
         
     <!--   Last Updated & Visitor Number -->
 
-            <script>
+
+            <div class="boxed4" style="cursor:default; background:url(/images/triangle3-seamless3.png); background-size:109%;overflow: hidden;">Last updated: <a href="/updatelog"><span id="lastupdate"> </a></div> 
+                
+                            <script>
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
                     if (this.readyState == 4 && this.status == 200) {
@@ -376,11 +418,11 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
                 xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=snacksgg", true);
                 xhttp.send();
             </script>
-            <div class="boxed4" style="cursor:default; background:url(/images/triangle3-seamless3.png); background-size:109%;overflow: hidden;">Last updated: <a href="/updatelog"><span id="lastupdate"> </a></div> 
                 
                 
+<!--       Welcome Blurb         -->
                 
-        <div class="boxed4" style="background: url(/images/checkersmall.gif); background-size: 15%;"><img src="/images/welcome2.png" class="boxheader" width="230px;" ><br> <img src="/images/artfight4.gif" class="rounded" style="width: 200px; height: 200px; margin-bottom: 22px;"><br>
+        <div class="boxed4 hide-on-mobile" style="background: url(/images/checkersmall.gif); background-size: 15%;"><img src="/images/welcome2.png" class="boxheader" width="230px;" ><br> <img src="/images/artfight4.gif" class="rounded" style="width: 200px; height: 200px; margin-bottom: 22px;"><br>
             Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks&nbsp;for&nbsp;visiting!
 
             
