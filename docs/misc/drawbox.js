@@ -190,6 +190,8 @@ async function fetchImages() {
       if (columns.length < 2) return;
 
       const timestamp = columns[0].trim();
+              const author = columns[2].trim();
+
       const imgUrl = columns[1].trim().replace(/"/g, "");
 
       if (imgUrl.startsWith("http")) {
@@ -198,7 +200,8 @@ async function fetchImages() {
 
         div.innerHTML = `
                     <img src="${imgUrl}" alt="drawing">
-                    <p>${timestamp}</p>
+                    <p>${timestamp} <i class="fa-solid fa-paintbrush" style="color: white;"></i>${author}</p>
+
                 `;
         gallery.appendChild(div);
       }
