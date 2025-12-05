@@ -155,7 +155,7 @@
             nextSlide: 'Next slide',
             download: 'Download',
             playVideo: 'Play video',
-            mediaLoadingFailed: 'Image Not Found',
+            mediaLoadingFailed: '--------------',
         },
     };
 

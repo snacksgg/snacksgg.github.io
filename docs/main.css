@@ -686,6 +686,10 @@ img.rounded2 {
     
 }
 
+.smallthumb {
+    border-radius: 15px; width: 150px;
+}
+
 img.boxheader {
     margin-top: -50px;
     position: relative; 

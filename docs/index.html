@@ -75,12 +75,37 @@
 
             
             
-                    <div class="boxed4" style="background: url(/images/checkersmall.gif); background-size: 15%; width: 100%;"><img src="/images/welcome2.png" class="boxheader" width="230px;" ><br> 
-                        <a href="#sitemap"><button>Sitemap</button></a>
-            <a href="#latestart"><button>Latest Art</button></a>
-    <a href="#blogposts"><button>Blogposts</button></a>
-    <a href="#radiooo"><button>Radio</button></a><br>
-                        <img src="/images/artfight4.gif" class="rounded" style="width: 200px; height: 200px; margin-bottom: 22px;"><br>
+                    <div class="boxed4" style="background: url(/images/checkersmall.gif); background-size: 15%; width: 100%;"><img src="/images/welcome2.png" class="boxheader" width="230px;" ><br>
+                        <div class="tbox" style="padding: 3px; margin: 3px; padding-top: 12px;">
+                        <a href="#sitemap"><button style="margin: 2px;">Sitemap</button></a>
+            <a href="#latestart"><button style="margin: 2px; padding: 3px;">Latest Art</button></a>
+    <a href="#blogposts"><button style="margin: 2px; padding: 3px;">Blogposts</button></a>
+    <a href="#radiooo"><button style="margin: 2px; padding: 3px;">Radio</button></a><br>
+                        <div style="font-size: 10px; padding: 3px;">Last updated: <a href="/updatelog"><span id="lastupdate2"> </a></div>
+                
+                            <script>
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var site_data = JSON.parse(this.responseText);
+                        var num_arr = site_data.info.views.toString().split("");
+                        var num_str = "";
+                        for (i = 0; i < num_arr.length; i++) {
+                            num_str += num_arr[i];
+                            if ((num_arr.length - 1 - i) % 3 == 0 && (num_arr.length - 1 - i) != 0) {
+                                num_str += ",";
+                            }
+                            var date_str = site_data.info.last_updated;
+                            var date_obj = new Date(site_data.info.last_updated);
+                            document.getElementById("lastupdate2").innerHTML = (date_obj.getMonth() + 1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
+                        }
+                        document.getElementById("hitcount").innerHTML = num_str;
+                    }
+                };
+                xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=snacksgg", true);
+                xhttp.send();
+            </script> </div>
+                        <img src="/images/artfight4.gif" class="rounded" style="width: 150px; height: 150px; margin-bottom: 22px;"><br>
                         
             Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks&nbsp;for&nbsp;visiting!
 
@@ -146,13 +171,13 @@ background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;
             
             <a href="/gallery"><img id="randomImage" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;"  /> </a>
             <script>
-                document.getElementById("randomImage").src = "feat" + Math.floor(Math.random() * 9) + ".png";
+                document.getElementById("randomImage").src = "feat" + Math.floor(Math.random() * 9) + ".jpg";
             </script>
             <br>
             
 <!--     `Feat Gallery       -->
             <div id="lightgallery" class="lightgallery" >
-                            <a href="/images/gallery/punkschool.gif"> <img alt="2022" src="/images/gallery/thumbs/punkschoolthumb.gif" class="rounded2"/></a>
+                            <a href="/images/gallery/punkschool.gif"> <img alt="2022" src="/images/gallery/thumbs/yt1.png" class="rounded2"/></a>
                  <a href="/images/gallery/58.png"> <img alt="2024" src="/images/gallery/thumbs/58.png" class="rounded2"/></a>
                             <a href="/images/gallery/2.png"> <img alt="Gift Art - 2022" src="/images/gallery/thumbs/2.png" class="rounded2"/></a>
                             <a href="/images/gallery/27.png"> <img alt="2021" src="/images/gallery/thumbs/27.png" class="rounded2"/></a>
@@ -190,7 +215,7 @@ background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;">
                         <img class="boxheader" style="margin-bottom: -20px; margin-top: -50px;" src="/images/boxheader-latest-art.png" alt="featured art"  draggable="false" id="latestart"><br>
             
             
-            <a href="/gallery/artfeed"><img src="images/gallery/latest.png" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;"  /> </a>
+            <a href="/gallery/artfeed"><img src="images/gallery/latest.jpg" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;"  /> </a>
                     <div id="lightgallery2" >
                         
 <!--           `Latest Art - insert images here             -->
@@ -394,7 +419,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
     <!--   Last Updated & Visitor Number -->
 
 
-            <div class="boxed4" style="cursor:default; background:url(/images/triangle3-seamless3.png); background-size:109%;overflow: hidden;">Last updated: <a href="/updatelog"><span id="lastupdate"> </a></div> 
+            <div class="boxed4  hide-on-mobile" style="cursor:default; background:url(/images/triangle3-seamless3.jpg); background-size:109%;overflow: hidden;">Last updated: <a href="/updatelog"><span id="lastupdate"> </a></div> 
                 
                             <script>
                 var xhttp = new XMLHttpRequest();
