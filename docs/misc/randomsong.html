@@ -149,7 +149,7 @@
         
                 <div class="boxed" style="background-image: url(/images/patterns/tilesw10.png); background-size: 100px;">
         <div class="tbox">
-        <h1>Random Song <br> (every song i've liked on spotify edition)</h1>
+        <h1>Random Song <br> (every song i've ever "liked" edition)</h1>
             <script>var lines;
 var randomNumber;
 var lastRandomNumber;
@@ -158,7 +158,7 @@ $(document.body).ready(function () {
 
   // load the trivia from the server
   $.ajax({
-    url: '/misc/spotifylibrary.txt'
+    url: '/misc/likedsongslibrary.txt'
   }).done(function(content) {
 
     // normalize the line breaks, then split into lines

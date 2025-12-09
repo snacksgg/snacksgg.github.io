@@ -152,7 +152,7 @@ const messages = [
 	`do you wonder where the crab man sleeps`,
 	`people never change, but i have to try`,
 	`schemin'`,
-	`i chiseled it!'`,
+	`i chiseled it!`,
 	`i can't control my brain`,
 	`making your bed every day is a noob trap`,
 	`so tired of being so tired`,
