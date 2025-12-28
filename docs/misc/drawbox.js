@@ -200,7 +200,7 @@ async function fetchImages() {
 
         div.innerHTML = `
                     <img src="${imgUrl}" alt="drawing">
-                    <p>${timestamp} <i class="fa-solid fa-paintbrush" style="color: white;"></i>${author}</p>
+                    <p>${timestamp} ${author}</p>
 
                 `;
         gallery.appendChild(div);

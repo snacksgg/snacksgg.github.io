@@ -532,4 +532,58 @@ input[type=button]:active {
         border-radius: 5px;
         margin-top: 6px;
     }
+    
+    
+/* image album css */
+    
+#wrapper {
+  --album-cover-size: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--album-cover-size));
+  justify-content: center;
+  gap: 8px;
+}
 
+.album {
+  position: relative; /* needed for `absolute` children to work */
+}
+
+.album img {
+  aspect-ratio: 1 / 1;
+  width: var(--album-cover-size);
+  height: var(--album-cover-size);
+}
+
+.album-details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc(var(--album-cover-size) + 2ch);
+  width: 30vw;
+  background: white;
+  color: black;
+  border: solid 2px black;
+  border-radius: 8px;
+  pointer-events: none; /* comment to make the details interactable */
+  padding: 1ch;
+}
+
+.album.flipped .album-details {
+  left: unset !important;
+  right: calc(var(--album-cover-size) + 2ch);
+}
+
+/* On hover */
+
+.album:hover {
+  z-index: 1;
+}
+
+.album:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 0 8px #000a;
+}
+
+.album:hover .album-details {
+  display: block;
+}

@@ -1118,6 +1118,7 @@ footer {
     height: auto;
     background-repeat: repeat;
     z-index: 5;
+    overflow: auto;
 
 
 }
@@ -1524,6 +1525,8 @@ box-shadow: 0 0 0 2px transparent;
     }
 }
 
+/* no select / no drag */
+
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -1539,7 +1542,7 @@ box-shadow: 0 0 0 2px transparent;
   /* Non-prefixed version */
 }
 
-/* index page code */
+/* index page code (3 column layout) */
 
 /* container */
 .content-with-sidebars {
@@ -1610,7 +1613,7 @@ padding-left: 0px;
 
 
 
-
+/* CSS Animations */
 
 .swivel {
 z-index: -5;
@@ -1650,7 +1653,7 @@ z-index: -5;
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-/* POST LISTS */
+/* BLOGPOST LISTS */
 
 .post-list {
 	padding-inline-start: var(--gap);
@@ -1672,7 +1675,7 @@ z-index: -5;
 	}
 }
 
-/* POSTS */
+/* BLOG POSTS */
 
 article > header {
 	margin-block-end: 1rem;
@@ -1749,8 +1752,6 @@ article > header {
         will-change: transform;
         animation: marquee 50s linear infinite; /* here, 100s denotes 100 seconds, so change it to the speed you'd like your marquee to flow. slower is better imho */
       }
-      
-    
     
       #stamps img {
         width: 99px;
@@ -1780,7 +1781,10 @@ article > header {
       }
 
 
+
 /* status cafe */
+
+
 
 #statuscafe {
     padding: .5em;
@@ -1801,7 +1805,11 @@ article > header {
     text-align: center;
 }
 
-/* webrings */
+
+
+/* `webrings */
+
+
 
 #rhythmring *{
     margin:auto;
@@ -1812,31 +1820,6 @@ article > header {
 #rhythmring-img{
     content: url("https://maddycha.com/rhythm-ring/imgs/widget/g1.png") !important;
 }
-
-/* show only on mobile / hide on mobile */
-
-.show-on-mobile {
-  display:none;
-}
-@media screen and (max-width:800px) {
-  .show-on-mobile {
-    display: block;
-  }
-    
-@media screen and (max-width:800px) {
-  .hide-on-mobile {
-    display: none;
-  }
-    
-            canvas {
-                width: 100%;
-                height: 100%;
-                margin: auto;
-            padding: 0;
-            display: block;
-            }
-}
-
 
 #cdr{
         font-family: "Prompt" !important;
@@ -1861,3 +1844,34 @@ text-align: center;
   font-family: "Prompt" !important;
     font-size: 10px !important;
 }
+
+
+
+/* `show only on mobile / hide on mobile */
+
+
+
+.show-on-mobile {
+  display:none;
+}
+@media screen and (max-width:800px) {
+  .show-on-mobile {
+    display: block;
+  }
+    
+@media screen and (max-width:800px) {
+  .hide-on-mobile {
+    display: none;
+  }
+    
+            canvas {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+            padding: 0;
+            display: block;
+            }
+}
+
+
+

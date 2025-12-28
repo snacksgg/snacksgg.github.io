@@ -57,6 +57,12 @@ const contactLinks = [
 const posts = [
     
             {
+	"title": `New Year 2026`,
+	"filename": `2025-12-28-new-year-2026`,
+	"tags": [`2025`, `new year`, ,`updates`, ],
+},
+        
+            {
 	"title": `Working On A Game`,
 	"filename": `2025-08-20-working-on-a-game`,
 	"tags": [`2025`, `gamedev`, ,`behind the scenes`, ],
@@ -103,11 +109,11 @@ const posts = [
 ============= */
 
 const messages = [
+    	`<a href="https://www.youtube.com/watch?v=F9nljUH1ECs" target="_blank"><font color="lightblue">story of cowboys</font></a>`,
     	`<img src="/images/pumapost1.png" width="50px">`,
     	` Cruis'n USA! <img src="/blog/images/header/cruisn.png" width="100px">`,
     	`here, have a medkit <img src="/blog/images/header/medkit.png" width="50px">`,
     	`so... <img src="/blog/images/header/starbit.png" width="20px"> <font color="purple">chunks</font> , huh?`,
-	`<img src="https://snacksgg.me/images/mewave.gif" width="50px">`,
 	`WELCOME TO BONUS STAGE!`,
 	`my name is giovanni giorgio, but everybody calls me giorgio`,
 	`i'm here to see MF DOOM`,
@@ -124,7 +130,6 @@ const messages = [
 	`yo chuck bust a move man`,
 	`playing balala`,
 	`watch out for the spood beast`,
-	`i seem to be a vegetable`,
 	`beesechurger`,
 	`top of the morning like yeehaw`,
 	`y'haw`,
@@ -168,7 +173,6 @@ const messages = [
 	`secret stones? demon king?`,
 	`demon king? secret stones?`,
 	`so very sleepy`,
-	`story of cowboys`,
 	`dinner.`,
 	`hello my treacherous friends, thank you for joining me here tonight`,
 	`you gotta draaaaaw somethin'!`,
@@ -176,6 +180,7 @@ const messages = [
 	`what can you say about carlton? he was carlton`,
 	`d-d-d-d-d-d-d-d-d-d-d-d-d-digital animal freaky folk`,
 	`i feel just like a purple pikmin`,
+	`check it out i'm in the house like carpet`,
 	`like a fish`,
 	`fish gaming`,
 	`your goose is cooked`,
@@ -422,4 +427,21 @@ if (inPost) {
 }
 
 
+
+    function isRightSideOfViewport(xCoordinate) {
+  const threshold = (window.innerWidth / 2)
+  return xCoordinate > threshold
+}
+
+for (const album of document.querySelectorAll('.album')) {
+  album.addEventListener('mouseover', (event) => {
+    const albumPosition = album.getBoundingClientRect().left
+    const isRightSide = isRightSideOfViewport(albumPosition)
+
+    if (isRightSide)
+      album.classList.add('flipped')
+    else
+      album.classList.remove('flipped')
+  }, { passive: true })
+}
 
