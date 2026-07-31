@@ -87,9 +87,9 @@
               <script>
 
         var modified = document.lastModified
-        const lastmodbox = document.getElementById("lastmodbox2")
+        const lastmodbox2 = document.getElementById("lastmodbox2")
         
-        lastmodbox.innerHTML = `<font color="white">Last Updated: </font>${modified}`
+        lastmodbox2.innerHTML = `<font color="white">Last Updated: </font>${modified}`
     </script>
                           </div>
                         <img src="/images/artfight4.gif" class="rounded" style="width: 150px; height: 150px; margin-bottom: 22px;"><br>
@@ -429,15 +429,15 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
     <!--   Last Updated & Visitor Number -->
 
 
-            <div class="boxed4  hide-on-mobile" style="cursor:default; background:url(/images/triangle3-seamless3-mini.jpg); background-size:109%;overflow: hidden;">Last updated: <a href="/updatelog"><div id="lastmodbox"></div> </a></div> 
-                
-                            <script>
-
+            <div class="boxed4  hide-on-mobile" style="cursor:default; background:url(/images/triangle3-seamless3-mini.jpg); background-size:109%;overflow: hidden;">Last updated: <a href="/updatelog"><div id="lastmodbox">
+                <script>
         var modified = document.lastModified
         const lastmodbox = document.getElementById("lastmodbox")
         
         lastmodbox.innerHTML = `${modified}`
-    </script>
+    </script></div> </a></div> 
+       
+                           
 
                 
                 
