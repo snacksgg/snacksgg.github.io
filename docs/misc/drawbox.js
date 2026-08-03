@@ -161,12 +161,12 @@ document.getElementById("submit").addEventListener("click", async function () {
     });
 
     statusText.textContent = "Upload successful!";
-    alert("Image uploaded and submitted successfully â˜»");
+    alert("Image uploaded and submitted successfully!");
     location.reload();
   } catch (error) {
     console.error(error);
     statusText.textContent = "Error uploading image.";
-    alert("Error uploading image or submitting to Google Form.");
+    alert("Error uploading image or submitting.");
   } finally {
     submitButton.disabled = false;
   }

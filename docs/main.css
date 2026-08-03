@@ -871,6 +871,45 @@ input[type=button] {
 
 }
 
+input[type=button2] {
+    background: url(/images/button2.png);
+    background-size: 120%;
+    border: none;
+    font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+    user-select: none;
+    color: white;
+    letter-spacing: 1px;
+    outline: 3px solid #00243B;
+    border-color: white;
+    border-radius: 5px;
+    padding: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration-line: none pointer-events: none;
+    font-size: 16px;
+    width: 170px;
+    line-height: 30px;
+    margin-right: 15px;
+    text-shadow: black -2px 2px 0px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
 input[type=button]:active {
     transform: scale(0.90);
 
