@@ -67,7 +67,12 @@
 <!-- Floating Images -->
     <div class="img-float"><img src="images/wizzed2.gif" alt="WIP" style="width: 35%; height: 35%;"></div>
 
+        <script>
+    shortcut.add("ctrl+z", Restore() {
+        // Do something
+    });   
 
+</script>
 <!-- End of Header -->
     
 <body style="font: white;">
@@ -82,9 +87,11 @@
     <div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
   
    
-    <input type="button" value="Undo" onclick="Restore()" style="margin-top: 10px;">
+    <input type="button" value="Undo" onclick="Restore()"  style="margin-top: 10px;">
         
             <input type="button" value="Clear" onclick="clearCanvas()">
+        
+<!--    clear canvas prompt    -->
 <script>
 function clearCanvas() {
   let text;
@@ -97,7 +104,12 @@ function clearCanvas() {
 </script>
         
        
-        
+    <script> function onUndo() {
+        var evtobj = window.event ? event : e;
+        if (evtobj.keyCode == 90 && evtobj.ctrlKey) Restore();
+      }
+      document.addEventListener("keydown", onUndo);</script>
+
     </div>
  <br>
 <button id="submit">Submit</button></a>
