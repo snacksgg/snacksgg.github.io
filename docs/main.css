@@ -30,7 +30,6 @@ body {
     text-align: center;
     padding-bottom: 120px;
     word-wrap:break-word;
-        scrollbar-color: #003759 #00243B;
 
 }
 
@@ -44,7 +43,6 @@ body {
   border-image-repeat: repeat;
         border-radius: 100px;
             transition: all 5s;
-        scrollbar-color: #003759 #00243B;
 
 }
 ::-webkit-scrollbar-thumb {
@@ -69,6 +67,7 @@ body {
   border-image-repeat: repeat;
         border-radius: 100px;
             transition: all 5s;
+        scrollbar-color: #003759 #00243B;
 
 }
 ::-webkit-scrollbar-thumb {
