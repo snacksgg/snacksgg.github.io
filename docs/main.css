@@ -30,8 +30,60 @@ body {
     text-align: center;
     padding-bottom: 120px;
     word-wrap:break-word;
+}
+
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  border-image: transparent;
+  border-image-source: url('/assets/scrollbar.png');
+  border-image-width: 8px;
+  border-image-slice: 7 fill;
+  border-image-repeat: repeat;
+        border-radius: 100px;
+            transition: all 5s;
 
 }
+::-webkit-scrollbar-thumb {
+  border-image: url('/assets/scrollbar-thumb.png');
+  border-image-width: 8px;
+  border-image-slice: 7 fill;
+  border-image-repeat: repeat;
+    border-radius: 100px;
+            transition: all 5s;
+
+
+}
+::-webkit-scrollbar-thumb:hover {
+  border-image-source: url('/assets/scrollbar-thumb-hover.png');
+            transition: all 5s;
+
+}::-webkit-scrollbar {
+  border-image: transparent;
+  border-image-source: url('/assets/scrollbar.png');
+  border-image-width: 8px;
+  border-image-slice: 7 fill;
+  border-image-repeat: repeat;
+        border-radius: 100px;
+            transition: all 5s;
+
+}
+::-webkit-scrollbar-thumb {
+  border-image: url('/assets/scrollbar-thumb.png');
+  border-image-width: 8px;
+  border-image-slice: 7 fill;
+  border-image-repeat: repeat;
+    border-radius: 100px;
+            transition: all 5s;
+
+
+}
+::-webkit-scrollbar-thumb:hover {
+  border-image-source: url('/assets/scrollbar-thumb-hover.png');
+            transition: all 5s;
+
+}
+
 
 
 
