@@ -47,6 +47,7 @@ main {
   border-image-repeat: repeat;
         border-radius: 100px;
             transition: all 5s;
+        scrollbar-color: #003759 #00243B;
 
 }
 ::-webkit-scrollbar-thumb {
@@ -64,6 +65,9 @@ main {
             transition: all 5s;
 
 }
+
+/* body */
+
 body {
     margin: 0;
     background-color: #336587;
@@ -161,6 +165,9 @@ body {
 
 ;
 
+
+/* containers */
+
 .container {
     margin: auto;
     margin-top: 150px padding: 15px 15px;
@@ -203,6 +210,8 @@ body {
 }
 
 .text {}
+
+/* content boxes */
 
 .boxed {
 
@@ -501,6 +510,8 @@ overflow-wrap: anywhere;
 }
 
 
+/* header styles */
+
 h1 {
     font-size: 22px;
     line-height: 30px;
@@ -515,6 +526,7 @@ h2 {
 
 }
 
+/* paragraph / text styles */
 
 p {
     font-size: 16px;
@@ -527,6 +539,25 @@ p {
 
 
 }
+
+
+.bolded {
+    font-weight: bold;
+    color: #fff;
+}
+
+.emphasis {
+    font-size: 20px;
+    color: #2064d6;
+}
+
+.action {
+    color: #0f4caf;
+    font-style: italic;
+
+}
+
+/* list styles */
 
 ul {
 
@@ -640,6 +671,8 @@ li.nobg {
     
 }
 
+/* horizontal rule styles */
+
 hr {
     border: none;
     height: 5px;
@@ -672,7 +705,7 @@ hr.small {
 }
 
 
-
+/* tooltips */
 
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -698,10 +731,7 @@ hr.small {
   visibility: visible;
 }
 
-.bolded {
-    font-weight: bold;
-    color: #fff;
-}
+/* image styles */
 
 img {
     max-width: 100%;
@@ -831,19 +861,10 @@ img.sm:hover {
 
 
 
-.emphasis {
-    font-size: 20px;
-    color: #2064d6;
-}
-
-.action {
-    color: #0f4caf;
-    font-style: italic;
-
-}
 
 
 
+/* button styles */
 
 button {
     background: url(/images/button2.png);
@@ -1158,7 +1179,7 @@ twitch-embed {
     z-index: 10;
 }
 
-
+/* scroll to top / bottom button styles */
 
 .scroll-top:hover {
     background-color: #003759;
@@ -1201,6 +1222,8 @@ twitch-embed {
     justify-content: center;
     align-items: center;
 }
+
+/* footer styles */
 
 footer {
     background-image: url(images/footer2.png);
