@@ -13,27 +13,6 @@ main {
     min-height: calc(100vh)
 }
 
-
-body {
-    margin: 0;
-    background-color: #336587;
-    background-image: url(images/triangle3-seamless2.jpg);
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    /* Show vertical scrollbar */
-    overflow-x: hidden;
-    font-family: "Helvetica", "Baskerville", serif;
-    text-align: center;
-    padding-bottom: 120px;
-    word-wrap:break-word;
-
-}
-
-
 /* custom scrollbar */
 ::-webkit-scrollbar {
   border-image: transparent;
@@ -52,7 +31,6 @@ body {
   border-image-repeat: repeat;
     border-radius: 100px;
             transition: all 5s;
-
 
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -85,6 +63,30 @@ body {
             transition: all 5s;
 
 }
+body {
+    margin: 0;
+    background-color: #336587;
+    background-image: url(images/triangle3-seamless2.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* Show vertical scrollbar */
+    overflow-x: hidden;
+    font-family: "Helvetica", "Baskerville", serif;
+    text-align: center;
+    padding-bottom: 120px;
+    word-wrap:break-word;
+  scrollbar-width: thin;
+        scrollbar-color: #003759 #00243B;
+
+
+}
+
+
+
 
 
 
