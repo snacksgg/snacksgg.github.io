@@ -9,9 +9,16 @@ html {
 
 }
 
+@-moz-document url-prefix() {
+    html {
+                    scrollbar-color: #164D6B #00243B;
+    }
+    
+}
+
 main {
     min-height: calc(100vh);
-            scrollbar-color: #003759 #00243B;
+            scrollbar-color: #164D6B #00243B;
 
 }
 
