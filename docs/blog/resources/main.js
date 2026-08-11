@@ -109,6 +109,7 @@ const posts = [
 ============= */
 
 const messages = [
+    	` <img src="/blog/images/header/klonoa.png" width="60px" style="vertical-align: middle;"> i hired this guy to stare at you `,
     	`<a href="https://www.youtube.com/watch?v=F9nljUH1ECs" target="_blank"><font color="lightblue">story of cowboys</font></a>`,
     	`<img src="/images/pumapost1.png" width="50px">`,
     	` Cruis'n USA! <img src="/blog/images/header/cruisn.png" width="100px">`,
@@ -128,8 +129,6 @@ const messages = [
 	`HUGE burger`,
 	`burger, nuggets, nuggets, burger`,
 	`yo chuck bust a move man`,
-	`playing balala`,
-	`watch out for the spood beast`,
 	`beesechurger`,
 	`top of the morning like yeehaw`,
 	`let the frog be your guide`,
@@ -210,7 +209,6 @@ const messages = [
 	`stop starin' at me with them BIG OL EYES`,
 	`i'm feeling fat, and sassy`,
 	`oh m-...ahhh...my pockages`,
-	`i'm not sick, but i'm not well`,
 	`this next one's called freebird 2`,
 	`they got this game called Braid, ain't no point to the game`,
 	`deserves to be eaten by wolves`,
@@ -264,8 +262,7 @@ const messages = [
 	`get funky! be funky! stay funky, yo hustle hustle!`,
 	`hey G, would you make me a sandwich?`,
 	`play TUNIC`,
-	`keepin' everything moving, everything static`,
-	`play rhythm heaven fever`,
+	`play rhythm heaven`,
 	`drink 5 hour energy`,
 	`<b>DRINK</b> 5 hour energy`,
 	`it's not a drink, more like a drink`,

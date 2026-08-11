@@ -124,7 +124,22 @@
                    </div>
 
                    
+                <!-- Shuffle Stamp Script -->
 
+                <script>function stampshuffle() {
+        const marquee = document.querySelector('#stamps');
+        const stamps = Array.from(marquee.querySelectorAll('img'));
+    
+        for (let i = stamps.length - 1; i > 0; i--) {
+            const randomIndex = Math.floor(Math.random() * (i + 1));
+            [stamps[i], stamps[randomIndex]] = [stamps[randomIndex], stamps[i]];
+        }
+    
+        stamps.forEach(img => marquee.appendChild(img));
+    }
+    
+    stampshuffle();     
+</script>
 
 
   </div>
@@ -551,6 +566,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
     " id="rhythmring" ></iframe> 
                 
 <!--       Puma         -->
+        
                     <div>    <div style="height: 100%; width: 100%; resize: both; auto;cursor: url(/images/puma2.png), auto;">
         <script>function diffImage(img) 
 {
@@ -583,22 +599,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
         
         
         
-                <!-- Shuffle Stamp Script -->
 
-                <script>function stampshuffle() {
-        const marquee = document.querySelector('#stamps');
-        const stamps = Array.from(marquee.querySelectorAll('img'));
-    
-        for (let i = stamps.length - 1; i > 0; i--) {
-            const randomIndex = Math.floor(Math.random() * (i + 1));
-            [stamps[i], stamps[randomIndex]] = [stamps[randomIndex], stamps[i]];
-        }
-    
-        stamps.forEach(img => marquee.appendChild(img));
-    }
-    
-    stampshuffle();     
-</script>
     
     
 <!--  End of Body & Main  -->

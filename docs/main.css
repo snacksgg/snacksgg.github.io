@@ -30,7 +30,6 @@ main {
   border-image-slice: 7 fill;
   border-image-repeat: repeat;
         border-radius: 100px;
-            transition: all 5s;
 
 }
 ::-webkit-scrollbar-thumb {
@@ -39,12 +38,10 @@ main {
   border-image-slice: 7 fill;
   border-image-repeat: repeat;
     border-radius: 100px;
-            transition: all 5s;
 
 }
 ::-webkit-scrollbar-thumb:hover {
   border-image-source: url('/assets/scrollbar-thumb-hover.png');
-            transition: all 5s;
 
 }::-webkit-scrollbar {
   border-image: transparent;
