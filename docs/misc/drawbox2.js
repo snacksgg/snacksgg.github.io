@@ -1,22 +1,32 @@
 /*
-        
-        FILL IN THESE VARIABLES BASED ON THE GUIDE AT https://drawbox.nekoweb.org
-        
-        IF YOU HAVE ANY QUESTION, SUGGESTIONS, OR NEED HELP, PLEASE EMAIL ME AT drawbox@jhorn.net OR @MONKEYBATION on DISCORD
-        
-				      /`·.¸
-				     /¸...¸`:·
-				 ¸.·´  ¸   `·.¸.·´)
-				: © ):´;      ¸  {
-				 `·.¸ `·  ¸.·´\`·¸)
-				     `\\´´\¸.·´
-        
+
+// Drawbox was orignally created by https://drawbox.nekoweb.org - u can see the archived site at: https://web.archive.org/web/20251224062205/https://drawbox.nekoweb.org/
+// this drawbox code has been modified and is currently maintained by 3maqi.art 
+  
+                   _ |\_
+                   \` ..\
+              __,.-" =__Y=
+            ."        )
+      _    /   ,    \/\_
+     ((____|    )_-\ \_-`  
+jgs  `-----'`-----` `--`
+
+https://oldcompcz.github.io/jgs/joan_stark/
+
+  FILL IN THESE VARIABLES BASED ON THE GUIDE AT https://3maqi.art/a/drawbox_guide.html
 */
 
 const GOOGLE_FORM_ID = "1FAIpQLSf9NZVwxB2Rdyimgz6pAOWPMtA_SPc1bA0eO1QQU7uT_OWtMQ";
 const ENTRY_ID = "entry.1318466765";
 const GOOGLE_SHEET_ID = "1pQUdkd9wJNkoD7TD8t1LiFcsC4YUxe6HZU-OgnrVqLA";
+const NAME_ID = "entry.1862726355";
+// turn on or off gallery
 const DISPLAY_IMAGES = true;
+// post approval - make false if you dont want to approve images
+const IMAGE_APPROVAL = true;
+
+// optional I recommend getting your own client ID https://apidocs.imgur.com/ */
+const CLIENT_ID = "bfaaee57f0b78f1";
 
 /*
         
@@ -207,7 +217,7 @@ function Undo() {
 // i kept accidently clearing my image when i meant to do /undo haha
 function Clear() {
 
-  if (confirm("Are you sure you want to clear the canvas? This cannot be undone!") == true) {
+  if (confirm("are you sure you want to clear? This can not be undo.") == true) {
   context.fillStyle = "white";
   context.globalAlpha = 1;
   context.clearRect(0, 0, canvas.width, canvas.height);
@@ -274,7 +284,7 @@ document.getElementById("submit").addEventListener("click", async function () {
   } catch (error) {
     console.error(error);
     statusText.textContent = "Error uploading image.";
-    alert("Error uploading image or submitting to Google Form. ");
+    alert("Error uploading image or submitting to Google Form. \n try uploading your image here: https://forms.gle/aaWMSQ8LUEwz8U4b6 or email me at emma@3maqi.art with your image ");
   } finally {
     submitButton.disabled = false;
   }
@@ -378,3 +388,5 @@ function keyPressHandler(e) {
 }
 
 window.addEventListener('keydown', keyPressHandler);
+
+ 
