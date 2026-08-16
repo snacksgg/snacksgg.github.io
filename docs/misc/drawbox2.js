@@ -23,9 +23,10 @@ const NAME_ID = "entry.1862726355";
 // turn on or off gallery
 const DISPLAY_IMAGES = true;
 // post approval - make false if you dont want to approve images
-const IMAGE_APPROVAL = false;
+const IMAGE_APPROVAL = true;
 
-
+// optional I recommend getting your own client ID https://apidocs.imgur.com/ */
+const CLIENT_ID = "bfaaee57f0b78f1";
 
 /*
         
@@ -283,7 +284,7 @@ document.getElementById("submit").addEventListener("click", async function () {
   } catch (error) {
     console.error(error);
     statusText.textContent = "Error uploading image.";
-    alert("Error uploading image or submitting to Google Form. ");
+    alert("Error uploading image or submitting to Google Form. \n try uploading your image here: https://forms.gle/aaWMSQ8LUEwz8U4b6 or email me at emma@3maqi.art with your image ");
   } finally {
     submitButton.disabled = false;
   }
