@@ -1,7 +1,6 @@
 /*
 
 // Drawbox was orignally created by https://drawbox.nekoweb.org - u can see the archived site at: https://web.archive.org/web/20251224062205/https://drawbox.nekoweb.org/
-// this drawbox code has been modified and is currently maintained by 3maqi.art 
   
                    _ |\_
                    \` ..\
@@ -217,7 +216,7 @@ function Undo() {
 // i kept accidently clearing my image when i meant to do /undo haha
 function Clear() {
 
-  if (confirm("are you sure you want to clear? This can not be undo.") == true) {
+  if (confirm("Are you sure you want to clear the canvas? This cannot be undone!") == true) {
   context.fillStyle = "white";
   context.globalAlpha = 1;
   context.clearRect(0, 0, canvas.width, canvas.height);
@@ -284,7 +283,7 @@ document.getElementById("submit").addEventListener("click", async function () {
   } catch (error) {
     console.error(error);
     statusText.textContent = "Error uploading image.";
-    alert("Error uploading image or submitting to Google Form. \n try uploading your image here: https://forms.gle/aaWMSQ8LUEwz8U4b6 or email me at emma@3maqi.art with your image ");
+    alert("Error uploading image or submitting to Google Form. If this continues to happen, you can right click save the image and send it to me elsewhere!");
   } finally {
     submitButton.disabled = false;
   }
