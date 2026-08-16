@@ -29,7 +29,7 @@
             
         }
         
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 800px) {
 #canvasoptions {
                 width: 100% !important;
                 margin-left: 0px !important:
@@ -96,8 +96,8 @@
     <br>
     <div onclick="change_color(this)" style="background:red" class="stroke-color"></div>
     <div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
-                       <input type="button" value="Undo" onclick="Undo()" title="you can also do ctrl+z"></input>
-                       <input type="button" value="Clear" onclick="Clear()" title="clear canvas"></input>
+                       <input type="button" value="Undo (Ctrl+Z)" onclick="Undo()" title="you can also do ctrl+z"></input>
+                       <input type="button" value="Clear" onclick="clearCanvas()" title="clear canvas"></input>
 
                   
         
@@ -121,11 +121,11 @@
                    <!--See the stroke value-->
 
                    <output name="OpacityAmount" id="OpacityAmount" for="Opacity">1.00</output><br>
-                   <label for="BrushType"><strong>Brush type:</strong></label>
+                   <label for="BrushType"><strong>Brush Type:</strong></label>
                    <select id="BrushType" name="BrushType" oninput="stroke_join = this.value">
                        <option value="round" selected>Round</option>
-                       <option value="bevel">bevel</option>
-                       <option value="miter">miter</option>
+                       <option value="bevel">Bevel</option>
+                       <option value="miter">Miter</option>
                    </select><span> | </span>
                    <label for="LineCap"><strong>Line Cap:</strong></label>
                    <select id="LineCap" name="LineCap" oninput="line_cap = this.value">
@@ -139,6 +139,18 @@
 
                    <br><br>
                 <input type="button" id="submit" value="Submit"></input>
+        
+ <!--    clear canvas prompt    -->
+<script>
+function clearCanvas() {
+  let text;
+  if (confirm("Are you sure you want to clear the canvas? This can't be undone!") == true) {
+    Clear()
+  } else {
+    
+  }
+}
+</script>
             </div>
         
 </fieldset>

@@ -216,7 +216,7 @@ function Undo() {
 // i kept accidently clearing my image when i meant to do /undo haha
 function Clear() {
 
-  if (confirm("Are you sure you want to clear the canvas? This cannot be undone!") == true) {
+  
   context.fillStyle = "white";
   context.globalAlpha = 1;
   context.clearRect(0, 0, canvas.width, canvas.height);
@@ -224,9 +224,7 @@ function Clear() {
   restore_array = [];
   start_index = -1;
   context.globalAlpha = line_opacity;
-} else {
-  // do nothing
-}
+
   
 }
 
