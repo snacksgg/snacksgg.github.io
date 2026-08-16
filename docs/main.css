@@ -1803,6 +1803,29 @@ z-index: -5;
 	}
 }
 
+/* animated scroll */
+
+#animatedBackground {
+
+  top: 0;
+  left: 0;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: auto 100%;
+/*adjust s value for speed*/
+  animation: animatedBackground 1000s linear infinite;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: 10000px 0;
+  }
+}
+
 /* BLOG POSTS */
 
 article > header {
