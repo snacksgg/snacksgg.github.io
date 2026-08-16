@@ -1834,7 +1834,7 @@ z-index: -5;
   background-position: 0 0;
   background-size: auto 100%;
 /*adjust s value for speed*/
-  animation: animatedBackground2 100s linear infinite;
+  animation: animatedBackground2 150s linear infinite;
 }
 
 @keyframes animatedBackground2 {
@@ -1913,6 +1913,8 @@ article > header {
         padding: .5em;
 
       }
+
+
       
       #marquee:hover #stamps {
         animation-play-state: paused; /* remove this line if you'd rather the stamps not pause when the visitor hovers over them */

@@ -97,12 +97,10 @@
             Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks&nbsp;for&nbsp;visiting!
 
             
-            
-<!--     stamp marquee       -->
-            
-               <div class="tbox" style=" margin-right: auto; margin-left: auto;padding-left: 0px; padding-right: 0px;padding-top: 5px;padding-bottom: 5px;justify-content: center;
-          align-content: center; width: 95%; margin-bottom: 0px;"><div id="marquee">
-    <div id="stamps" style="padding: 0px;"> <!-- all your stamps go after this, as regular 17images -->
+            <div class="tbox" style=" margin-right: auto; margin-left: auto;padding-left: 0px; padding-right: 0px;padding-top: 5px;padding-bottom: 5px;justify-content: center;
+          align-content: center; width: 95%; margin-bottom: 0px;">
+    <div  style="padding: 0px;"> <!-- all your stamps go after this, as regular 17images -->
+        <marquee>
         <img src="/images/stamps/hk.png" />
         <img src="/images/stamps/toonlinkfan.png" />
         <img src="/images/stamps/awk.jpg" />
@@ -121,29 +119,8 @@
         <img src="/images/stamps/inrainbows.gif" />
         <img src="/images/stamps/rain.gif" />
         <img src="/images/stamps/ublock-now.png" style="margin-bottom: 8px;" />
-                   </div>
+               </marquee> </div> </div>
 
-                   
-                <!-- Shuffle Stamp Script -->
-
-                <script>function stampshuffle() {
-        const marquee = document.querySelector('#stamps');
-        const stamps = Array.from(marquee.querySelectorAll('img'));
-    
-        for (let i = stamps.length - 1; i > 0; i--) {
-            const randomIndex = Math.floor(Math.random() * (i + 1));
-            [stamps[i], stamps[randomIndex]] = [stamps[randomIndex], stamps[i]];
-        }
-    
-        stamps.forEach(img => marquee.appendChild(img));
-    }
-    
-    stampshuffle();     
-</script>
-
-
-  </div>
-</div>
 
                 </div>
             
@@ -486,7 +463,22 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
                    </div>
 
                    
+                <!-- Shuffle Stamp Script -->
 
+                <script>function stampshuffle() {
+        const marquee = document.querySelector('#stamps');
+        const stamps = Array.from(marquee.querySelectorAll('img'));
+    
+        for (let i = stamps.length - 1; i > 0; i--) {
+            const randomIndex = Math.floor(Math.random() * (i + 1));
+            [stamps[i], stamps[randomIndex]] = [stamps[randomIndex], stamps[i]];
+        }
+    
+        stamps.forEach(img => marquee.appendChild(img));
+    }
+    
+    stampshuffle();     
+</script>
 
 
   </div>
