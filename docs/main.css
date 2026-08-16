@@ -1826,6 +1826,26 @@ z-index: -5;
   }
 }
 
+#animatedBackground2 {
+
+  top: 0;
+  left: 0;
+  background-repeat: round;
+  background-position: 0 0;
+  background-size: auto 100%;
+/*adjust s value for speed*/
+  animation: animatedBackground2 100s linear infinite;
+}
+
+@keyframes animatedBackground2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100vw 100vw;
+  }
+}
+
 /* BLOG POSTS */
 
 article > header {
