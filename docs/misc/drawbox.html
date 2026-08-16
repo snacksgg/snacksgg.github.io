@@ -30,7 +30,10 @@
         }
         
         @media only screen and (max-width: 600px) {
-
+#canvasoptions {
+                width: 100% !important;
+                margin-left: 0px !important:
+            }
 }
         #gallery {
             display: flex;
@@ -75,72 +78,92 @@
 </script>
 <!-- End of Header -->
     
-    
-    
-    
 <body style="font: white;">
     <div class="main-column">
-    <div class="boxed" style="background:none; outline: none;box-shadow: none;">
+    <div class="boxed" style="background:none; outline: none;box-shadow: none; padding-top: 0px;">
     <h1>DRAWBOX</h1>
         
         
-                <div id="circularcursor"></div>
-
         
-        
-    <canvas id="drawboxcanvas" width="400" height="400"></canvas>
-    <br>
-            <input type="color" oninput="stroke_color = this.value">
-<label for="StrokeAmount"><strong>Size: </strong></label> <input type="range" id="Strokewidth" name="Strokewidth" min="1" max="100" value="2" oninput="stroke_width = this.value; StrokeAmount.value=this.value" title="stroke width">
-    <!--See the stroke value-->
-    <output name="StrokeAmount" id="StrokeAmount" for="Stokewidth">2</output>    <div onclick="change_color(this)" style="background:red" class="stroke-color"></div>
-    <div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
-  
+        <div id="circularcursor"></div>
    
-    <input type="button" value="Undo" onclick="Restore()"  style="margin-top: 10px;">
-        
-            <input type="button" value="Clear" onclick="clearCanvas()">
-        
-<!--    clear canvas prompt    -->
-<script>
-function clearCanvas() {
-  let text;
-  if (confirm("Are you sure you want to clear the canvas? This can't be undone!") == true) {
-    Clear()
-  } else {
     
-  }
-}
-</script>
+   
+    <div class="drawbox_con">
+
+    <div class="TheCanvas">
+    <canvas id="drawboxcanvas" width="500px" height="500px"></canvas>
+    <br>
+    <div onclick="change_color(this)" style="background:red" class="stroke-color"></div>
+    <div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
+                       <input type="button" value="Undo" onclick="Undo()" title="you can also do ctrl+z"></input>
+                       <input type="button" value="Clear" onclick="Clear()" title="clear canvas"></input>
+
+                  
         
-       
-    <script> function onUndo() {
-        var evtobj = window.event ? event : e;
-        if (evtobj.keyCode == 90 && evtobj.ctrlKey) Restore();
-      }
-      document.addEventListener("keydown", onUndo);</script>
+    <fieldset class="boxed" style="background:none; outline: none;box-shadow: none; padding-top: 0px;border: none; ">
+        <div class="tbox" id="canvasoptions" style="margin: auto;background:url(/images/triangle3-seamless3.jpg); width: 60%; text-align: left;">
+            
+            
+    <label for="colorpicker"><strong>Color:  </strong></label>
+    <input type="color"  name="colorpicker" id="colorpicker" oninput="stroke_color = this.value; colorchoice.value = this.value"> 
+
+    <label for="StrokeAmount"><strong>Size: </strong></label> <input type="range" id="Strokewidth" name="Strokewidth" min="1" max="100" value="2" oninput="stroke_width = this.value; StrokeAmount.value=this.value" title="stroke width">
+    <!--See the stroke value-->
+    <output name="StrokeAmount" id="StrokeAmount" for="Stokewidth">2</output>
+ 
+
+    <br>
+
+                   <label for="OpacityAmount"><strong>Opacity: </strong></label>
+
+                   <input type="range" id="Opacity" name="Opacity" step="0.05" min="0" max="1" value="1" oninput="line_opacity = this.value; OpacityAmount.value=this.value" title="Opacity width">
+                   <!--See the stroke value-->
+
+                   <output name="OpacityAmount" id="OpacityAmount" for="Opacity">1.00</output><br>
+                   <label for="BrushType"><strong>Brush type:</strong></label>
+                   <select id="BrushType" name="BrushType" oninput="stroke_join = this.value">
+                       <option value="round" selected>Round</option>
+                       <option value="bevel">bevel</option>
+                       <option value="miter">miter</option>
+                   </select><span> | </span>
+                   <label for="LineCap"><strong>Line Cap:</strong></label>
+                   <select id="LineCap" name="LineCap" oninput="line_cap = this.value">
+                       <option value="round" selected>Round</option>
+                       <option value="butt">Butt</option>
+                       <option value="square">Square</option>
+                   </select>
+                   <br><br>
+                   <label for="Name"><strong>Name:</strong></label>
+                   <input type="text" oninput="user_name = this.value" required maxlength="30" size="15">
+                   <br>
+                <button id="submit">Submit</button>
+            </div>
+        
+</fieldset>
+    
+        <p id="status"></p>
+
+
 
     </div>
- <br>
-<button id="submit">Submit</button></a>
+        
+        </div>
 
-    
-    
-    
-    
+
     
     <p id="status" style="text-align: center; color: white;"></p>
 
-	<div class="boxed">
+	<div class="boxed" style="width: 100%;">
     <h1>Submitted Drawings ☺</h1>
-    <div id="gallery" class="tbox">Loading images...</div>
+    <div id="gallery" class="tbox" >Loading images...</div>
         <font color="white">Powered by <a href="https://drawbox.nekoweb.org/" target="_blank">Drawbox</a>
 
     </div>
         
         </div>
-    <script src="/misc/drawbox.js"></script>
-
+    <script src="/misc/drawbox2.js"></script>
+        </div>
 </body>
     
     <!-- Footer -->

@@ -23,7 +23,7 @@ const NAME_ID = "entry.1862726355";
 // turn on or off gallery
 const DISPLAY_IMAGES = true;
 // post approval - make false if you dont want to approve images
-const IMAGE_APPROVAL = true;
+const IMAGE_APPROVAL = false;
 
 // optional I recommend getting your own client ID https://apidocs.imgur.com/ */
 const CLIENT_ID = "bfaaee57f0b78f1";
