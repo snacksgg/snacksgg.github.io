@@ -16,7 +16,6 @@ const GOOGLE_FORM_ID = "1FAIpQLSf9NZVwxB2Rdyimgz6pAOWPMtA_SPc1bA0eO1QQU7uT_OWtMQ
 const ENTRY_ID = "entry.1318466765";
 const GOOGLE_SHEET_ID = "1pQUdkd9wJNkoD7TD8t1LiFcsC4YUxe6HZU-OgnrVqLA";
 const DISPLAY_IMAGES = true;
-const NAME_ID = "entry.1862726355";
 
 /*
         

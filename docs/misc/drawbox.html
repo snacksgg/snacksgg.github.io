@@ -108,9 +108,9 @@
     <label for="colorpicker"><strong>Color:  </strong></label>
     <input type="color"  name="colorpicker" id="colorpicker" oninput="stroke_color = this.value; colorchoice.value = this.value"> 
 
-    <label for="StrokeAmount"><strong>Size: </strong></label> <input type="range" id="Strokewidth" name="Strokewidth" min="1" max="100" value="2" oninput="stroke_width = this.value; StrokeAmount.value=this.value" title="stroke width">
+    <label for="StrokeAmount"><strong>Size: </strong></label> <input type="range" id="Strokewidth" name="Strokewidth" min="1" max="100" value="3" oninput="stroke_width = this.value; StrokeAmount.value=this.value" title="stroke width">
     <!--See the stroke value-->
-    <output name="StrokeAmount" id="StrokeAmount" for="Stokewidth">2</output>
+    <output name="StrokeAmount" id="StrokeAmount" for="Stokewidth">3</output>
  
 
     <br>
@@ -135,7 +135,7 @@
                    </select>
                    <br><br>
                    <label for="Name"><strong>Name:</strong></label>
-                       <input type="text" oninput="user_name = this.value" required maxlength="30" size="15">
+                       <input type="text" oninput="user_name = this.value" required maxlength="20" size="15">
 
                    <br><br>
                 <input type="button" id="submit" value="Submit"></input>

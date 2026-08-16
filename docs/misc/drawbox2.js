@@ -68,7 +68,7 @@ x.addEventListener("change", function() {
 let restore_array = [];
 let start_index = -1;
 let stroke_color = "black";
-let stroke_width = "2";
+let stroke_width = "3";
 let is_drawing = false;
 let line_opacity = "1";
 
