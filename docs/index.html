@@ -70,18 +70,23 @@
         <img src="/images/spb-splash-placeholder.png" width="70%" style="border-radius: 15px; margin-bottom: 20px;"  draggable="false"> </div>
         
         
-<!-- `Mobile Only Links + Mobile Welcome -->
+<!-- `Mobile Only Links + Mobile Welcome Mobile -->
         
         <div class="show-on-mobile"> 
 
             
-            
-                    <div class="boxed4" style="background: url(/images/checkersmall.gif); background-size: 15%; width: 100%;"><img src="/images/welcome2.png" class="boxheader" width="230px;" ><br>
-                        <div class="tbox" style="padding: 3px; margin: 3px; padding-top: 12px;">
-                        <a href="#sitemap"><button style="margin: 2px;">Sitemap</button></a>
-            <a href="#latestart"><button style="margin: 2px; padding: 3px;">Latest Art</button></a>
-    <a href="#blogposts"><button style="margin: 2px; padding: 3px;">Blogposts</button></a>
-    <a href="#radiooo"><button style="margin: 2px; padding: 3px;">Radio</button></a><br>
+<!--     Mobile buttons       -->
+                    <div class="boxed4" style="background: url(/images/checker.png); background-size: 80%; width: 100%;" id="animatedBackground"><img src="/images/welcome2.png" class="boxheader" width="230px;" ><br>
+                        <div class="tbox" style="padding: 3px; margin: 2px; padding-top: 12px;">
+                        <a href="#sitemap"><button style="margin: 2px; margin-bottom: 10px;" type="button">Sitemap</button></a>
+                        <a href="#news"><button style="margin: 2px; margin-bottom: 10px;">News</button></a>
+                        <a href="#blogposts"><button style="margin: 2px; margin-bottom: 10px;">Blogposts</button></a>  <br>
+                        <a href="#featuredart"><button style="margin: 2px; margin-bottom: 10px;">Featured Art</button></a>
+            <a href="#latestart"><button style="margin: 2px; margin-bottom: 10px; ">Latest Art</button></a>
+    <a href="#radiooo"><button style="margin: 2px;  margin-bottom: 10px;">Radio</button></a><br>
+                            
+                            
+                            
                         <div style="font-size: 10px; padding: 3px;"><a href="/updatelog"><div id="lastmodbox2"></div> </a></div>
                 
               <script>
@@ -97,10 +102,10 @@
             Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks&nbsp;for&nbsp;visiting!
 
             
-            <div class="tbox" style=" margin-right: auto; margin-left: auto;padding-left: 0px; padding-right: 0px;padding-top: 5px;padding-bottom: 5px;justify-content: center;
+            <div class="tbox" style=" margin-right: auto; margin-left: auto;padding-left: 0px; padding-right: 0px;padding-top: 15px;padding-bottom: 5px;justify-content: center;
           align-content: center; width: 95%; margin-bottom: 0px;">
     <div  style="padding: 0px;"> <!-- all your stamps go after this, as regular 17images -->
-        <marquee>
+        <marquee scrollamount="4">
         <img src="/images/stamps/hk.png" />
         <img src="/images/stamps/toonlinkfan.png" />
         <img src="/images/stamps/awk.jpg" />
@@ -139,11 +144,14 @@
                 <script src="js/lg-zoom.umd.js"></script>
                 <script src="js/lg-video.umd.js"></script>
         
-        <div class="boxed4" id="animatedBackground2" style="width: 100%;background: url(/images/checker-diamond-stars.png); background-size: 15%; ">
-            <div class="noselect"> <a href="/gallery">
-            <img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px; width: 60%;" src="/images/boxheader-featured-art2.png" alt="featured art" draggable="false" id="featuredart"></a></div>
+        <div class="boxed4" id="animatedBackground2" style="width: 100%;background: url(/images/checker-diamond-stars.png); background-size: 15%; background-position: 0% 33%; ">
+            
+<!--     boxheader       -->
+            <a href="/gallery">
+            <img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px; max-width: 100%;" src="/images/boxheader-featured-art2.png" alt="featured art" draggable="false" id="featuredart"></a>
             
             
+<!--     featured big preview       -->
             <a href="/gallery"><img id="randomImage" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;"  /> </a>
             <script>
                 document.getElementById("randomImage").src = "feat" + Math.floor(Math.random() * 9) + ".jpg";
@@ -183,11 +191,15 @@
 <!--    `Latest Art    -->
         <div class="boxed4" style="width: 100%;background: url(/images/checker-diamond.png); background-size: 15%;" id="animatedBackground2">
             
+            
+<!--     boxheader       -->
+            
                         <a href="/gallery/artfeed.html">
-                        <img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px;width: 60%;" src="/images/boxheader-latest-art2.png" alt="featured art"  draggable="false" id="latestart"></a><br>
+                        <img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px;max-width: 100%;" src="/images/boxheader-latest-art2.png" alt="featured art"  draggable="false" id="latestart"></a><br>
             
-            
+<!--     latest big preview       -->
             <a href="/gallery/artfeed"><img src="images/gallery/latest.jpg" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;"  /> </a>
+            
                     <div id="lightgallery2" >
                         
 <!--           `Latest Art - insert images here             -->
@@ -244,13 +256,16 @@
 
     
 <!--  `Sitemap  -->
-            <br>
+            <br> 
                 <div class="boxed4" style="margin-bottom: 30px;padding-right: 0px; line-height: 22px;background-color: #00121d;
 opacity: 1;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #00121d 28px ), repeating-linear-gradient( #00375955, #003759 ); margin-top: 0px;">
-                    <img class="boxheader noselect" style="margin-top: -50px;  margin-bottom: -5px;" src="/images/boxheader-sitemap5.gif" alt="sitemap"  draggable="false" id="news" >   </a>              <br>
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #00121d 28px ), repeating-linear-gradient( #00375955, #003759 ); margin-top: 0px;" >
                     
-                    <div class="tbox" style="text-align: left;height: 550px;overflow-y: scroll; padding-top: 15px;padding-left: 12px;padding-right: 2px; box-shadow: 0px 0px 5px #000e1c;margin-bottom: 10px; margin-top: 0px;">
+<!--         boxheader           -->
+                    
+                    <img class="boxheader noselect" style="margin-top: -50px;  margin-bottom: -5px; width: 100%;" src="/images/boxheader-sitemap5.gif" alt="sitemap"  draggable="false" id="sitemap" >                 <br>
+                    
+                    <div class="tbox" style="text-align: left;height: 580px;overflow-y: scroll; padding-top: 15px;padding-left: 12px;padding-right: 2px; box-shadow: 0px 0px 5px #000e1c;margin-bottom: 10px; margin-top: -20px;">
                         
 
             <ul class="li-sitemap">
@@ -329,18 +344,18 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
     </div>
     
 <!--  `News  -->
-    <br>
+    <br><br>
                 <div class="boxed4" style="margin-bottom: 30px;padding-right: 0px; line-height: 22px;">
                     <a href="/updatelog"><img class="boxheader image-hover-highlight" style="margin-top: -50px; width: 100%;" src="/images/boxheader-news.gif" alt="news"  draggable="false" id="news" >   </a>              <br>
                     
-                    <div class="tbox" style="text-align: left;height: 300px;overflow-y: scroll; padding-top: 15px;padding-left: 12px;padding-right: 2px; box-shadow: 0px 0px 5px #000e1c;margin-bottom: 10px;">
+                    <div class="tbox" style="text-align: left;height: 300px;overflow-y: scroll; padding-top: 15px;padding-left: 12px;padding-right: 2px; box-shadow: 0px 0px 5px #000e1c;margin-bottom: 10px; margin-top: -10px;">
                         
                          <details style= "cursor: pointer;"><summary><em>July&nbsp;2026</em> —  <a href="/gallery/forothers#artfight">ArtFight Drawings</a> + General Update </summary> 
                              <div class="tbox" style="padding: 2px; padding-bottom: 2px;"><p style="font-size: 12px;line-height: 20px;"> where did the time go.. been goin through it but feeling a bit more energized, hope to make more updates and stuff in general soon! 🙏</p> 
                              </div> </details> 
                                 
 
-                        <hr class="small" style="width: 60%;margin-top: 10px;margin-bottom: 10px;">
+<hr class="small" style="width: 90%;margin-left: 0;margin-bottom: 15px;margin-top: 10px;">
                         
 <!-- Past News -->
                         <font color="#ddd" size=2 style="line-height: 20px;">
@@ -503,7 +518,10 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
                 
 <!--       Status.cafe Status         -->
                 
-        <div class="boxed4" id="animatedBackground" style="background: url(/images/checker.png); background-size: 50%;animation: animatedBackground 1000s linear infinite;">  <a href="https://status.cafe/users/snacksgg" target="_blank"><img class="boxheader image-hover-highlight" style="margin-bottom: -0px; margin-top: -50px;" src="/images/boxheader-status.gif" alt="status"  draggable="false" id="latestart" > </a>
+        <div class="boxed4" id="animatedBackground" style="background: url(/images/checker.png); background-size: 50%;animation: animatedBackground 1000s linear infinite; ">  <a href="https://status.cafe/users/snacksgg" target="_blank">
+            
+            <img class="boxheader image-hover-highlight" style="margin-bottom: -0px; margin-top: -50px;" src="/images/boxheader-status.gif" alt="status"  draggable="false" id="status" > </a>
+            
             <div style="background:rgba(0,0,0,.5); border-radius: 15px; font-size: 14px;">
             <div id="statuscafe" style="margin-top: 0px;"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=snacksgg" defer></script>
                 </div>
@@ -529,15 +547,19 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
        
         <div class="boxed4" style="background: url(/images/checkersmall3.jpg); background-size: 10%;animation: animatedBackground 1000s linear infinite; padding-top: 0px;padding-bottom: 0px;">
             
-            <a href="https://last.fm/user/snacksgg" target="_blank"><img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px;" src="/images/boxheader-lastfm.gif" alt="last.fm"  draggable="false" id="latestart" ></a>
+<!--     boxheader       -->
             
+            <a href="https://last.fm/user/snacksgg" target="_blank"><img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px;" src="/images/boxheader-lastfm.gif" alt="last.fm"  draggable="false" id="lastfm" ></a><br>
+            
+            
+<!--     last.fm img       -->
             
             <a href="https://last.fm/user/snacksgg" target="_blank"><img src="https://lastfm-recently-played.jeffreyca.workers.dev/svg?user=snacksgg&amp;theme=legacy&amp;radius=15&amp;logo=0&amp;footer=stats&amp;bg_color=3b0b00&amp;border=none" alt="last.fm recently played" style="margin-left:auto; margin-right:auto; padding-top: 10px;padding-bottom:10px;" onerror="this.src='/images/404-lastfm.png';" ></a>
                 </div>
         
 <!-- Chatbox -->
-        <div class="boxed4" style="background: url(/images/checker.png); background-size: 70%;animation: animatedBackground 1000s linear infinite;">
-            <a href="https://www3.cbox.ws/box/?boxid=3543718&boxtag=iLeb5s" target="_blank"><img class="boxheader image-hover-highlight" style="margin-bottom: -0px; margin-top: -50px;" src="/images/boxheader-chat.gif" alt="status"  draggable="false" id="latestart" > </a>
+        <div class="boxed4" style="background: url(/images/checker.png); background-size: 70%;animation: animatedBackground 1000s linear infinite; ">
+            <a href="https://www3.cbox.ws/box/?boxid=3543718&boxtag=iLeb5s" target="_blank"><img class="boxheader image-hover-highlight" style="margin-bottom: -0px; margin-top: -50px;" src="/images/boxheader-chat.gif" alt="status"  draggable="false" id="chatbox" > </a>
             
             <iframe src="https://www3.cbox.ws/box/?boxid=3543718&boxtag=iLeb5s" width="100%" height="400" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" style="border-radius: 15px;"></iframe>	</div>
                 

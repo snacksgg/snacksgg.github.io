@@ -326,6 +326,10 @@ body {
         max-height: 1220px;
 
     }
+    
+    img.boxheader {
+    background-size: 100% !important;
+}
 }
 
 
