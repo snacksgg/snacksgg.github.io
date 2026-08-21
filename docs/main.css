@@ -2051,4 +2051,17 @@ text-align: center;
 }
 
 
+/* play gif on hover */
 
+    .static {
+  position: absolute !important;
+  background: white;
+ }
+
+.static:hover {
+  opacity: 0 !important;
+ }
+    
+    
+    
+    
