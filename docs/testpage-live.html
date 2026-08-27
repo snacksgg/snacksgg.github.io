@@ -1,3 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    
+
+
+
+
+<button class="reload-btn">Reload</button>
+<p>Myth: <span class="status" data-nick="Myth"></span></p>
+<p>Ompuco <span class="status" data-nick="Ompuco"></span></p>
+<p>heckmaybe <span class="status" data-nick="heckmaybe"></span></p>
+<p>NASA <span class="status" data-nick="NASA"></span></p>
+<p>DoigSwift <span class="status" data-nick="DoigSwift"></span></p>
+
+
+<script>const elements = document.querySelectorAll('.status'),
+      button = document.querySelector('.reload-btn')
+
+button.onclick = reloadStatuses
+
+function reloadStatuses() {
+  for (const status of elements) {
+    delete status.dataset.online
+    const nick = status.dataset.nick
+    const url = `https://static-cdn.jtvnw.net/previews-ttv/live_user_${nick}-1x1.jpg`
+
+    fetch(url, {
+      method: 'HEAD',
+      redirect: 'manual'
+    }).then(res => status.dataset.online = res.ok)
+  }
+}
+
+reloadStatuses()</script>
+
+
 <style> .status::before {
   content: "LOADING";
   padding: 5px;
@@ -21,31 +64,5 @@
   background: #ff746a;
 }
        </style>
-
-
-<script>const elements = document.querySelectorAll('.status'),
-      button = document.querySelector('.reload-btn')
-
-button.onclick = reloadStatuses
-
-function reloadStatuses() {
-  for (const status of elements) {
-    delete status.dataset.online
-    const nick = status.dataset.nick
-    const url = `https://static-cdn.jtvnw.net/previews-ttv/live_user_${nick}-1x1.jpg`
-
-    fetch(url, {
-      method: 'HEAD',
-      redirect: 'manual'
-    }).then(res => status.dataset.online = res.ok)
-  }
-}
-
-reloadStatuses()</script>
-
-<button class="reload-btn">Reload</button>
-<p>Myth: <span class="status" data-nick="Myth"></span></p>
-<p>Ompuco <span class="status" data-nick="Ompuco"></span></p>
-<p>heckmaybe <span class="status" data-nick="heckmaybe"></span></p>
-<p>NASA <span class="status" data-nick="NASA"></span></p>
-<p>DoigSwift <span class="status" data-nick="DoigSwift"></span></p>
+</body>
+</html>
