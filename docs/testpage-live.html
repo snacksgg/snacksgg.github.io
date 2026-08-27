@@ -1,0 +1,51 @@
+<style> .status::before {
+  content: "LOADING";
+  padding: 5px;
+  border-radius: 5px;
+  font: 1em Arial;
+  font-weight: bold;
+  
+  color: #544d00;
+  background: #fff476;
+}
+
+.status[data-online="true"]::before {
+  content: "ONLINE";
+  color: #376136;
+  background: #87ff85;
+}
+
+.status[data-online="false"]::before {
+  content: "OFFLINE";
+  color: #4c1511;
+  background: #ff746a;
+}
+       </style>
+
+
+<script>const elements = document.querySelectorAll('.status'),
+      button = document.querySelector('.reload-btn')
+
+button.onclick = reloadStatuses
+
+function reloadStatuses() {
+  for (const status of elements) {
+    delete status.dataset.online
+    const nick = status.dataset.nick
+    const url = `https://static-cdn.jtvnw.net/previews-ttv/live_user_${nick}-1x1.jpg`
+
+    fetch(url, {
+      method: 'HEAD',
+      redirect: 'manual'
+    }).then(res => status.dataset.online = res.ok)
+  }
+}
+
+reloadStatuses()</script>
+
+<button class="reload-btn">Reload</button>
+<p>Myth: <span class="status" data-nick="Myth"></span></p>
+<p>Ompuco <span class="status" data-nick="Ompuco"></span></p>
+<p>heckmaybe <span class="status" data-nick="heckmaybe"></span></p>
+<p>NASA <span class="status" data-nick="NASA"></span></p>
+<p>DoigSwift <span class="status" data-nick="DoigSwift"></span></p>
