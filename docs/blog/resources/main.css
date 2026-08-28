@@ -366,7 +366,7 @@ article > header {
 
 #footer {
     background-image: url(/images/footer2.png);
-    background-size: cover;
+    background-size: 50%;
 	padding-block-start: 1rem;
     border-radius: 15px;
 	font-size: var(--meta-font-size);
