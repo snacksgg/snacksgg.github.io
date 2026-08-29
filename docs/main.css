@@ -79,7 +79,7 @@ main {
 
 body {
     margin: 0;
-    background-color: #336587;
+    background-color: #0d3f61;
     background-image: url(images/triangle3-seamless2.jpg);
     background-size: 100%;
     background-attachment: fixed;
@@ -412,6 +412,7 @@ background: repeating-linear-gradient(45deg, #003759, #003759 20px, #00243B 20px
     box-sizing: border-box;
     z-index: 1;
     overflow: visible;
+    background-color: #00243B;
 }
 
 }
