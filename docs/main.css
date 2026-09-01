@@ -20,6 +20,7 @@ html {
 main {
     min-height: calc(100vh);
             scrollbar-color: #164D6B #00243B;
+font-family: "Prompt", Helvetica, Arial;
 
 }
 
@@ -79,7 +80,7 @@ main {
 
 body {
     margin: 0;
-    background-color: #0d3f61;
+    background-color: #205273;
     background-image: url(images/triangle3-seamless2.jpg);
     background-size: 100%;
     background-attachment: fixed;
@@ -89,7 +90,6 @@ body {
     overflow-y: scroll;
     /* Show vertical scrollbar */
     overflow-x: hidden;
-    font-family: "Helvetica", "Baskerville", serif;
     text-align: center;
     padding-bottom: 120px;
     word-wrap:break-word;
@@ -153,11 +153,25 @@ body {
         display: block;
     }
     
+    body{
+        
+        background-size: 200%;
+    }
+    
     #splashart {
         position: relative;
         width: 90vw;
         right: 20px;
         
+    }
+    
+    #animatedBackground2 {
+        
+        background-size: 25% !important;
+        
+    }    #animatedBackground {
+        
+        background-size: 100% !important;
     }
 }
 
@@ -231,13 +245,7 @@ body {
     0 0/100px 100px round;
 
 
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
-    sans-serif;
+    font-family: "Prompt";,"Bradley Hand";
     color: white;
     letter-spacing: 1px;
     border-radius: 15px;
@@ -292,10 +300,7 @@ body {
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
-    sans-serif;
+
     color: white;
     letter-spacing: 1px;
     border-radius: 15px;
@@ -341,13 +346,9 @@ background:
         #00243B 0 180deg) 
     0 0/100px 100px round;
 
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
-    sans-serif;
+    font-family: "Prompt";,"Bradley Hand";
+
+
     color: white;
     letter-spacing: 1px;
     border-radius: 15px;
@@ -382,10 +383,7 @@ background: repeating-linear-gradient(45deg, #003759, #003759 20px, #00243B 20px
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
-    sans-serif;
+
     color: white;
     letter-spacing: 1px;
     border-radius: 15px;
@@ -426,10 +424,7 @@ background: repeating-linear-gradient(45deg, #003759, #003759 20px, #00243B 20px
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
-    sans-serif;
+
     color: white;
     letter-spacing: 1px;
     border-radius: 15px;
@@ -473,10 +468,7 @@ background: repeating-linear-gradient(45deg, #003759, #003759 20px, #00243B 20px
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
-    sans-serif;
+
     color: white;
     letter-spacing: 1px;
     border-radius: 15px;
@@ -887,9 +879,7 @@ button {
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
+ 
     user-select: none;
     color: white;
     letter-spacing: 1px;
@@ -934,9 +924,7 @@ input[type=button] {
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
+
     user-select: none;
     color: white;
     letter-spacing: 1px;
@@ -970,9 +958,7 @@ input[type=button2] {
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
+
     user-select: none;
     color: white;
     letter-spacing: 1px;
@@ -1015,9 +1001,7 @@ input[type=button]:active {
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
+
     user-select: none;
     color: white;
     letter-spacing: 1px;
@@ -1176,10 +1160,8 @@ twitch-embed {
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
-    sans-serif;
+
+
     color: white;
     letter-spacing: 1px;
 
@@ -1209,10 +1191,7 @@ twitch-embed {
     font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
-    sans-serif;
+
     color: white;
     letter-spacing: 1px;
     border-radius: 10px;
@@ -1249,9 +1228,9 @@ footer {
     left: 0;
     width: 100%;
     height: auto;
-    background-repeat: repeat;
     z-index: 5;
     overflow: auto;
+    background-repeat: repeat-x;
 
 
 }
@@ -1275,7 +1254,21 @@ footer {
 }
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+}
+
+
+/* make smaller on mobile */
+    @media screen and (max-width:570px) {
+  .footertexts {
+      
+     font-size: 50%;
+      margin-top: -10px;
+      padding-bottom: 2px;
+  }
+
+  
+    
 }
 
 /* Slideshow container */
@@ -1504,9 +1497,7 @@ img.emote {
      font-family: "Prompt";
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
+
 
 
 
@@ -2003,9 +1994,7 @@ article > header {
         font-family: "Prompt" !important;
     ,
     "Bradley Hand";
-    ,
-    "Comic Sans MS";
-    ,
+
     sans-serif !important;
     color: white;
      font-size: 10px !important;

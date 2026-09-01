@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="/js/lite-yt-embed/lite-yt-embed.css" />
 
     <!--  Scripts  -->
-    <script src="/js/lite-yt-embed/lite-yt-embed.js"></script>
 
     <script src="https://kit.fontawesome.com/712948e023.js" crossorigin="anonymous"></script>
     <script src="js/lightgallery.umd.js"></script>
@@ -32,6 +31,7 @@
     <script src="js/lg-thumbnail.umd.js"></script>
     <script src="js/lg-zoom.umd.js"></script>
     <script src="js/lg-video.umd.js"></script>
+    <script src="/js/lite-yt-embed/lite-yt-embed.js"></script>
 
 </head>
 
@@ -50,7 +50,7 @@
 
 <!-- Floating Images -->
 
-<div class="img-float"><img src="images/wizzed2.gif" alt="WIP" style="width: 35%; height: 35%;"></div>
+<div class="img-float"><img src="images/wizzed2.gif" style="width: 35%; height: 35%;"></div>
 
 
 <!-- End of Header -->
@@ -106,7 +106,7 @@
 
 
                         </div>
-                        <img src="/images/artfight4.webp" class="rounded" style="width: 150px; height: 150px; margin-bottom: 22px;"><br>
+                        <img src="/images/artfight4.webp" class="rounded" style="width: 150px; height: 150px; margin-bottom: 22px;" fetchpriority="high"><br>
 
                         Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks&nbsp;for&nbsp;visiting!
 
@@ -160,7 +160,7 @@
 
 
                     <!--     featured big preview       -->
-                    <a href="/gallery"><img id="randomImage" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;" /> </a>
+                    <a href="/gallery"><img id="randomImage" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;" fetchpriority="high" /> </a>
 
                     <br>
 
@@ -193,10 +193,10 @@
                     <!--     boxheader       -->
 
                     <a href="/gallery/artfeed.html">
-                        <img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px;max-width: 100%;" src="/images/boxheader-latest-art2.png" alt="featured art" draggable="false" id="latestart"></a><br>
+                        <img class="boxheader image-hover-highlight" style="margin-bottom: -20px; margin-top: -50px;max-width: 100%;" src="/images/boxheader-latest-art2.png" alt="latest art" draggable="false" id="latestart"></a><br>
 
                     <!--     latest big preview       -->
-                    <a href="/gallery/artfeed"><img src="images/gallery/latest.jpg" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;" /> </a>
+                    <a href="/gallery/artfeed"><img src="images/gallery/latest.jpg" class="featuredart" style="max-height: 500px; border-radius: 15px; margin-top: 10px;  max-width: 100%;        box-shadow: 0px 0px 20px #000e1c;" loading="lazy" /> </a>
 
                     <div id="lightgallery2">
 
@@ -467,7 +467,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
 
             <!--       Welcome Blurb         -->
 
-            <div class="boxed4 hide-on-mobile" id="animatedBackground" style="background: url(/images/checker.png); background-size: 100%;"><img src="/images/welcome2.png" class="boxheader" width="230px;"><br> <img src="/images/artfight4.webp" class="rounded" style="width: 200px; height: 200px; margin-bottom: 22px;"><br>
+            <div class="boxed4 hide-on-mobile" id="animatedBackground" style="background: url(/images/checker.png); background-size: 100%;"><img src="/images/welcome2.png" class="boxheader" width="230px;"><br> <img src="/images/artfight4.webp" class="rounded" style="width: 200px; height: 200px; margin-bottom: 22px;"  ><br>
                 Hey there, welcome to my website! I'm Snacks, an artist and animator just carving out my own little place on the net. Thanks&nbsp;for&nbsp;visiting!
 
 
@@ -576,8 +576,26 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
                 </div>
 
             </div>
+            
+            
+ 
 
         </div>
+            
+            
+<!--     footer header links       -->
+            <div class="boxed4  show-on-mobile animatedBackground" style="background: url(/images/checker.png); background-size: 80%; width: 100%; padding: 10px;" id="animatedBackground">
+            
+            <div class="tbox" style="margin: 0;">
+                            <a href="#"><button style="margin: 2px; margin-bottom: 5px;color: lightblue;" type="button">HOME</button></a>
+                            <a href="/about"><button style="margin: 2px; margin-bottom: 5px;">ABOUT</button></a>
+                            <a href="/gallery"><button style="margin: 2px; margin-bottom: 5px;">GALLERY</button></a> 
+                            <a href="/commissions"><button style="margin: 2px;margin-bottom: 5px;">COMMISSIONS</button></a>
+                            <a href="/misc"><button style="margin: 2px;margin-bottom: 5px; ">MISC</button></a>
+</div>
+</div>    
+            
+            
         </div>
 
 
@@ -666,10 +684,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
 
 
 <!-- Footer -->
-
+          
 <footer style="overflow: hidden;">
+    
+    
 
-    <div class="left" style="position: float; padding-top:65px;cursor: default;">© snacksgg <script>
+    <div class="left footertexts" style="position: float; padding-top:65px;cursor: default; display: block;">© snacksgg <script>
             document.write(new Date().getFullYear());
         </script> • All rights reserved. <br> Do not repost or copy content without permission. </div>
 
@@ -684,11 +704,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
         <a href="https://ko-fi.com/snacksgg" target="_blank"><img src="/images/sm-kofi.png" alt="Ko-fi" style="width:50px;height:50px;" class="sm"></a>
         <a href="https://discord.gg/QAhaWEFm8x" target="_blank" style="margin-right: 50px;"><img src="/images/sm-discord.png" alt="Discord" style="width:50px;height:50px;" class="sm"></a>
 
+        <span class="hide-on-mobile">
         • <a href="/">Home</a> •
         <a href="/about">About</a> •
         <a href="/gallery.html">Gallery</a> •
         <a href="/commissions.html">Commissions</a> •
-        <a href="/misc.html">Misc</a> •
+        <a href="/misc.html">Misc</a> • </span>
     </div>
 </footer>
 
