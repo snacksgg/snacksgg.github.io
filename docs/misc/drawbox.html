@@ -11,7 +11,6 @@
     <meta content="https://snacksgg.me/" property="og:url" />
     <meta content="/images/embedthumb.png" property="og:image" />
     <meta content="#062c40" data-react-helmet="true" name="theme-color" />
-    <link rel="preload" as="style" href="main.css">
     <link href="/main.css" rel="stylesheet" />
     <link rel="icon" href="/images/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
@@ -29,10 +28,14 @@
             
         }
         
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 900px) {
 #canvasoptions {
                 width: 100% !important;
                 margin-left: 0px !important:
+            }
+            
+            #animatedBackground2 {
+                background-size: 30% !important;
             }
 }
         #gallery {
@@ -117,7 +120,7 @@
 
                   
         
-    <fieldset class="boxed" style="background:none; outline: none;box-shadow: none; padding-top: 0px;border: none; ">
+    <fieldset class="boxed" style="background:none; outline: none;box-shadow: none; padding-top: 0px;border: none; margin-bottom: 0px;">
         <div class="tbox" id="canvasoptions" style="margin: auto;background:url(/images/triangle3-seamless3.jpg); width: 60%; text-align: left; background-size: 80%;">
             
             
@@ -183,7 +186,7 @@ function clearCanvas() {
     
     <p id="status" style="text-align: center; color: white;"></p>
 
-	<div class="boxed" style="background: url(/images/checker-diamond.png); background-size: 10%; width: 80%;" id="animatedBackground2">
+	<div class="boxed" style="background: url(/images/checker-diamond.png); background-size: 10%; width: 80%; margin-top: 0px;" id="animatedBackground2">
     <h1>Submitted Drawings ☺</h1>
     <div id="gallery" class="tbox" style="align-items: center;  " >Loading images... <img src="/images/loading.gif" width="100"><br></div>
         <font color="white">Powered by <a href="https://3maqi.art/a/drawbox_guide" target="_blank">Drawbox</a>
