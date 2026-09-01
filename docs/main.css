@@ -744,6 +744,7 @@ mark {
   position: absolute;
     right: 10px;
     left: 10px;
+    padding-top:75px;
   z-index: 1;
     font-size: 12px;
   opacity: 0;

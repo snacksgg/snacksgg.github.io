@@ -39,6 +39,10 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            justify-content: center;
+            padding-right: 10px;
+            padding-left: 10px;
+
         }
         .image-container {
             border: 2px solid #ccc;
@@ -46,7 +50,9 @@
             border-radius: 6px;
             max-width: 200px;
             text-align: center;
-            
+                        margin-top: 5px;
+            margin-bottom: 5px;
+
             
         }
         .image-container img {
@@ -177,9 +183,9 @@ function clearCanvas() {
     
     <p id="status" style="text-align: center; color: white;"></p>
 
-	<div class="boxed" style="background: url(/images/checker-diamond.png); background-size: 10%; width: 100%;" id="animatedBackground2">
+	<div class="boxed" style="background: url(/images/checker-diamond.png); background-size: 10%; width: 80%;" id="animatedBackground2">
     <h1>Submitted Drawings ☺</h1>
-    <div id="gallery" class="tbox" style="align-items: center; " >Loading images... <img src="/images/loading.gif" width="100"><br></div>
+    <div id="gallery" class="tbox" style="align-items: center;  " >Loading images... <img src="/images/loading.gif" width="100"><br></div>
         <font color="white">Powered by <a href="https://3maqi.art/a/drawbox_guide" target="_blank">Drawbox</a>
 
     </div>
