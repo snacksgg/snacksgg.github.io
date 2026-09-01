@@ -723,24 +723,30 @@ hr.small {
     
 }
 
-
+mark {
+    background:rgba(0,0,0,.9); border-radius: 5px;padding-top:10px; padding-bottom: 10px;
+    color: white;
+    
+    
+}
 /* tooltips */
 
 .tooltip .tooltiptext {
   visibility: hidden;
   width: auto;
-  background-image: url(/images/triangle3-seamless.png);
-  background-size: 200%;
+    min-width: auto;
+  padding: 15px;
   color: #fff;
   text-align: center;
   border-radius: 15px;
-  padding: 7px 7px 7px 7px;
-  outline: 3px solid #00243B;
   /* Position the tooltip */
   position: absolute;
+    right: 10px;
+    left: 10px;
   z-index: 1;
-  padding-left: 7px;
-  margin-left: 7px;
+    font-size: 12px;
+  opacity: 0;
+
 
   
 
@@ -748,6 +754,8 @@ hr.small {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+    transition: 0.2s;
+    opacity: 1;
 }
 
 /* image styles */

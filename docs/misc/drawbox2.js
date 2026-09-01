@@ -320,7 +320,7 @@ async function fetchImages() {
         div.classList.add("image-container");
         // inner html is a bit... insecure. Id like to fix this at some point
         div.innerHTML = `
-                    <img src="${imgUrl}" alt="drawing" class="drawbox" title="${myComment}">
+                    <div class="tooltip"> <img src="${imgUrl}" alt="drawing" class="drawbox""> <span class="tooltiptext"><mark>${myComment}</mark></div>
                     <p>${timestamp}</p>
                     <p><span>By: <span>${author}</p>             
                 `;

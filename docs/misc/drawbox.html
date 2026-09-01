@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=1024"> 
-    <title>DRAWBOX</title>
+    <title>Drawing Board</title>
        <meta charset="utf-8" />
     <meta content="Snacks' Paint Box" property="og:title" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,6 +60,28 @@
             font-size: 13px !important;
             line-height: 10px;
         }
+        
+        
+       
+  [title] {
+    position: relative;
+  }
+
+  [title]:after {
+    content: attr(title);
+    position: absolute;
+    left: 50%;
+    bottom: 100%; /* put it on the top */
+    background-color: yellow;
+    width: max-content;
+    opacity: 0;
+    -webkit-transition: opacity 0.75s ease-in-out; /* 👈 Change the time to meet your requirements. */
+  }
+
+  [title]:hover:after {
+    opacity: 1;
+  }
+
 
     </style>
 </head>
@@ -83,6 +105,7 @@
         // Undo Shortcut
     });   
 
+            
 </script>
 <!-- End of Header -->
     
@@ -175,10 +198,10 @@ function clearCanvas() {
     
     <p id="status" style="text-align: center; color: white;"></p>
 
-	<div class="boxed" style="width: 100%;">
+	<div class="boxed" style="background: url(/images/checker-diamond.png); background-size: 10%; width: 100%;" id="animatedBackground2">
     <h1>Submitted Drawings ☺</h1>
     <div id="gallery" class="tbox" style="align-items: center; " >Loading images... <img src="/images/loading.gif" width="100"><br></div>
-        <font color="white">Powered by <a href="https://drawbox.nekoweb.org/" target="_blank">Drawbox</a>
+        <font color="white">Powered by <a href="https://3maqi.art/a/drawbox_guide" target="_blank">Drawbox</a>
 
     </div>
         
@@ -187,6 +210,11 @@ function clearCanvas() {
         </div>
 </body>
     
+        <!-- Scroll Buttons -->
+        <div id="scrollBottom"></div>
+        <a class="scroll-top" href="#"><img src="/images/totop.png" style="width: 60%;" alt="scroll to top"></a>
+        <a class="scroll-bot" href="#scrollBottom"><img src="/images/tobot.png" style="width: 60%;" alt="scroll to bottom"></a>
+
     <!-- Footer -->
 
 <footer style="overflow: hidden;">
