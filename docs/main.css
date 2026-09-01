@@ -20,7 +20,7 @@ html {
 main {
     min-height: calc(100vh);
             scrollbar-color: #164D6B #00243B;
-font-family: "Prompt", Helvetica, Arial;
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
 
 }
 
@@ -245,7 +245,7 @@ body {
     0 0/100px 100px round;
 
 
-    font-family: "Prompt";,"Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
     color: white;
     letter-spacing: 1px;
     border-radius: 15px;
@@ -297,9 +297,7 @@ body {
   background-size: 70px 70px;
   background-repeat: repeat;
 
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
 
     color: white;
     letter-spacing: 1px;
@@ -346,7 +344,7 @@ background:
         #00243B 0 180deg) 
     0 0/100px 100px round;
 
-    font-family: "Prompt";,"Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
 
 
     color: white;
@@ -380,9 +378,7 @@ background: repeating-linear-gradient(45deg, #003759, #003759 20px, #00243B 20px
 
 
 
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
 
     color: white;
     letter-spacing: 1px;
@@ -421,9 +417,7 @@ background: repeating-linear-gradient(45deg, #003759, #003759 20px, #00243B 20px
     background-size: 100%;
     border: none;
 
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
 
     color: white;
     letter-spacing: 1px;
@@ -465,9 +459,7 @@ background: repeating-linear-gradient(45deg, #003759, #003759 20px, #00243B 20px
     0 0/100px 100px round;
 
 
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
 
     color: white;
     letter-spacing: 1px;
@@ -876,10 +868,8 @@ button {
     background: url(/images/button2.png);
     background-size: 120%;
     border: none;
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
- 
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
+
     user-select: none;
     color: white;
     letter-spacing: 1px;
@@ -921,9 +911,7 @@ input[type=button] {
     background: url(images/checker3.png);
     background-size: 200%;
     border: none;
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
 
     user-select: none;
     color: white;
@@ -955,9 +943,7 @@ input[type=button2] {
     background: url(/images/button2.png);
     background-size: 120%;
     border: none;
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
 
     user-select: none;
     color: white;
@@ -998,9 +984,8 @@ input[type=button]:active {
     background: url(images/checker3.png);
     background-size: 200%;
     border: none;
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
+
 
     user-select: none;
     color: white;
@@ -1157,9 +1142,8 @@ twitch-embed {
 
 .scroll-top {
     background-color: #00243B;
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
+
 
 
     color: white;
@@ -1188,9 +1172,8 @@ twitch-embed {
 
 .scroll-bot {
     background-color: #00243B;
-    font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
+
 
     color: white;
     letter-spacing: 1px;
@@ -1219,6 +1202,8 @@ twitch-embed {
 /* footer styles */
 
 footer {
+        font-family: Helvetica, Arial, sans-serif;
+
     background-image: url(images/footer2.png);
     
     position: relative;
@@ -1239,6 +1224,7 @@ footer {
 
 
 .footercontent {
+    
     padding-top: 70px;
     float: inherit;
     top: 70px;
@@ -1494,9 +1480,7 @@ img.emote {
     color: white;
     background-size: 90%;
         pointer-events: none;
-     font-family: "Prompt";
-    ,
-    "Bradley Hand";
+    font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
 
 
 
