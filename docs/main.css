@@ -5,22 +5,35 @@ html {
     width: 100vw;
     height: 100vh;
     -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
                         scrollbar-color: #164D6B #00243B;
-
+        
 
 }
 
 @-moz-document url-prefix() {
     html {
                     scrollbar-color: #164D6B #00243B;
+        
     }
     
+    body {
+
+                font-family: "Arial", sans-serif !important;
+    }
+    
+       .tbox {
+        scrollbar-width: thin !important;
+                font-family: "Arial", sans-serif !important;
+
+        }
 }
 
 main {
     min-height: calc(100vh);
             scrollbar-color: #164D6B #00243B;
     font-family: "Prompt","Bradley Hand", Helvetica, Arial, sans-serif;
+    
 
 }
 
@@ -79,6 +92,9 @@ main {
 /* body */
 
 body {
+    
+    
+    
     margin: 0;
     background-color: #205273;
     background-image: url(images/triangle3-seamless2.jpg);
@@ -407,6 +423,7 @@ background: repeating-linear-gradient(45deg, #003759, #003759 20px, #00243B 20px
     z-index: 1;
     overflow: visible;
     background-color: #00243B;
+    
 }
 
 }
@@ -1587,6 +1604,7 @@ details[open] > img {
     border-radius: 15px;
     margin:inherit;
     padding:20px;
+
 }
 
 /* hr with text in middle */
