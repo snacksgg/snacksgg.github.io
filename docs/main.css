@@ -1,3 +1,6 @@
+
+/* === the big important tags === */
+
 html {
 
     padding: 0;
@@ -11,23 +14,7 @@ html {
 
 }
 
-@-moz-document url-prefix() {
-    html {
-                    scrollbar-color: #164D6B #00243B;
-        
-    }
-    
-    body {
 
-                font-family: "Arial", sans-serif !important;
-    }
-    
-       .tbox {
-        scrollbar-width: thin !important;
-                font-family: "Arial", sans-serif !important;
-
-        }
-}
 
 main {
     min-height: calc(100vh);
@@ -37,59 +24,6 @@ main {
 
 }
 
-/* custom scrollbar (retired)
-
-::-webkit-scrollbar {
-  border-image: transparent;
-  border-image-source: url('/assets/scrollbar.png');
-  border-image-width: 8px;
-  border-image-slice: 7 fill;
-  border-image-repeat: repeat;
-        border-radius: 100px;
-
-}
-::-webkit-scrollbar-thumb {
-  border-image: url('/assets/scrollbar-thumb.png');
-  border-image-width: 8px;
-  border-image-slice: 7 fill;
-  border-image-repeat: repeat;
-    border-radius: 100px;
-
-}
-::-webkit-scrollbar-thumb:hover {
-  border-image-source: url('/assets/scrollbar-thumb-hover.png');
-
-}::-webkit-scrollbar {
-  border-image: transparent;
-  border-image-source: url('/assets/scrollbar.png');
-  border-image-width: 8px;
-  border-image-slice: 7 fill;
-  border-image-repeat: repeat;
-        border-radius: 100px;
-            transition: all 5s;
-        scrollbar-color: #003759 #00243B;
-
-}
-::-webkit-scrollbar-thumb {
-  border-image: url('/assets/scrollbar-thumb.png');
-  border-image-width: 8px;
-  border-image-slice: 7 fill;
-  border-image-repeat: repeat;
-    border-radius: 100px;
-            transition: all 5s;
-
-
-}
-::-webkit-scrollbar-thumb:hover {
-  border-image-source: url('/assets/scrollbar-thumb-hover.png');
-            transition: all 5s;
-
-}
-
-*/
-
-
-/* body */
 
 body {
     
@@ -116,12 +50,44 @@ body {
 }
 
 
+/* === firefox styling === */
+
+@-moz-document url-prefix() {
+    html {
+                    scrollbar-color: #164D6B #00243B;
+                                font-family: "Arial", sans-serif !important;
+                    letter-spacing: -2px;
+    }
+    
+    body {
+
+                font-family: "Arial", sans-serif !important;
+
+    }
+    
+       .tbox {
+        scrollbar-width: thin !important;
+                font-family: "Arial", sans-serif !important;
+
+        }
+    
+    main {
+        
+                        font-family: "Arial", sans-serif !important;
+    }
+    
+    button {
+        
+                                font-family: "Arial", sans-serif !important;
+    }
+    .boxed-grid {
+                                font-family: "Arial", sans-serif !important;
+                            font-weight: 700 !important;
+    }
+}
 
 
-
-
-
-
+/* === header === */
 
 .header {
     z-index: 10000;
@@ -155,6 +121,34 @@ body {
 
 
 }
+
+/* makes the header go away when you scroll far enough*/
+
+body nav {
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+}
+
+
+
+
+/* blocker - */
+.blocker {
+    height: 100px;
+}
+
+/* mobile responsive - header, splash art, background */
+
+@media only screen and (max-width: 870px) {
+    .blocker {
+        height: 50px;
+    }
+}
+
+;
+
+
 
 @media only screen and (max-width: 870px) {
     .container-header {
@@ -191,18 +185,7 @@ body {
     }
 }
 
-/* Matches your header height */
-.blocker {
-    height: 100px;
-}
 
-@media only screen and (max-width: 870px) {
-    .blocker {
-        height: 50px;
-    }
-}
-
-;
 
 
 /* containers */
@@ -572,6 +555,8 @@ p {
 
 }
 
+
+
 /* list styles */
 
 ul {
@@ -590,6 +575,10 @@ ul {
     text-align: left;
     
 }
+
+ul.li-sitemap {
+        font-size: 12px;
+    }
 
 li {
     
@@ -722,6 +711,8 @@ hr.small {
 
     
 }
+
+/* highlight / marker style, used for tooltips on drawbox */
 
 mark {
     background:rgba(0,0,0,.9); border-radius: 5px;padding-top:10px; padding-bottom: 10px;
@@ -1063,9 +1054,7 @@ input[type=button]:active {
 
     }
     
-    ul.li-sitemap {
-        font-size: 12px;
-    }
+
     
 
   img.rounded {
@@ -1153,23 +1142,7 @@ a:active {
     color: #2899b0;
 }
 
-body nav {
-    position: sticky;
-    top: 0;
-}
 
-
-$("#someSelector").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() {
-        ...
-    }
-
-);
-
-twitch-embed {
-    width: 5008px;
-
-
-}
 
 .scroll-top {
     background-color: #00243B;
