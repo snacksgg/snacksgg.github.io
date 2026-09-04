@@ -45,11 +45,14 @@
   opacity: 0 !important;
   cursor: default;
 }
+
 .lg-next:hover:not(.disabled),
 .lg-prev:hover:not(.disabled) {
     background: url(/images/button2.png);
     background-size: 120%;
-  color: #fff;
+  color: lightblue;
+    transition: 0.1s;
+    
 }
 .lg-single-item .lg-next,
 .lg-single-item .lg-prev {
@@ -1324,7 +1327,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   transition: opacity 333ms ease-in 0s;
 }
 .lg-backdrop.in {
-  opacity: 1;
+  opacity: 0.90;
 }
 
 .lg-css3.lg-no-trans .lg-prev-slide,
