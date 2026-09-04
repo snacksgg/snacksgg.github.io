@@ -1,4 +1,40 @@
 
+/* === firefox styling === */
+
+@-moz-document url-prefix() {
+    html {
+                    scrollbar-color: #164D6B #00243B;
+                                font-family: "Arial", sans-serif !important;
+    }
+    
+    body {
+
+                font-family: "Arial", sans-serif !important;
+
+    }
+    
+       .tbox {
+        scrollbar-width: thin !important;
+                font-family: "Arial", sans-serif !important;
+
+        }
+    
+    main {
+        
+                        font-family: "Arial", sans-serif !important;
+    }
+    
+    button {
+        
+                                font-family: "Arial", sans-serif !important;
+    }
+    .boxed-grid {
+                                font-family: "Arial", sans-serif !important;
+                            font-weight: 700 !important;
+    }
+}
+
+
 html {
 
 }
@@ -146,6 +182,8 @@ text-align: center;
     border-radius: 15px;
 	* {
 		margin-block: 0;
+                                        font-family: "Arial", sans-serif !important;
+
 	}
 }
 #main-nav {
@@ -214,8 +252,8 @@ border-radius:10px;
 #header-message {
     margin-bottom: 7px;
             font-size: 16px;
-	padding-block-start: 0.3rem;
-	padding-block-end: 0.2rem;
+	padding-block-start: 0.5rem;
+	padding-block-end: 0.5rem;
 	padding-inline: 0.5rem;
 	border-block-start: var(--line);
 	border-color: var(--back-colour);
@@ -394,6 +432,7 @@ article > header {
 		text-align: right;
 		a::after {
 			content: "\2192 \a0"; /* right arrow + non-breaking space */
+            margin: 20px !important;
 		}
 	}
 }

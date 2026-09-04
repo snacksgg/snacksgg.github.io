@@ -49,6 +49,15 @@ body {
 
 }
 
+/* site wide styling */
+
+    ::selection {
+        background-color: #064770; 
+    }
+
+a::selection {
+    color: white;
+}
 
 /* === firefox styling === */
 
@@ -56,7 +65,6 @@ body {
     html {
                     scrollbar-color: #164D6B #00243B;
                                 font-family: "Arial", sans-serif !important;
-                    letter-spacing: -2px;
     }
     
     body {
@@ -64,6 +72,8 @@ body {
                 font-family: "Arial", sans-serif !important;
 
     }
+    
+
     
        .tbox {
         scrollbar-width: thin !important;
@@ -124,7 +134,11 @@ body {
 
 /* makes the header go away when you scroll far enough*/
 
-
+body nav {
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+}
 
 
 
@@ -1122,6 +1136,11 @@ element {
 }
 
 
+s {
+    color: #2891D1;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+}
 
 
 /* unvisited link */
