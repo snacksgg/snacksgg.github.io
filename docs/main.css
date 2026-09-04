@@ -124,11 +124,7 @@ body {
 
 /* makes the header go away when you scroll far enough*/
 
-body nav {
-    position: sticky;
-    top: 0;
-    z-index: 100000;
-}
+
 
 
 
@@ -743,6 +739,13 @@ mark {
 
   
 
+}
+
+@media only screen and (max-width: 870px) {
+ .tooltip .tooltiptext {
+    position: fixed;
+     bottom: 50px;
+    }
 }
 
 .tooltip:hover .tooltiptext {

@@ -27,7 +27,7 @@ Add a new item in the "messages" array, containing the message content (this can
 	SETTINGS
 ============= */
 
-const latestPostsCutoff = 10; // number of blog posts displayed on home page
+const latestPostsCutoff = 5; // number of blog posts displayed on home page
 const messagesOn = true; // whether or not to show a random message in the header
 
 // links listed in header (nav) and footer (contact)
@@ -56,6 +56,8 @@ const contactLinks = [
 
 const posts = [
     
+            
+            
             {
 	"title": `New Year 2026`,
 	"filename": `2025-12-28-new-year-2026`,
@@ -71,19 +73,19 @@ const posts = [
         {
 	"title": `Music Spotlight #0 - Longtime Favorites`,
 	"filename": `2025-07-30-music-spotlight-0`,
-	"tags": [`2025`, `music talk`, ,`music spotlight`, ],
+	"tags": [`2025`, `music`, , ],
 },
     
     {
 	"title": `[miniblog] Instrumental Music `,
 	"filename": `2025-05-14-instrumental-music`,
-	"tags": [`2025`, `miniblog`,`music talk`, ,`music spotlight`, ],
+	"tags": [`2025`, `miniblog`,`music`, ,, ],
 },
         
     {
 	"title": `Art Games`,
 	"filename": `2025-02-17-easing-back-into-art`,
-	"tags": [`2025`, `art talk`, ],
+	"tags": [`2025`, `art`, ],
 },
     
 {
@@ -109,12 +111,18 @@ const posts = [
 ============= */
 
 const messages = [
+    
+        /* ============= headers with images ============= */
+    
     	` <img src="/blog/images/header/klonoa.png" width="60px" style="vertical-align: middle;"> i hired this guy to stare at you `,
-    	`<a href="https://www.youtube.com/watch?v=F9nljUH1ECs" target="_blank"><font color="lightblue">story of cowboys</font></a>`,
-    	`<img src="/images/pumapost1.png" width="50px">`,
-    	` Cruis'n USA! <img src="/blog/images/header/cruisn.png" width="100px">`,
-    	`here, have a medkit <img src="/blog/images/header/medkit.png" width="50px">`,
-    	`so... <img src="/blog/images/header/starbit.png" width="20px"> <font color="purple">chunks</font> , huh?`,
+    
+    	`<img src="/images/pumapost1.png" width="50px"style="vertical-align: middle;">`,
+    	` Cruis'n USA! <img src="/blog/images/header/cruisn.png" width="100px"style="vertical-align: middle;">`,
+    	`here, have a medkit <img src="/blog/images/header/medkit.png" width="80px"style="vertical-align: middle;">`,
+    	`so... <img src="/blog/images/header/starbit.png" width="20px"style="vertical-align: middle;"> <font color="purple">chunks</font> , huh?`,
+
+    /* ============= headers with text only ============= */
+    
 	`WELCOME TO BONUS STAGE!`,
 	`my name is giovanni giorgio, but everybody calls me giorgio`,
 	`i'm here to see MF DOOM`,
@@ -286,6 +294,7 @@ const messages = [
 	`yeah`,
 	`yeah?`,
 	`girls rule the day... but us guys.... <font color="lightblue"><a href="https://www.youtube.com/watch?v=kZlZ-ZK3bXQ rel="external" target="_blank">we get the night</a></font>`,
+    	`<a href="https://www.youtube.com/watch?v=F9nljUH1ECs" target="_blank"><font color="lightblue">story of cowboys</font></a>`,
 
 
 ];
@@ -318,12 +327,12 @@ function formatTagHash(tag) {
 
 // write in main-nav and footer content
 document.getElementById(`header`).innerHTML = `
-<nav id="main-nav"><ul class="flex-list">${navLinks.map(link => `<li><a href="${pathToInfo}${link.filename}.html">${link.name}</a></li>`).join(``)}</ul></nav>
+<nav id="main-nav"><ul class="flex-list" >${navLinks.map(link => `<li><a href="${pathToInfo}${link.filename}.html">${link.name}</a></li>`).join(``)}</ul></nav>
 ${messagesOn && messages.length > 0
 ? `<div id="header-message">${messages[Math.floor(Math.random() * messages.length)]}</div>`
 : ``}
 `;
-document.getElementById(`contact-links`).innerHTML = contactLinks.map(link => `<li><a href="${link.url}" rel="external">${link.name}</a></li>`).join(``);
+document.getElementById(`contact-links`).innerHTML = contactLinks.map(link => `<li ><a href="${link.url}" rel="external">${link.name}</a></li>`).join(``);
 
 /* ----------
 	LISTS

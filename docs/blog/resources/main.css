@@ -73,7 +73,7 @@ body nav {
 
 :root {
 	--gap: 1.5rem;
-	--line: 5px solid #00243B;
+	--line: 4px solid #00243B;
 	--interface-font-size: 1.2em;
 	--meta-font-size: 0.8em;
 }
@@ -135,6 +135,7 @@ text-align: center;
 	flex-wrap: wrap;
 	padding-inline-start: 0;
 	list-style-type: "";
+
 }
 
 /* HEADER */
@@ -148,6 +149,10 @@ text-align: center;
 	}
 }
 #main-nav {
+    position: static;
+            background-color: #003759;
+    padding-top: 3px;
+border-radius:10px;
 	a {
 		display: block;
 		padding-block-start: 0.3em;
@@ -157,13 +162,58 @@ text-align: center;
 		color: var(--back-colour);
 		text-decoration: unset;
         position: relative;
+        background-color: #003759;
+        border-radius: 10px;
+/*    vvvv i should probably do this for my hover stuff, didnt know you could add hover like this :o   */
 		&:hover {
-			background-color: #003759;
+			background-color: #00243B;
+            color: lightblue;
+            
+            
             
 		}
 	}
 }
+
+@media only screen and (max-width: 870px) {
+    
+    #footer {
+        background-size: 85% !important;
+    }
+    
+    ul {
+        padding-top: 10px !important;
+    }
+    
+    #main-nav {
+	a {
+        font-size: 13px;
+    
+        }
+    }
+    
+    li {
+        font-size: 11px;
+    }
+    
+    p {
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    #header-message {
+        font-size: 11px !important;
+    }
+ 
+}
+
 #header-message {
+    margin-bottom: 7px;
+            font-size: 16px;
 	padding-block-start: 0.3rem;
 	padding-block-end: 0.2rem;
 	padding-inline: 0.5rem;
@@ -172,6 +222,7 @@ text-align: center;
 	&::before {
 		content: "\25c9 \a0"; /* fisheye + non-breaking space */
 		color: var(--hot-colour);
+        
 	}
 	a {
 		color: inherit;
@@ -319,6 +370,8 @@ article > header {
 		margin-block-start: 0;
 	}
 }
+
+
 #post-tags {
 	margin-block: 0;
 	& > li:not(:last-child)::after {
@@ -366,19 +419,22 @@ article > header {
 
 #footer {
     background-image: url(/images/footer2.png);
-    background-size: 50%;
+    background-size: 40%;
+    
 	padding-block-start: 1rem;
     border-radius: 15px;
 	font-size: var(--meta-font-size);
     padding: 20px;
     padding-top: 50px;
-    
+    background-repeat: repeat;
     
 	[rel="return"]::before {
 		content: "\2191 \a0"; /* up arrow + non-breaking space */
 	}
 }
 #contact-links {
+    
+    justify-content: center;
 	& > li:not(:last-child)::after {
 		content: "\a0 |\a0"; /* non-breaking space + pipe + non-breaking space */
         
