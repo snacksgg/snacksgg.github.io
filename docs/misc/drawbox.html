@@ -20,7 +20,31 @@
     <script src="/pagination/paginator.js" type="text/javascript"></script>
 <script src="https://kit.fontawesome.com/712948e023.js" crossorigin="anonymous"></script>
     <style>
-        * {box-sizing: border-box;}
+        
+/* firefox styling */
+        
+        @-moz-document url-prefix() {
+            #canvasoptions {
+                font-weight: normal;
+            }
+}
+        
+/*    mobile responsive    */
+        
+        @media only screen and (max-width: 900px) {
+#canvasoptions {
+                width: 100% !important;
+                margin-left: 0px !important;
+                font-size: 10px;
+            }
+            
+            #animatedBackground2 {
+                background-size: 30% !important;
+            }
+}
+        
+/*    main styling    */
+                * {box-sizing: border-box;}
         canvas {
             border: 1px solid black;
             cursor: crosshair;
@@ -28,16 +52,6 @@
             
         }
         
-        @media only screen and (max-width: 900px) {
-#canvasoptions {
-                width: 100% !important;
-                margin-left: 0px !important:
-            }
-            
-            #animatedBackground2 {
-                background-size: 30% !important;
-            }
-}
         #gallery {
             display: flex;
             flex-wrap: wrap;
@@ -70,8 +84,104 @@
             line-height: 10px;
         }
         
+/*    range slider styling    */
         
-       
+input[type=range] {
+  width: 150px;
+  margin: 3px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background: #003759;
+  border: 0;
+  border-radius: 25px;
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -5px;
+  width: 34px;
+  height: 20px;
+  background: #2d7ba6;
+  border: 3px solid #00243b;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #004069;
+}
+input[type=range]::-moz-range-track {
+  background: #003759;
+  border: 0;
+  border-radius: 25px;
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  width: 34px;
+  height: 16px;
+  background: #2d7ba6;
+  border: 3px solid #00243b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+}
+input[type=range]::-ms-fill-lower {
+  background: #00080d;
+  border: 0;
+  border-radius: 50px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #00243b;
+  border: 0;
+  border-radius: 50px;
+}
+input[type=range]::-ms-thumb {
+  width: 34px;
+  height: 20px;
+  background: #00568c;
+  border: 3px solid #00243b;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #00243b;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #004069;
+}
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  input[type=range] {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
+
+
+
+
+
+
  
     </style>
 </head>
@@ -103,10 +213,10 @@
     <h1>DRAWBOX</h1>
         
         
-        
+        <!--  main canvas  -->
+
         <div id="circularcursor"></div>
    
-    
    
     <div class="drawbox_con">
 
@@ -119,15 +229,15 @@
                        <input type="button" value="Clear" onclick="clearCanvas()" title="clear canvas"></input>
 
                   
-        
+<!--    canvas options    -->
     <fieldset class="boxed" style="background:none; outline: none;box-shadow: none; padding-top: 0px;border: none; margin-bottom: 0px;">
-        <div class="tbox" id="canvasoptions" style="margin: auto;background:url(/images/triangle3-seamless3.jpg); width: 60%; text-align: left; background-size: 80%; background-attachment: fixed;">
+        <div class="tbox" id="canvasoptions" style="margin: auto;background:url(/images/triangle3-seamless3.jpg); width: 60%; text-align: left; background-size: 80%; background-attachment: fixed; line-height: 40px;">
             
             
     <label for="colorpicker"><strong>Color:  </strong></label>
     <input type="color"  name="colorpicker" id="colorpicker" oninput="stroke_color = this.value; colorchoice.value = this.value"> 
 
-    <label for="StrokeAmount"><strong>Size: </strong></label> <input type="range" id="Strokewidth" name="Strokewidth" min="1" max="100" value="3" oninput="stroke_width = this.value; StrokeAmount.value=this.value" title="stroke width">
+    <label for="StrokeAmount" style="padding-left: 10px;"><strong>Size: </strong></label> <input type="range" id="Strokewidth" name="Strokewidth" min="1" max="100" value="3" oninput="stroke_width = this.value; StrokeAmount.value=this.value" title="stroke width">
     <!--See the stroke value-->
     <output name="StrokeAmount" id="StrokeAmount" for="Stokewidth">3</output>
  
@@ -152,11 +262,11 @@
                        <option value="butt">Butt</option>
                        <option value="square">Square</option>
                    </select>
-                   <br><br>
+                   <br>
                    <label for="Name"><strong>Name:</strong></label>
                        <input type="text" oninput="user_name = this.value" required maxlength="30" size="15" placeholder="anonymous">
 
-                   <br><br>
+                   <br>
                 <input type="button" id="submit" value="Submit"></input>
         
  <!--    clear canvas prompt    -->
@@ -183,8 +293,10 @@ function clearCanvas() {
         </div>
 
 
-    
+<!--  "submitting" text  -->
     <p id="status" style="text-align: center; color: white;"></p>
+    
+<!--  submitted drawings section  -->
 
 	<div class="boxed" style="background: url(/images/checker-diamond.png); background-size: 10%; width: 80%; margin-top: 0px;" id="animatedBackground2">
     <h1>Submitted Drawings ☺</h1>
