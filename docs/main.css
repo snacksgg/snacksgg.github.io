@@ -31,7 +31,7 @@ body {
     margin: 0;
     background-color: #205273;
     background-image: url(images/triangle3-seamless2.jpg);
-    background-size: 100%;
+    background-size: 90%;
     background-attachment: fixed;
     background-repeat: repeat;
     width: 100%;
@@ -158,9 +158,10 @@ body nav {
     .blocker {
         height: 50px;
     }
+    
+
 }
 
-;
 
 
 
@@ -189,6 +190,17 @@ body nav {
         
     }
     
+    .splashart-text {
+        width: 60vw !important;
+        
+    }
+    
+    .splashart-box {
+                width: 75vw !important;
+        filter: drop-shadow(2px 0px 0 #003759) drop-shadow(0px 2px 0 #003759) drop-shadow(-2px -0px 0 #003759) drop-shadow(-0px -2px 0 #003759);
+
+    }
+    
     #animatedBackground2 {
         
         background-size: 25% !important;
@@ -197,7 +209,16 @@ body nav {
         
         background-size: 100% !important;
     }
+    
+    .index-buttons {
+        
+        width: 110px;
+filter: drop-shadow(2px 0px 0 #003759) drop-shadow(0px 2px 0 #003759) drop-shadow(-2px -0px 0 #003759) drop-shadow(-0px -2px 0 #003759);
+    }
+
 }
+
+
 
 
 
@@ -781,6 +802,10 @@ img {
     
 
 }
+
+/* when image fails to load or is missing */
+    img::before {
+    }
 
 .img2 {
     width: 20%;
@@ -1640,8 +1665,7 @@ fieldset.title legend {
 }
 
 .webbuttons {
-image-rendering: crisp-edges;
-  display: block;
+
 }
 
 .image-hover-highlight {
@@ -1649,6 +1673,7 @@ image-rendering: crisp-edges;
     transition: all 0.10s;
 box-shadow: 0 0 0 2px transparent;
     &:hover {
+
 
 
         border-radius: 5px;
