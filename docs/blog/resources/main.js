@@ -291,6 +291,8 @@ const messages = [
 	`honk shoe`,
 	`burg me`,
 	`all i know is that i don't know`,
+	`DOOR STUCK! DOOR! STUCK!`,
+	`i tried to sneak through the door, man. can't make it. can't make it.`,
 	`yeah`,
 	`yeah?`,
 	`girls rule the day... but us guys.... <font color="lightblue"><a href="https://www.youtube.com/watch?v=kZlZ-ZK3bXQ rel="external" target="_blank">we get the night</a></font>`,
