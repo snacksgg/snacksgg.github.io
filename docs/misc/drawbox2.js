@@ -112,6 +112,7 @@ function updatePenStyle() {
   // update the canvas's drawing
   cursor_canvas.width = cursor_canvas.height = rad;
   cursor_ctx.fillStyle = color;
+  
   if( cap === "round" ) {
     cursor_ctx.arc( rad / 2, rad / 2, rad / 2, 0, Math.PI * 2 );
   }
@@ -120,13 +121,14 @@ function updatePenStyle() {
   }
   cursor_ctx.fill();
   // extract it as a png image
-  cursor_canvas.toBlob( function( blob ) {
+   cursor_canvas.toBlob( function( blob ) {
     // revoke the previous blob URL we created (if any)
     URL.revokeObjectURL( pen_style.cursor_url );
     // store the new one
     pen_style.cursor_url = URL.createObjectURL( blob );
     // use it as CSS 'cursor'
-    canvas.style.cursor = `url(${ pen_style.cursor_url }) ${ rad/2 } ${ rad/2 }, auto`;
+    canvas.style.cursor = `url(${ pen_style.cursor_url }) ${ rad/2 } ${ rad/2 }, auto`; 
+    if (rad < 4) {canvas.style.cursor = "crosshair";}
   });  
 }
 
@@ -140,9 +142,11 @@ function setPosition(e) {
 
 function change_color(element) {
   stroke_color = element.style.background;
+   updatePenStyle();
 }
 
 function start(event) {
+  has_moved = false;
   is_drawing = true;
   context.beginPath();
   context.moveTo(getX(event), getY(event));
@@ -152,6 +156,7 @@ function start(event) {
 
 function draw(event) {
   if (!is_drawing) return;
+  has_moved = true;
   context.lineTo(getX(event), getY(event));
   context.strokeStyle = stroke_color;
   context.lineWidth = stroke_width;
@@ -165,6 +170,12 @@ function draw(event) {
 
 function stop(event) {
   if (!is_drawing) return;
+  if (!has_moved) {
+    let start_draw_x = getX(event);
+    let start_draw_y = getY(event);
+context.lineTo(start_draw_x + 1, start_draw_y);
+context.stroke();
+}
   context.stroke();
   context.closePath();
   is_drawing = false;
@@ -192,9 +203,6 @@ canvas.addEventListener("mousedown", start, false);
 canvas.addEventListener("mousemove", draw, false);
 canvas.addEventListener("mouseup", stop, false);
 canvas.addEventListener("mouseout", stop, false);
-
-
-
 
 
 

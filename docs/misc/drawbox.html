@@ -337,16 +337,16 @@ how to remove the virtical space around the range input in IE*/
         <div onclick="change_color(this); colorchoice.value = 'Chocolate Brown' ; colorpicker.value = '#9bbc0f'"  style="background: #9bbc0f;" class="stroke_color"></div>
    </div>
    
-    <label for="colorpicker"><strong>Color:  </strong></label>
-    <input type="color"  name="colorpicker" id="colorpicker" oninput="stroke_color = this.value; colorchoice.value = this.value"> 
-
+<label for="colorpicker"><strong>Color:&nbsp;</strong></label>
+            <input type="color"  name="colorpicker" id="colorpicker" oninput="stroke_color = this.value; colorchoice.value = this.value" style="border-radius: 5px;"> 
+            <output name="colorchoice" id="colorchoice" for="colorpicker" style="min-width: 110px; display: inline-block;">Black</output>
             
 
             
-            
-    <label for="StrokeAmount" style="padding-left: 10px;"><strong>Size: </strong></label> <input type="range" id="Strokewidth" name="Strokewidth" min="1" max="100" value="3" oninput="stroke_width = this.value; StrokeAmount.value=this.value" title="stroke width">
+    <span style="display: inline-block;">        
+    <label for="StrokeAmount" style="padding-left: 10px;"><strong>Size:&nbsp;</strong></label> <input type="range" id="Strokewidth" name="Strokewidth" min="1" max="100" value="3" oninput="stroke_width = this.value; StrokeAmount.value=this.value" title="stroke width" >
     <!--See the stroke value-->
-    <output name="StrokeAmount" id="StrokeAmount" for="Stokewidth">3</output>
+        <output name="StrokeAmount" id="StrokeAmount" for="Stokewidth" style="display: inline-block; min-width: 40px;">3</output> </span>
  
 
             
@@ -357,13 +357,13 @@ how to remove the virtical space around the range input in IE*/
  
             
 
-                   <label for="OpacityAmount"><strong>Opacity: </strong></label>
-
-                   <input type="range" id="Opacity" name="Opacity" step="0.05" min="0" max="1" value="1" oninput="line_opacity = this.value; OpacityAmount.value=this.value" title="Opacity width">
+                   <span style="display: inline-block;"><label for="OpacityAmount"><strong>Opacity:&nbsp;</strong></label><input type="range" id="Opacity" name="Opacity" step="0.05" min="0" max="1" value="1" oninput="line_opacity = this.value; OpacityAmount.value=this.value" title="Opacity width">
                    <!--See the stroke value-->
 
-                   <output name="OpacityAmount" id="OpacityAmount" for="Opacity">1.00</output><br>
+                   <output name="OpacityAmount" id="OpacityAmount" for="Opacity" style="display: inline-block; min-width: 40px;">1.00</output><br> </span>
+            
 <!--      theme picker      -->
+            <span style="display: inline-block;">
                    <label><strong>Color Palette:</strong></label>
   <select name="palette" id="palette"  onchange="showDiv()">
     <option value="Basic">Default</option>
@@ -371,12 +371,21 @@ how to remove the virtical space around the range input in IE*/
     <option value="AutumnHarvest">Autumn Harvest</option>
     <option value="GameBoy">Game Boy</option>
   </select> 
-                   <br>
+                
+            </span>                    <br>
+                
+                        <span style="display: inline-block;">
+
                    <label for="Name"><strong>Name:</strong></label>
                        <input type="text" oninput="user_name = this.value" required maxlength="30" size="15" placeholder="anonymous">
-
+</span>
                    <br>
-                <input type="button" id="submit" value="Submit"></input>     <label for="BrushType"><strong>Brush Type:</strong></label>
+
+                <input type="button" id="submit" value="Submit"></input>     
+        
+                                            <span style="display: inline-block;">
+
+        <label for="BrushType"><strong>Brush Type:</strong></label>
                    <select id="BrushType" name="BrushType" oninput="stroke_join = this.value">
                        <option value="round" selected>Round</option>
                        <option value="bevel">Bevel</option>
@@ -387,7 +396,9 @@ how to remove the virtical space around the range input in IE*/
                        <option value="round" selected>Round</option>
                        <option value="butt">Butt</option>
                        <option value="square">Square</option>
-                   </select><br>
+            </select> </span>
+        
+        <br> 
         
  <!--    clear canvas prompt    -->
 <script>
