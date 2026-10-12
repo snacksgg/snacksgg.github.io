@@ -128,7 +128,7 @@ function updatePenStyle() {
     pen_style.cursor_url = URL.createObjectURL( blob );
     // use it as CSS 'cursor'
     canvas.style.cursor = `url(${ pen_style.cursor_url }) ${ rad/2 } ${ rad/2 }, auto`; 
-    if (rad < 4) {canvas.style.cursor = "crosshair";}
+    if (rad < 3) {canvas.style.cursor = "crosshair";}
   });  
 }
 
