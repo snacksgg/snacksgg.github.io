@@ -385,3 +385,16 @@ function keyPressHandler(e) {
 }
 
 window.addEventListener('keydown', keyPressHandler);
+
+ function showDiv() {
+  const dropdown = document.getElementById("palette");
+  const selectedValue = dropdown.value;
+  const divs = document.querySelectorAll(".colorPalette");
+
+  // Hide all divs
+  divs.forEach(div => div.style.display = "none");
+
+  // Show the selected div
+  document.getElementById(selectedValue).style.display = "flex";
+}
+showDiv();

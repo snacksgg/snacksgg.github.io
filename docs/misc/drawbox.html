@@ -84,6 +84,38 @@
             line-height: 10px;
         }
         
+            .stroke_color {
+          width:32px;
+          height:32px;
+                border-radius: 5px;
+                margin-right: 5px;
+                margin-left: 5px;
+                     outline: 3px solid #003759;   
+             display: inline-block;
+                align-items: center !important;
+                margin-bottom: 8px;
+
+                &:hover {
+                     outline: 3px solid white !important;   
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+                &:active {
+                    transform: scale(1.2);
+                }
+        }
+        
+         .colorPalette{
+             display: none;
+             
+
+             margin-top: 5px;
+             width: 100%;
+             flex-wrap: wrap;
+                            
+
+    }
+        
 /*    range slider styling    */
         
 input[type=range] {
@@ -198,7 +230,7 @@ how to remove the virtical space around the range input in IE*/
     </div>
 </nav>
 <!-- Floating Images -->
-    <div class="img-float"><img src="images/wizzed2.gif" alt="WIP" style="width: 35%; height: 35%;"></div>
+    <div class="img-float"><img src="/images/float/drawbox-float.png" alt="" style="width: 35%; height: 35%;"></div>
 
         <script>
     shortcut.add("ctrl+z", Restore() {
@@ -208,11 +240,9 @@ how to remove the virtical space around the range input in IE*/
 <!-- End of Header -->
     
 <body style="font: white;">
-    <div class="main-column">
     <div class="boxed" style="background:none; outline: none;box-shadow: none; padding-top: 0px;">
-    <h1>DRAWBOX</h1>
         
-        
+
         <!--  main canvas  -->
 
         <div id="circularcursor"></div>
@@ -229,20 +259,103 @@ how to remove the virtical space around the range input in IE*/
                        <input type="button" value="Clear" onclick="clearCanvas()" title="clear canvas"></input>
 
                   
+                            <!--      === THEMES ===      -->
+
+         <!-- https://www.w3schools.com/colors/colors_names.asp -->
+      <!--make sure the colorpicker.value is in hexdemical. Colorchoice value is the name that will display when you choose a color-->
+         <!---you can add multiple color palettes make sure to have the value and id name match!-->
+    <!--color color gen site: https://coolors.co/?home -->
+
+        
+
+        </div>
 <!--    canvas options    -->
     <fieldset class="boxed" style="background:none; outline: none;box-shadow: none; padding-top: 0px;border: none; margin-bottom: 0px;">
-        <div class="tbox" id="canvasoptions" style="margin: auto;background:url(/images/triangle3-seamless3.jpg); width: 60%; text-align: left; background-size: 80%; background-attachment: fixed; line-height: 40px;">
+        <div class="tbox" id="canvasoptions" style="margin: auto;background:url(/images/triangle3-seamless3.jpg); width: 70%; text-align: left; background-size: 80%; background-attachment: fixed; line-height: 40px;">
             
+                    
+ 
             
+            <div id="Basic" class="colorPalette" >
+      
+    <div onclick="change_color(this); colorchoice.value = 'Black' ; colorpicker.value = '#000000'"  style="background: #000000" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Dark Gray' ; colorpicker.value = '#444444'"  style="background: #444444;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Light Gray' ; colorpicker.value = '#999999'"  style="background: #999999;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'White' ; colorpicker.value = '#ffffff'"  style="background: #ffffff;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Red' ; colorpicker.value = '#DB3232'"  style="background: #DB3232" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Dark Red' ; colorpicker.value = '#6E0000'"  style="background: #6E0000" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Orange' ; colorpicker.value = '#F0843E'"  style="background: #F0843E" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Brown' ; colorpicker.value = '#451F0A'"  style="background: #451F0A" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Yellow' ; colorpicker.value = '#FCFC5B'"  style="background: #FCFC5B" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Green' ; colorpicker.value = '#1DE23E'"  style="background: #1DE23E" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Dark Green' ; colorpicker.value = '#1F915F'"  style="background: #1F915F" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Cyan' ; colorpicker.value = '#50DCDE'"  style="background: #50DCDE" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Blue' ; colorpicker.value = '#559BE0'"  style="background: #559BE0" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Dark Blue' ; colorpicker.value = '#081A52'"  style="background: #081A52" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Purple' ; colorpicker.value = '#A35AED'"  style="background: #A35AED" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Dark Purple' ; colorpicker.value = '#571375'"  style="background: #571375" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Pink' ; colorpicker.value = '#FA7AD2'"  style="background: #FA7AD2" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Magenta' ; colorpicker.value = '#8C063F'"  style="background: #8C063F" class="stroke_color"></div>
+
+            </div>
+      
+             <div id="Drawception" class="colorPalette" >
+      
+    <div onclick="change_color(this); colorchoice.value = 'Black' ; colorpicker.value = '#000000'"  style="background: #000000" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Dark Gray' ; colorpicker.value = '#444444'"  style="background: #444444;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Light Gray' ; colorpicker.value = '#999999'"  style="background: #999999;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'White' ; colorpicker.value = '#ffffff'"  style="background: #ffffff;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Brown' ; colorpicker.value = '#603913'"  style="background: #603913;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Tan' ; colorpicker.value = '#c69c6d'"  style="background: #c69c6d;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Light Tan' ; colorpicker.value = '#ffdab9'"  style="background: #ffdab9;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Cream Yellow' ; colorpicker.value = '#fffdc9'"  style="background: #fffdc9;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Red' ; colorpicker.value = '#ff0000'"  style="background: #ff0000;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Yellow' ; colorpicker.value = '##ffd700'"  style="background: #ffd700;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Orange' ; colorpicker.value = '#ff6600'"  style="background: #ff6600;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Light Green' ; colorpicker.value = '#16ff00'"  style="background: #16ff00;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Green' ; colorpicker.value = '#0fad00'"  style="background: #0fad00;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Light Blue' ; colorpicker.value = '#00ffff'"  style="background: #00ffff;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Blue' ; colorpicker.value = '#0247fe'"  style="background: #0247fe;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Hot Pink' ; colorpicker.value = '#ec008c'"  style="background: #ec008c;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Purple' ; colorpicker.value = '#8601af'"  style="background: #8601af;" class="stroke_color"></div>
+
+
+            </div>  
+            
+   <div id="AutumnHarvest" class="colorPalette">
+        <div onclick="change_color(this); colorchoice.value = 'Dark Wine' ; colorpicker.value = '#6f1d1b'"  style="background: #6f1d1b;" class="stroke_color"></div>
+        <div onclick="change_color(this); colorchoice.value = 'Camel' ; colorpicker.value = '#BB9457'"  style="background: #BB9457;" class="stroke_color"></div>
+        <div onclick="change_color(this); colorchoice.value = 'Dark Coffee' ; colorpicker.value = '#432818'"  style="background: #432818;" class="stroke_color"></div>
+        <div onclick="change_color(this); colorchoice.value = 'Chocolate Brown' ; colorpicker.value = '#99582a'"  style="background: #99582a;" class="stroke_color"></div>
+        <div onclick="change_color(this); colorchoice.value = 'Light Apricot' ; colorpicker.value = '#ffe6a7'"  style="background: #ffe6a7;" class="stroke_color"></div>     
+   </div> 
+            
+            <div id="GameBoy" class="colorPalette">
+        <div onclick="change_color(this); colorchoice.value = 'Dark Wine' ; colorpicker.value = '#0f380f'"  style="background: #0f380f;" class="stroke_color"></div>
+        <div onclick="change_color(this); colorchoice.value = 'Camel' ; colorpicker.value = '#306230'"  style="background: #306230;" class="stroke_color"></div>
+        <div onclick="change_color(this); colorchoice.value = 'Dark Coffee' ; colorpicker.value = '#8bac0f'"  style="background: #8bac0f;" class="stroke_color"></div>
+        <div onclick="change_color(this); colorchoice.value = 'Chocolate Brown' ; colorpicker.value = '#9bbc0f'"  style="background: #9bbc0f;" class="stroke_color"></div>
+   </div>
+   
     <label for="colorpicker"><strong>Color:  </strong></label>
     <input type="color"  name="colorpicker" id="colorpicker" oninput="stroke_color = this.value; colorchoice.value = this.value"> 
 
+            
+
+            
+            
     <label for="StrokeAmount" style="padding-left: 10px;"><strong>Size: </strong></label> <input type="range" id="Strokewidth" name="Strokewidth" min="1" max="100" value="3" oninput="stroke_width = this.value; StrokeAmount.value=this.value" title="stroke width">
     <!--See the stroke value-->
     <output name="StrokeAmount" id="StrokeAmount" for="Stokewidth">3</output>
  
 
-    <br>
+            
+
+
+
+            
+ 
+            
 
                    <label for="OpacityAmount"><strong>Opacity: </strong></label>
 
@@ -250,7 +363,20 @@ how to remove the virtical space around the range input in IE*/
                    <!--See the stroke value-->
 
                    <output name="OpacityAmount" id="OpacityAmount" for="Opacity">1.00</output><br>
-                   <label for="BrushType"><strong>Brush Type:</strong></label>
+<!--      theme picker      -->
+                   <label><strong>Color Palette:</strong></label>
+  <select name="palette" id="palette"  onchange="showDiv()">
+    <option value="Basic">Default</option>
+    <option value="Drawception">Drawception</option>
+    <option value="AutumnHarvest">Autumn Harvest</option>
+    <option value="GameBoy">Game Boy</option>
+  </select> 
+                   <br>
+                   <label for="Name"><strong>Name:</strong></label>
+                       <input type="text" oninput="user_name = this.value" required maxlength="30" size="15" placeholder="anonymous">
+
+                   <br>
+                <input type="button" id="submit" value="Submit"></input>     <label for="BrushType"><strong>Brush Type:</strong></label>
                    <select id="BrushType" name="BrushType" oninput="stroke_join = this.value">
                        <option value="round" selected>Round</option>
                        <option value="bevel">Bevel</option>
@@ -261,13 +387,7 @@ how to remove the virtical space around the range input in IE*/
                        <option value="round" selected>Round</option>
                        <option value="butt">Butt</option>
                        <option value="square">Square</option>
-                   </select>
-                   <br>
-                   <label for="Name"><strong>Name:</strong></label>
-                       <input type="text" oninput="user_name = this.value" required maxlength="30" size="15" placeholder="anonymous">
-
-                   <br>
-                <input type="button" id="submit" value="Submit"></input>
+                   </select><br>
         
  <!--    clear canvas prompt    -->
 <script>
