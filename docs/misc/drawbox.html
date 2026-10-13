@@ -322,6 +322,14 @@ how to remove the virtical space around the range input in IE*/
 
             </div>  
             
+                        <div id="CN" class="colorPalette">
+    <div onclick="change_color(this); colorchoice.value = 'Black' ; colorpicker.value = '#000000'"  style="background: #000000" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'White' ; colorpicker.value = '#ffffff'"  style="background: #ffffff;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Cyan' ; colorpicker.value = '#00C2FF'"  style="background: #00C2FF;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Magenta' ; colorpicker.value = '#FF00C2'"  style="background: #FF00C2;" class="stroke_color"></div>
+    <div onclick="change_color(this); colorchoice.value = 'Gold' ; colorpicker.value = '#fad400'"  style="background: #fad400;" class="stroke_color"></div>
+   </div>
+            
    <div id="AutumnHarvest" class="colorPalette">
         <div onclick="change_color(this); colorchoice.value = 'Dark Wine' ; colorpicker.value = '#6f1d1b'"  style="background: #6f1d1b;" class="stroke_color"></div>
         <div onclick="change_color(this); colorchoice.value = 'Camel' ; colorpicker.value = '#BB9457'"  style="background: #BB9457;" class="stroke_color"></div>
@@ -362,12 +370,13 @@ how to remove the virtical space around the range input in IE*/
 
                    <output name="OpacityAmount" id="OpacityAmount" for="Opacity" style="display: inline-block; min-width: 40px;">1.00</output><br> </span>
             
-<!--      theme picker      -->
+<!--      ==color palette theme picker==      -->
             <span style="display: inline-block;">
                    <label><strong>Color Palette:</strong></label>
   <select name="palette" id="palette"  onchange="showDiv()">
     <option value="Basic">Default</option>
     <option value="Drawception">Drawception</option>
+    <option value="CN">CN</option>
     <option value="AutumnHarvest">Autumn Harvest</option>
     <option value="GameBoy">Game Boy</option>
   </select> 
