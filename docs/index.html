@@ -121,7 +121,7 @@
                         <ul class="li-nested" style="font-size: 12px; line-height: 5px;">
                             <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Occasional swearing / mature topics </li>
                             <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Image/script heavy pages</li>
-                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Mobile friendly pages (mostly)</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Mobile friendly pages <span style="font-size: 8px;">(mostly)</span></li>
                             <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Majority handmade assets</li>
 
                         </ul><br>
@@ -263,12 +263,20 @@
 
                 </div>
                 
-                <!--  buttons -->
-                <div style="margin-bottom:5px;" class="webbuttons">
+                <!-- web buttons -->
+                <div style="margin-bottom:5px;" class="webbuttons tooltip">
                     
-                    <a href="https://snacksgg.me/"><img src="/images/buttons/spb-current.gif" alt="Snacks' Paint Box" class="image-hover-highlight" /></a>
-                    <a href="https://neocities.org/site/snacksgg"><img src="/images/buttons/neocitiesbutton.png" alt="Snacks' Paint Box" class="image-hover-highlight" /></a>
-                </div> <br>
+                    <details><summary style="list-style: none;"><img src="/images/spb-current.gif" alt="Snacks' Paint Box" class="image-hover-highlight" style="cursor: pointer;" title="click to copy my button!" />                    <a href="https://neocities.org/site/snacksgg"><img src="/images/buttons/neocitiesbutton.png" alt="Snacks' Paint Box" class="image-hover-highlight" /></a> <br>
+</summary>
+                    
+                    
+                        <textarea style="position:absolute;
+left:0;
+right:0;
+margin-left:auto;
+margin-right:auto; width:320px; height: 40px; font-size:10px;background-color:#00243B;color:white;"><a href="https://snacksgg.me/" target="_blank"><img src="https://snacksgg.me/images/spb-current.gif/"></a></textarea> </details>
+
+                </div> <br><br>
 
 
 
@@ -525,9 +533,9 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
 
                         <li><i class="fa-solid fa-square-check" style="color: #2ecc71;"></i> This site has:</li>
                         <ul class="li-nested" style="font-size: 12px; line-height: 5px;">
-                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Occasional swearing / mature topics </li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Occasional&nbsp;swearing / mature&nbsp;topics </li>
                             <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Image/script heavy pages</li>
-                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Mobile friendly pages (mostly)</li>
+                            <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Mobile friendly pages <span style="font-size: 8px;">(mostly)</span></li>
                             <li style="line-height: 15px;list-style-type: disc !important; list-style-position: inside;">Majority handmade assets</li>
 
                         </ul><br>
@@ -644,13 +652,13 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
             <img class="boxheader " style="margin-bottom: -30px; margin-top: -20px;" src="/images/frontpage/boxheader-webrings.webp" alt="webrings" draggable="false" id="webrings">
 
             <!--    webrings iframe    -->
-            <iframe src="https://snacksgg.neocities.org/webrings" style="background-image: url(/images/patterns/tilesw10.png);border:0;border-radius: 15px;outline: 5px solid #000e1c; overflow:scroll; height: 130px;    margin-right: 15px; padding-left: 8px; outline: 5px solid #000e1c; text-align: center; text-decoration: none; display: inline-block; font-weight: bolder; text-decoration-line: none pointer-events: none; font-size: 16px; width: 90%; height: 160px;" loading="lazy" title="Webrings" ></iframe>
+            <iframe src="https://snacksgg.neocities.org/webrings" style="background-image: url(/images/patterns/tilesw10.png);border:0;border-radius: 15px;outline: 5px solid #000e1c; overflow:scroll; margin-right: 15px; padding-left: 8px; outline: 5px solid #000e1c; text-align: center; text-decoration: none; display: inline-block; font-weight: bolder; text-decoration-line: none pointer-events: none; font-size: 16px; width: 90%; height: 200px;" loading="lazy" title="Webrings" ></iframe>
 
             <!--       Puma         -->
 
             <div>
                 <div style="height: 100%; width: 100%; resize: both; auto;cursor: url(/images/puma2.png), auto;">
-                    <img src="/images/pumapost1.png" alt="accordion icon" id="puma" onclick="diffImage(this);" </div>
+                    <img src="/images/pumapost1.png" alt="dogy" id="puma" onclick="diffImage(this);" </div>
                 </div>
 
             </div>
@@ -661,7 +669,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
         </div>
             
             
-<!--     footer header links       -->
+<!--    mobile - footer header links       -->
             <div class="boxed4  show-on-mobile animatedBackground" style="background: url(/images/checker.png); background-size: 80%; width: 100%; padding: 10px;" id="animatedBackground">
             
             <div class="tbox" style="margin: 0;">
@@ -691,7 +699,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
 
 
 
-        <!-- === Scripts === -->
+        <!-- === Combined Scripts === -->
 
         <script defer>
             // gallery script
@@ -759,11 +767,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #001
             
             
 
-
         </script>
 
 
     <script src="/js/lite-yt-embed/lite-yt-embed.js" defer></script>
+    
+<!--  End of Combined Scripts  -->
     
         <!--  End of Body & Main  -->
     </body>
