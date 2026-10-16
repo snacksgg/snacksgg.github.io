@@ -1208,9 +1208,9 @@ element {
 
 
 s {
-    color: #2891D1;
+    color: lightgray;
     text-decoration-color: white;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
 }
 
 
